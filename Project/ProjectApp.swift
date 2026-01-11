@@ -1,6 +1,6 @@
 //
-//  FlowKitApp.swift
-//  FlowKit
+//  ProjectApp.swift
+//  Project
 //
 //  App entry point - Kit Host architecture
 //  The app owns UI composition and navigation only.
@@ -11,7 +11,7 @@ import SwiftUI
 import NavigationKit
 
 @main
-struct FlowKitApp: App {
+struct ProjectApp: App {
     var body: some Scene {
         WindowGroup {
             DoubleSidebarLayoutV2()
