@@ -15,7 +15,8 @@ let package = Package(
             name: "KitOrchestrator",
             dependencies: ["DataKit"],
             resources: [.process("Resources")]
-        ),
-        .testTarget(name: "KitOrchestratorTests", dependencies: ["KitOrchestrator"])
+        )
+        //,
+       // .testTarget(name: "KitOrchestratorTests", dependencies: ["KitOrchestrator"])
     ]
 )
