@@ -1,0 +1,26 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/SearchKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/Services/SearchManager.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/Views/SearchCard.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.dia"
+  }
+}

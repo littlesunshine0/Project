@@ -1,0 +1,32 @@
+{
+  "menus": [
+    {
+      "id": "asset.main",
+      "type": "main",
+      "items": [
+        { "id": "asset.import", "title": "Import", "icon": "square.and.arrow.down", "action": "asset.import" },
+        { "id": "asset.library", "title": "Library", "icon": "photo.on.rectangle", "action": "asset.list" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "asset.browser", "type": "browser", "title": "Assets", "icon": "photo.on.rectangle" },
+    { "id": "asset.grid", "type": "grid", "title": "Asset Grid", "icon": "square.grid.2x2" },
+    { "id": "asset.preview", "type": "detail", "title": "Preview", "icon": "eye" }
+  ],
+  "animations": [
+    { "id": "asset.load", "type": "fade", "duration": 0.3, "curve": "easeInOut" }
+  ],
+  "icons": [
+    { "id": "asset.main", "systemName": "photo.on.rectangle" },
+    { "id": "asset.image", "systemName": "photo" },
+    { "id": "asset.video", "systemName": "video" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

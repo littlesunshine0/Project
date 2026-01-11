@@ -1,0 +1,8 @@
+{
+  "nodes": ["Idea", "Artifact", "Concept", "Connection", "Tag"],
+  "actions": ["idea.create", "idea.update", "idea.delete", "idea.connect", "artifact.create", "concept.extract", "tag.add"],
+  "agents": ["IdeaGenerator", "ConceptExtractor", "ConnectionFinder"],
+  "commands": ["/idea create", "/idea connect", "/ideas", "/concepts", "/artifacts"],
+  "ui": ["browser", "canvas", "graph"],
+  "ml": ["generation", "embedding", "recommendation"]
+}

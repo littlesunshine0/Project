@@ -1,0 +1,10 @@
+{
+  "id": "com.flowkit.projectscaffold",
+  "name": "ProjectScaffold",
+  "version": "1.0.0",
+  "category": "utility",
+  "platforms": ["macOS", "iOS", "visionOS"],
+  "dependencies": ["DataKit", "FileKit"],
+  "author": "FlowKit Team",
+  "license": "MIT"
+}

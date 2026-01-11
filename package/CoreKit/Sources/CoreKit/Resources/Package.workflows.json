@@ -1,0 +1,27 @@
+{
+  "workflows": [
+    {
+      "id": "core.app.launch",
+      "name": "App Launch",
+      "description": "App launch sequence",
+      "steps": [
+        { "id": "1", "action": "load.config" },
+        { "id": "2", "action": "initialize.services" },
+        { "id": "3", "action": "restore.state" },
+        { "id": "4", "action": "show.main.ui" }
+      ],
+      "triggers": ["app.launch"]
+    },
+    {
+      "id": "core.app.terminate",
+      "name": "App Terminate",
+      "description": "App termination sequence",
+      "steps": [
+        { "id": "1", "action": "save.state" },
+        { "id": "2", "action": "cleanup.resources" },
+        { "id": "3", "action": "terminate.services" }
+      ],
+      "triggers": ["app.terminate"]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SearchKit-arm64-apple-macosx26.0-debug.module": ["<SearchKit-arm64-apple-macosx26.0-debug.module>"]
+  "SearchKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<SearchKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "SearchKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<SearchKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "SearchKitTests-arm64-apple-macosx26.0-debug.module": ["<SearchKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<SearchKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<SearchKit-arm64-apple-macosx26.0-debug.module>","<SearchKitPackageTests-arm64-apple-macosx26.0-debug.test>","<SearchKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/Tests/SearchKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/SearchKit.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/Services/SearchManager.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/Views/SearchCard.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/SearchKit/Tests/SearchKitTests/SearchKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<SearchKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKit.swiftmodule"]
+    outputs: ["<SearchKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<SearchKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitPackageTests.swiftmodule"]
+    outputs: ["<SearchKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<SearchKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.xctest/Contents/MacOS/SearchKitPackageTests"]
+    outputs: ["<SearchKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<SearchKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitTests.swiftmodule"]
+    outputs: ["<SearchKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.SearchKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/SearchKit.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/Services/SearchManager.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/Views/SearchCard.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKit.swiftmodule"]
+    description: "Compiling Swift Module 'SearchKit' (3 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SearchKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/include/SearchKit-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","searchkit"]
+
+  "C.SearchKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'SearchKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SearchKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/include/SearchKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","searchkit"]
+
+  "C.SearchKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchCard.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchKit.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKit.build/SearchManager.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.xctest/Contents/MacOS/SearchKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/SearchKitPackageTests.xctest/Contents/MacOS/SearchKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.xctest/Contents/MacOS/SearchKitPackageTests","-module-name","SearchKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.SearchKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/Tests/SearchKitTests/SearchKitTests.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'SearchKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SearchKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules/SearchKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","searchkit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SearchKit/Sources/SearchKit/","/Users/tempadmin/Desktop/Project/package/SearchKit/Tests/SearchKitTests/","/Users/tempadmin/Desktop/Project/package/SearchKit/Package.swift","/Users/tempadmin/Desktop/Project/package/SearchKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

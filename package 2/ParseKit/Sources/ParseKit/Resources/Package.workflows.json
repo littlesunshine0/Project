@@ -1,0 +1,15 @@
+{
+  "workflows": [
+    {
+      "id": "parse.auto.detect",
+      "name": "Auto Parse",
+      "description": "Auto-detect format and parse",
+      "steps": [
+        { "id": "1", "action": "detect.format" },
+        { "id": "2", "action": "parse.auto" },
+        { "id": "3", "action": "return.result" }
+      ],
+      "triggers": ["api.parse"]
+    }
+  ]
+}

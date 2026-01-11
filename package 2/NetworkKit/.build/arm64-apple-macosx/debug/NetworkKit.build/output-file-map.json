@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/NetworkKit/.build/arm64-apple-macosx/debug/NetworkKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/NetworkKit/Sources/NetworkKit/NetworkKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/NetworkKit/.build/arm64-apple-macosx/debug/NetworkKit.build/NetworkKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/NetworkKit/.build/arm64-apple-macosx/debug/NetworkKit.build/NetworkKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/NetworkKit/.build/arm64-apple-macosx/debug/NetworkKit.build/NetworkKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/NetworkKit/.build/arm64-apple-macosx/debug/NetworkKit.build/NetworkKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/NetworkKit/.build/arm64-apple-macosx/debug/NetworkKit.build/NetworkKit.dia"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "actions": [
+    {
+      "id": "workflow.create",
+      "name": "Create Workflow",
+      "description": "Create a new workflow",
+      "icon": "plus",
+      "input": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "description", "type": "string", "required": false }
+      ],
+      "output": "Workflow",
+      "shortcut": "⇧⌘N",
+      "category": "create"
+    },
+    {
+      "id": "workflow.run",
+      "name": "Run Workflow",
+      "description": "Execute a workflow",
+      "icon": "play.fill",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true },
+        { "name": "parameters", "type": "object", "required": false }
+      ],
+      "output": "ExecutionResult",
+      "shortcut": "⇧⌘R",
+      "category": "execute"
+    },
+    {
+      "id": "workflow.stop",
+      "name": "Stop Workflow",
+      "description": "Stop a running workflow",
+      "icon": "stop.fill",
+      "input": [
+        { "name": "executionId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "shortcut": "⌘.",
+      "category": "execute"
+    },
+    {
+      "id": "workflow.pause",
+      "name": "Pause Workflow",
+      "description": "Pause a running workflow",
+      "icon": "pause.fill",
+      "input": [
+        { "name": "executionId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "execute"
+    },
+    {
+      "id": "workflow.resume",
+      "name": "Resume Workflow",
+      "description": "Resume a paused workflow",
+      "icon": "play.fill",
+      "input": [
+        { "name": "executionId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "execute"
+    },
+    {
+      "id": "workflow.delete",
+      "name": "Delete Workflow",
+      "description": "Delete a workflow",
+      "icon": "trash",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "shortcut": "⌘⌫",
+      "category": "delete"
+    },
+    {
+      "id": "workflow.duplicate",
+      "name": "Duplicate Workflow",
+      "description": "Duplicate a workflow",
+      "icon": "plus.square.on.square",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true }
+      ],
+      "output": "Workflow",
+      "shortcut": "⌘D",
+      "category": "create"
+    },
+    {
+      "id": "workflow.list",
+      "name": "List Workflows",
+      "description": "List all workflows",
+      "icon": "list.bullet",
+      "input": [
+        { "name": "filter", "type": "string", "required": false }
+      ],
+      "output": "[Workflow]",
+      "category": "read"
+    },
+    {
+      "id": "workflow.search",
+      "name": "Search Workflows",
+      "description": "Search workflows",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "query", "type": "string", "required": true }
+      ],
+      "output": "[Workflow]",
+      "shortcut": "⌘F",
+      "category": "read"
+    },
+    {
+      "id": "workflow.validate",
+      "name": "Validate Workflow",
+      "description": "Validate workflow configuration",
+      "icon": "checkmark.seal",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true }
+      ],
+      "output": "ValidationResult",
+      "category": "read"
+    },
+    {
+      "id": "workflow.export",
+      "name": "Export Workflow",
+      "description": "Export workflow to file",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true },
+        { "name": "format", "type": "string", "required": false, "defaultValue": "json" }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "workflow.import",
+      "name": "Import Workflow",
+      "description": "Import workflow from file",
+      "icon": "square.and.arrow.down",
+      "input": [
+        { "name": "file", "type": "file", "required": true }
+      ],
+      "output": "Workflow",
+      "category": "create"
+    },
+    {
+      "id": "step.add",
+      "name": "Add Step",
+      "description": "Add a step to workflow",
+      "icon": "plus.circle",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true },
+        { "name": "stepType", "type": "string", "required": true },
+        { "name": "position", "type": "int", "required": false }
+      ],
+      "output": "Step",
+      "category": "create"
+    },
+    {
+      "id": "step.remove",
+      "name": "Remove Step",
+      "description": "Remove a step from workflow",
+      "icon": "minus.circle",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true },
+        { "name": "stepId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "trigger.add",
+      "name": "Add Trigger",
+      "description": "Add a trigger to workflow",
+      "icon": "bolt.badge.plus",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true },
+        { "name": "triggerType", "type": "string", "required": true },
+        { "name": "config", "type": "object", "required": false }
+      ],
+      "output": "Trigger",
+      "category": "create"
+    },
+    {
+      "id": "schedule.set",
+      "name": "Schedule Workflow",
+      "description": "Schedule workflow execution",
+      "icon": "calendar",
+      "input": [
+        { "name": "workflowId", "type": "string", "required": true },
+        { "name": "schedule", "type": "string", "required": true }
+      ],
+      "output": "Schedule",
+      "category": "create"
+    }
+  ]
+}

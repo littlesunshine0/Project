@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ChatKit/.build/arm64-apple-macosx/debug/ChatKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ChatKit/.build/arm64-apple-macosx/debug/ChatKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ChatKit/.build/arm64-apple-macosx/debug/ChatKitPackageTests.build/runner.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ChatKit/.build/arm64-apple-macosx/debug/ChatKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ChatKit/.build/arm64-apple-macosx/debug/ChatKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ChatKit/.build/arm64-apple-macosx/debug/ChatKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ChatKit/.build/arm64-apple-macosx/debug/ChatKitPackageTests.build/runner.dia"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "workflows": [
+    {
+      "id": "error.handle.flow",
+      "name": "Error Handling Flow",
+      "description": "Standard error handling flow",
+      "steps": [
+        { "id": "1", "action": "error.log" },
+        { "id": "2", "action": "error.handle" },
+        { "id": "3", "action": "error.recover" },
+        { "id": "4", "action": "notify.result" }
+      ],
+      "triggers": ["error.occurred"]
+    },
+    {
+      "id": "error.report.flow",
+      "name": "Error Report Flow",
+      "description": "Report error to service",
+      "steps": [
+        { "id": "1", "action": "collect.error.info" },
+        { "id": "2", "action": "error.report" },
+        { "id": "3", "action": "notify.reported" }
+      ],
+      "triggers": ["error.critical"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "menus": [
+    {
+      "id": "bridge.main",
+      "type": "main",
+      "items": [
+        { "id": "bridge.list", "title": "Bridges", "icon": "link", "action": "bridge.list" },
+        { "id": "bridge.new", "title": "New Bridge", "icon": "plus", "action": "bridge.setup" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "bridge.browser", "type": "browser", "title": "Bridges", "icon": "link" },
+    { "id": "bridge.list", "type": "list", "title": "Bridge List", "icon": "list.bullet" }
+  ],
+  "animations": [
+    { "id": "bridge.connect", "type": "progress", "duration": 0.5, "curve": "easeOut" }
+  ],
+  "icons": [
+    { "id": "bridge.main", "systemName": "link" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

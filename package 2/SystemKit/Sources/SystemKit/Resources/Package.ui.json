@@ -1,0 +1,29 @@
+{
+  "menus": [
+    {
+      "id": "system.main",
+      "type": "main",
+      "items": [
+        { "id": "system.info", "title": "System Info", "icon": "info.circle", "action": "system.info" },
+        { "id": "system.monitor", "title": "Monitor", "icon": "chart.line.uptrend.xyaxis", "action": "system.monitor" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "system.browser", "type": "browser", "title": "System", "icon": "gearshape.2" },
+    { "id": "system.monitor", "type": "canvas", "title": "Monitor", "icon": "chart.line.uptrend.xyaxis" }
+  ],
+  "animations": [
+    { "id": "system.update", "type": "fade", "duration": 0.3, "curve": "easeInOut" }
+  ],
+  "icons": [
+    { "id": "system.main", "systemName": "gearshape.2" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

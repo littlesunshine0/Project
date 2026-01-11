@@ -1,0 +1,40 @@
+{
+  "agents": [
+    {
+      "id": "export.optimizer",
+      "name": "Export Optimizer",
+      "description": "Optimizes export output",
+      "triggers": [
+        { "type": "event", "condition": "export.preparing" }
+      ],
+      "actions": [
+        "analyze.content",
+        "optimize.size",
+        "compress.output"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 2
+      }
+    },
+    {
+      "id": "export.format.suggester",
+      "name": "Format Suggester",
+      "description": "Suggests best export format",
+      "triggers": [
+        { "type": "event", "condition": "export.dialog.open" }
+      ],
+      "actions": [
+        "analyze.content.type",
+        "suggest.format",
+        "explain.choice"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

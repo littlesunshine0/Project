@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/SearchKit/Tests/SearchKitTests/SearchKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/SearchKit/.build/arm64-apple-macosx/debug/SearchKitTests.build/SearchKitTests.dia"
+  }
+}

@@ -1,0 +1,14 @@
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/AutoDoc/AutoDocEngine.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/DocKit.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/APIDocGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/ChangelogGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/ConfigGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/DesignDocGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/READMEGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/RequirementsGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/SpecsGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/TasksGenerator.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Parsers/DocumentParser.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Services/DocComposer.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Services/DocManager.swift
+/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Views/DocCard.swift

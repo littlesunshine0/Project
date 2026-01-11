@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CoreKit/Sources/CoreKit/CRUD/CRUDContracts.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CRUDContracts.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CRUDContracts.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CRUDContracts~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CRUDContracts.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CRUDContracts.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CoreKit/Sources/CoreKit/Chat/ChatActionMapping.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/ChatActionMapping.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/ChatActionMapping.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/ChatActionMapping~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/ChatActionMapping.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/ChatActionMapping.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CoreKit/Sources/CoreKit/CoreKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CoreKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CoreKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CoreKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CoreKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/CoreKit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CoreKit/Sources/CoreKit/Graph/NodeGraph.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/NodeGraph.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/NodeGraph.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/NodeGraph~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/NodeGraph.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/NodeGraph.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CoreKit/Sources/CoreKit/Node/Node.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/Node.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/Node.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/Node~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/Node.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CoreKit/.build/arm64-apple-macosx/debug/CoreKit.build/Node.dia"
+  }
+}

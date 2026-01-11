@@ -1,0 +1,96 @@
+{
+  "actions": [
+    {
+      "id": "share.create",
+      "name": "Create Share",
+      "description": "Share content with others",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "contentId", "type": "string", "required": true },
+        { "name": "recipients", "type": "array", "required": true },
+        { "name": "permissions", "type": "string", "required": false }
+      ],
+      "output": "Share",
+      "shortcut": "⇧⌘S",
+      "category": "share"
+    },
+    {
+      "id": "share.revoke",
+      "name": "Revoke Share",
+      "description": "Revoke a share",
+      "icon": "xmark.circle",
+      "input": [
+        { "name": "shareId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "comment.add",
+      "name": "Add Comment",
+      "description": "Add a comment",
+      "icon": "bubble.left",
+      "input": [
+        { "name": "contentId", "type": "string", "required": true },
+        { "name": "text", "type": "string", "required": true }
+      ],
+      "output": "Comment",
+      "category": "create"
+    },
+    {
+      "id": "comment.list",
+      "name": "List Comments",
+      "description": "List all comments",
+      "icon": "bubble.left.and.bubble.right",
+      "input": [
+        { "name": "contentId", "type": "string", "required": true }
+      ],
+      "output": "[Comment]",
+      "category": "read"
+    },
+    {
+      "id": "version.create",
+      "name": "Create Version",
+      "description": "Create a new version",
+      "icon": "plus.circle",
+      "input": [
+        { "name": "contentId", "type": "string", "required": true },
+        { "name": "message", "type": "string", "required": false }
+      ],
+      "output": "Version",
+      "category": "create"
+    },
+    {
+      "id": "version.restore",
+      "name": "Restore Version",
+      "description": "Restore a previous version",
+      "icon": "arrow.uturn.backward",
+      "input": [
+        { "name": "versionId", "type": "string", "required": true }
+      ],
+      "output": "Content",
+      "category": "update"
+    },
+    {
+      "id": "sync.start",
+      "name": "Start Sync",
+      "description": "Start synchronization",
+      "icon": "arrow.triangle.2.circlepath",
+      "input": [],
+      "output": "SyncStatus",
+      "category": "execute"
+    },
+    {
+      "id": "conflict.resolve",
+      "name": "Resolve Conflict",
+      "description": "Resolve a sync conflict",
+      "icon": "checkmark.circle",
+      "input": [
+        { "name": "conflictId", "type": "string", "required": true },
+        { "name": "resolution", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    }
+  ]
+}

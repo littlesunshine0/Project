@@ -1,0 +1,638 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.xctest/Contents/MacOS/ActivityKitPackageTests",
+      "packagePath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit",
+      "productName" : "ActivityKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ActivityKit-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/Sources/ActivityKit/ActivityKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ActivityKit",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKit.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/include/ActivityKit-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "activitykit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/Sources/ActivityKit/ActivityKit.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ActivityKitPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ActivityKitPackageTests",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKitPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/include/ActivityKitPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "activitykit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ActivityKitTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/Tests/ActivityKitTests/ActivityKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ActivityKitTests",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKitTests.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/ActivityKitTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "activitykit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/ActivityKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules/ActivityKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/ActivityKit/Tests/ActivityKitTests/ActivityKitTests.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ActivityKit" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ActivityKit",
+      "-package-name",
+      "activitykit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/Sources/ActivityKit/ActivityKit.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/include/ActivityKit-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "activitykit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ActivityKitPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ActivityKitPackageTests",
+      "-package-name",
+      "activitykit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/include/ActivityKitPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "activitykit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ActivityKitTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ActivityKitTests",
+      "-package-name",
+      "activitykit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/Tests/ActivityKitTests/ActivityKitTests.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "activitykit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ActivityKit" : [
+
+    ],
+    "ActivityKitPackageTests" : [
+      "ActivityKitTests",
+      "ActivityKit"
+    ],
+    "ActivityKitTests" : [
+      "ActivityKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/Sources/ActivityKit/ActivityKit.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/ActivityKitTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/Tests/ActivityKitTests/ActivityKitTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKitTests.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

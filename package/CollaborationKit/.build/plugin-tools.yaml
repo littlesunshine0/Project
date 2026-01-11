@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "CollaborationKit-arm64-apple-macosx26.0-debug.module": ["<CollaborationKit-arm64-apple-macosx26.0-debug.module>"]
+  "CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "CollaborationKitTests-arm64-apple-macosx26.0-debug.module": ["<CollaborationKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<CollaborationKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<CollaborationKit-arm64-apple-macosx26.0-debug.module>","<CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.test>","<CollaborationKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/Sources/CollaborationKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/Tests/CollaborationKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/CollaborationKit/Sources/CollaborationKit/CollaborationKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/CollaborationKit/Tests/CollaborationKitTests/CollaborationKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<CollaborationKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKit.swiftmodule"]
+    outputs: ["<CollaborationKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitPackageTests.swiftmodule"]
+    outputs: ["<CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.xctest/Contents/MacOS/CollaborationKitPackageTests"]
+    outputs: ["<CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<CollaborationKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitTests.swiftmodule"]
+    outputs: ["<CollaborationKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.CollaborationKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/Sources/CollaborationKit/CollaborationKit.swift","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKit.swiftmodule"]
+    description: "Compiling Swift Module 'CollaborationKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CollaborationKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/include/CollaborationKit-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","collaborationkit"]
+
+  "C.CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'CollaborationKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CollaborationKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/include/CollaborationKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","collaborationkit"]
+
+  "C.CollaborationKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.xctest/Contents/MacOS/CollaborationKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.xctest/Contents/MacOS/CollaborationKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.xctest/Contents/MacOS/CollaborationKitPackageTests","-module-name","CollaborationKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.CollaborationKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/Tests/CollaborationKitTests/CollaborationKitTests.swift","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'CollaborationKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CollaborationKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules/CollaborationKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","collaborationkit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/CollaborationKit/Sources/CollaborationKit/","/Users/tempadmin/Desktop/Project/package/CollaborationKit/Tests/CollaborationKitTests/","/Users/tempadmin/Desktop/Project/package/CollaborationKit/Package.swift","/Users/tempadmin/Desktop/Project/package/CollaborationKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

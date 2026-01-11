@@ -1,0 +1,84 @@
+{
+  "actions": [
+    {
+      "id": "intent.detect",
+      "name": "Detect Intent",
+      "description": "Detect user intent from text",
+      "icon": "brain",
+      "input": [
+        { "name": "text", "type": "string", "required": true },
+        { "name": "context", "type": "object", "required": false }
+      ],
+      "output": "Intent",
+      "category": "execute"
+    },
+    {
+      "id": "entity.extract",
+      "name": "Extract Entities",
+      "description": "Extract entities from text",
+      "icon": "tag",
+      "input": [
+        { "name": "text", "type": "string", "required": true }
+      ],
+      "output": "[Entity]",
+      "category": "execute"
+    },
+    {
+      "id": "context.update",
+      "name": "Update Context",
+      "description": "Update conversation context",
+      "icon": "arrow.triangle.2.circlepath",
+      "input": [
+        { "name": "contextId", "type": "string", "required": true },
+        { "name": "data", "type": "object", "required": true }
+      ],
+      "output": "Context",
+      "category": "update"
+    },
+    {
+      "id": "context.clear",
+      "name": "Clear Context",
+      "description": "Clear conversation context",
+      "icon": "xmark.circle",
+      "input": [
+        { "name": "contextId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "sentiment.analyze",
+      "name": "Analyze Sentiment",
+      "description": "Analyze text sentiment",
+      "icon": "face.smiling",
+      "input": [
+        { "name": "text", "type": "string", "required": true }
+      ],
+      "output": "Sentiment",
+      "category": "execute"
+    },
+    {
+      "id": "language.detect",
+      "name": "Detect Language",
+      "description": "Detect text language",
+      "icon": "globe",
+      "input": [
+        { "name": "text", "type": "string", "required": true }
+      ],
+      "output": "Language",
+      "category": "execute"
+    },
+    {
+      "id": "intent.train",
+      "name": "Train Intent",
+      "description": "Train custom intent",
+      "icon": "brain.head.profile",
+      "input": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "examples", "type": "array", "required": true }
+      ],
+      "output": "Intent",
+      "category": "create"
+    }
+  ]
+}

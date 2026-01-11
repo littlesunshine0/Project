@@ -1,0 +1,8 @@
+{
+  "nodes": ["Error", "Recovery", "Log", "Report", "Handler"],
+  "actions": ["error.handle", "error.log", "error.report", "recovery.suggest", "recovery.apply", "handler.register"],
+  "agents": ["ErrorAnalyzer", "RecoverySuggester", "LogAggregator"],
+  "commands": ["/error log", "/error report", "/error recover"],
+  "ui": ["browser", "list", "settings"],
+  "ml": ["classification", "prediction"]
+}

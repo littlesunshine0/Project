@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/Tests/CollaborationKitTests/CollaborationKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKitTests.build/CollaborationKitTests.dia"
+  }
+}

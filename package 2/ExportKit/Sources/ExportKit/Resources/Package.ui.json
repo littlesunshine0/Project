@@ -1,0 +1,34 @@
+{
+  "menus": [
+    {
+      "id": "export.main",
+      "type": "main",
+      "items": [
+        { "id": "export.pdf", "title": "Export as PDF", "icon": "doc.richtext", "action": "export.pdf" },
+        { "id": "export.json", "title": "Export as JSON", "icon": "curlybraces", "action": "export.json" },
+        { "id": "export.csv", "title": "Export as CSV", "icon": "tablecells", "action": "export.csv" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "export.browser", "type": "browser", "title": "Export", "icon": "square.and.arrow.up" },
+    { "id": "export.formats", "type": "list", "title": "Formats", "icon": "list.bullet" },
+    { "id": "export.preview", "type": "detail", "title": "Preview", "icon": "eye" }
+  ],
+  "animations": [
+    { "id": "export.progress", "type": "progress", "duration": 0.5, "curve": "easeOut" },
+    { "id": "export.complete", "type": "success", "duration": 0.3, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "export.main", "systemName": "square.and.arrow.up" },
+    { "id": "export.pdf", "systemName": "doc.richtext" },
+    { "id": "export.json", "systemName": "curlybraces" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

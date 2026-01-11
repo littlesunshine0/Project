@@ -1,0 +1,40 @@
+{
+  "agents": [
+    {
+      "id": "orchestrator.auto.wirer",
+      "name": "Auto Wirer",
+      "description": "Automatically wires package dependencies",
+      "triggers": [
+        { "type": "event", "condition": "package.attached" }
+      ],
+      "actions": [
+        "resolve.dependencies",
+        "wire.connections",
+        "verify.wiring"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "critical",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "orchestrator.health.checker",
+      "name": "Health Checker",
+      "description": "Checks package health",
+      "triggers": [
+        { "type": "schedule", "condition": "every.minute" }
+      ],
+      "actions": [
+        "check.packages",
+        "report.issues",
+        "auto.recover"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

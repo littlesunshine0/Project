@@ -1,0 +1,8 @@
+{
+  "nodes": ["Export", "Format", "Template", "Destination", "Job"],
+  "actions": ["export.create", "export.execute", "export.cancel", "format.convert", "template.apply", "destination.configure"],
+  "agents": ["ExportOptimizer", "FormatConverter", "JobScheduler"],
+  "commands": ["/export", "/export format", "/export template", "/export status"],
+  "ui": ["browser", "list", "settings"],
+  "ml": ["recommendation"]
+}

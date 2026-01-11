@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "KnowledgeKit-arm64-apple-macosx26.0-debug.module": ["<KnowledgeKit-arm64-apple-macosx26.0-debug.module>"]
+  "KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "KnowledgeKitTests-arm64-apple-macosx26.0-debug.module": ["<KnowledgeKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<KnowledgeKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<KnowledgeKit-arm64-apple-macosx26.0-debug.module>","<KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.test>","<KnowledgeKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Tests/KnowledgeKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/KnowledgeKit.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/Services/KnowledgeManager.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/Views/KnowledgeCard.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeCard.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeKit.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeManager.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Tests/KnowledgeKitTests/KnowledgeKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<KnowledgeKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeKit.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeManager.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeCard.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKit.swiftmodule"]
+    outputs: ["<KnowledgeKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitPackageTests.swiftmodule"]
+    outputs: ["<KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.xctest/Contents/MacOS/KnowledgeKitPackageTests"]
+    outputs: ["<KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<KnowledgeKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitTests.swiftmodule"]
+    outputs: ["<KnowledgeKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.KnowledgeKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/KnowledgeKit.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/Services/KnowledgeManager.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/Views/KnowledgeCard.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeKit.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeManager.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeCard.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKit.swiftmodule"]
+    description: "Compiling Swift Module 'KnowledgeKit' (3 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","KnowledgeKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/include/KnowledgeKit-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","knowledgekit"]
+
+  "C.KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'KnowledgeKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","KnowledgeKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/include/KnowledgeKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","knowledgekit"]
+
+  "C.KnowledgeKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeCard.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeKit.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKit.build/KnowledgeManager.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.xctest/Contents/MacOS/KnowledgeKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.xctest/Contents/MacOS/KnowledgeKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.xctest/Contents/MacOS/KnowledgeKitPackageTests","-module-name","KnowledgeKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.KnowledgeKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Tests/KnowledgeKitTests/KnowledgeKitTests.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'KnowledgeKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","KnowledgeKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules/KnowledgeKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","knowledgekit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Sources/KnowledgeKit/","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Tests/KnowledgeKitTests/","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Package.swift","/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "IndexerKit-arm64-apple-macosx26.0-debug.module": ["<IndexerKit-arm64-apple-macosx26.0-debug.module>"]
+  "IndexerKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<IndexerKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "IndexerKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<IndexerKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "IndexerKitTests-arm64-apple-macosx26.0-debug.module": ["<IndexerKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<IndexerKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<IndexerKit-arm64-apple-macosx26.0-debug.module>","<IndexerKitPackageTests-arm64-apple-macosx26.0-debug.test>","<IndexerKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/Sources/IndexerKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/Tests/IndexerKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/IndexerKit/Sources/IndexerKit/IndexerKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/IndexerKit.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/IndexerKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/IndexerKit/Tests/IndexerKitTests/IndexerKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<IndexerKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/IndexerKit.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKit.swiftmodule"]
+    outputs: ["<IndexerKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<IndexerKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitPackageTests.swiftmodule"]
+    outputs: ["<IndexerKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<IndexerKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.xctest/Contents/MacOS/IndexerKitPackageTests"]
+    outputs: ["<IndexerKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<IndexerKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/IndexerKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitTests.swiftmodule"]
+    outputs: ["<IndexerKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.IndexerKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/Sources/IndexerKit/IndexerKit.swift","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/IndexerKit.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKit.swiftmodule"]
+    description: "Compiling Swift Module 'IndexerKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","IndexerKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/include/IndexerKit-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","indexerkit"]
+
+  "C.IndexerKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'IndexerKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","IndexerKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/include/IndexerKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","indexerkit"]
+
+  "C.IndexerKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKit.build/IndexerKit.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/IndexerKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.xctest/Contents/MacOS/IndexerKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/IndexerKitPackageTests.xctest/Contents/MacOS/IndexerKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.xctest/Contents/MacOS/IndexerKitPackageTests","-module-name","IndexerKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.IndexerKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/Tests/IndexerKitTests/IndexerKitTests.swift","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/IndexerKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'IndexerKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","IndexerKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules/IndexerKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/IndexerKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/IndexerKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","indexerkit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/IndexerKit/Sources/IndexerKit/","/Users/tempadmin/Desktop/Project/package/IndexerKit/Tests/IndexerKitTests/","/Users/tempadmin/Desktop/Project/package/IndexerKit/Package.swift","/Users/tempadmin/Desktop/Project/package/IndexerKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,22 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "loading", "name": "Loading Packages", "icon": "arrow.clockwise", "color": "blue" },
+    { "id": "wiring", "name": "Auto-Wiring", "icon": "link", "color": "orange" },
+    { "id": "running", "name": "Running", "icon": "play.fill", "color": "green" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" }
+  ],
+  "events": [
+    { "id": "orchestrator.started", "name": "Orchestrator Started", "severity": "info" },
+    { "id": "packages.loaded", "name": "Packages Loaded", "severity": "success" },
+    { "id": "wiring.complete", "name": "Auto-Wiring Complete", "severity": "success" },
+    { "id": "orchestrator.ready", "name": "Orchestrator Ready", "severity": "success" },
+    { "id": "orchestrator.error", "name": "Orchestrator Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "loading", "event": "orchestrator.start" },
+    { "from": "loading", "to": "wiring", "event": "packages.loaded" },
+    { "from": "wiring", "to": "running", "event": "wiring.complete" },
+    { "from": "loading", "to": "error", "event": "orchestrator.error" }
+  ]
+}

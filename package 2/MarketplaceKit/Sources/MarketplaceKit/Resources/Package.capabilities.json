@@ -1,0 +1,8 @@
+{
+  "nodes": ["Package", "Listing", "Review", "Purchase", "Update"],
+  "actions": ["package.browse", "package.install", "package.uninstall", "package.update", "listing.create", "review.submit", "purchase.complete"],
+  "agents": ["PackageRecommender", "UpdateChecker", "ReviewAnalyzer"],
+  "commands": ["/marketplace browse", "/marketplace install", "/marketplace update", "/marketplace publish"],
+  "ui": ["browser", "gallery", "list"],
+  "ml": ["recommendation", "search"]
+}

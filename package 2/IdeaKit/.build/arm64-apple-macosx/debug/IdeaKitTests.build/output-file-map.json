@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IdeaKit/.build/arm64-apple-macosx/debug/IdeaKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IdeaKit/Tests/IdeaKitTests/IdeaKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IdeaKit/.build/arm64-apple-macosx/debug/IdeaKitTests.build/IdeaKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IdeaKit/.build/arm64-apple-macosx/debug/IdeaKitTests.build/IdeaKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IdeaKit/.build/arm64-apple-macosx/debug/IdeaKitTests.build/IdeaKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IdeaKit/.build/arm64-apple-macosx/debug/IdeaKitTests.build/IdeaKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IdeaKit/.build/arm64-apple-macosx/debug/IdeaKitTests.build/IdeaKitTests.dia"
+  }
+}

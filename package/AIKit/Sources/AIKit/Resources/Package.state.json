@@ -1,0 +1,27 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "loading", "name": "Loading Model", "icon": "arrow.clockwise", "color": "blue" },
+    { "id": "processing", "name": "Processing", "icon": "brain", "color": "purple" },
+    { "id": "generating", "name": "Generating", "icon": "wand.and.stars", "color": "orange" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "model.loaded", "name": "Model Loaded", "severity": "success" },
+    { "id": "prediction.started", "name": "Prediction Started", "severity": "info" },
+    { "id": "prediction.completed", "name": "Prediction Completed", "severity": "success" },
+    { "id": "generation.completed", "name": "Generation Completed", "severity": "success" },
+    { "id": "ai.error", "name": "AI Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "loading", "event": "model.load" },
+    { "from": "loading", "to": "idle", "event": "model.loaded" },
+    { "from": "idle", "to": "processing", "event": "prediction.started" },
+    { "from": "processing", "to": "completed", "event": "prediction.completed" },
+    { "from": "idle", "to": "generating", "event": "generation.started" },
+    { "from": "generating", "to": "completed", "event": "generation.completed" },
+    { "from": "processing", "to": "error", "event": "ai.error" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

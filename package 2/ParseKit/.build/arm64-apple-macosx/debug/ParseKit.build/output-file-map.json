@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/Sources/ParseKit/ParseKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.dia"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "nodes": ["File", "Folder", "Operation", "Watcher", "Metadata"],
+  "actions": ["file.create", "file.read", "file.write", "file.delete", "file.move", "file.copy", "folder.create", "folder.list", "watcher.start"],
+  "agents": ["FileWatcher", "MetadataExtractor", "CleanupAgent"],
+  "commands": ["/file create", "/file read", "/file delete", "/file move", "/folder list", "/folder create"],
+  "ui": ["browser", "list", "settings"],
+  "ml": ["classification"]
+}

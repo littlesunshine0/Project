@@ -1,0 +1,22 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "sending", "name": "Sending", "icon": "arrow.up.circle", "color": "blue" },
+    { "id": "scheduled", "name": "Scheduled", "icon": "clock", "color": "orange" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "notification.sent", "name": "Notification Sent", "severity": "success" },
+    { "id": "notification.received", "name": "Notification Received", "severity": "info" },
+    { "id": "notification.dismissed", "name": "Notification Dismissed", "severity": "info" },
+    { "id": "notification.error", "name": "Notification Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "sending", "event": "notification.send" },
+    { "from": "sending", "to": "completed", "event": "notification.sent" },
+    { "from": "idle", "to": "scheduled", "event": "notification.schedule" },
+    { "from": "scheduled", "to": "sending", "event": "schedule.trigger" },
+    { "from": "sending", "to": "error", "event": "notification.error" }
+  ]
+}

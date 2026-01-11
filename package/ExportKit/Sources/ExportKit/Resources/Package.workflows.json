@@ -1,0 +1,27 @@
+{
+  "workflows": [
+    {
+      "id": "export.quick",
+      "name": "Quick Export",
+      "description": "Quick export with default format",
+      "steps": [
+        { "id": "1", "action": "detect.format" },
+        { "id": "2", "action": "export.create" },
+        { "id": "3", "action": "notify.complete" }
+      ],
+      "triggers": ["shortcut.⌘E"]
+    },
+    {
+      "id": "export.with.options",
+      "name": "Export with Options",
+      "description": "Export with format selection",
+      "steps": [
+        { "id": "1", "action": "ui.show.export.dialog" },
+        { "id": "2", "action": "select.format" },
+        { "id": "3", "action": "export.create" },
+        { "id": "4", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.export"]
+    }
+  ]
+}

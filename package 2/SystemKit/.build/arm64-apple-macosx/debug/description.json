@@ -1,0 +1,638 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.xctest/Contents/MacOS/SystemKitPackageTests",
+      "packagePath" : "/Users/tempadmin/Desktop/Project/package/SystemKit",
+      "productName" : "SystemKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SystemKit-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/Sources/SystemKit/SystemKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SystemKit",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKit.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/include/SystemKit-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "systemkit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/Sources/SystemKit/SystemKit.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SystemKitPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SystemKitPackageTests",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKitPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/include/SystemKitPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "systemkit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SystemKitTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/Tests/SystemKitTests/SystemKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SystemKitTests",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKitTests.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/SystemKitTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "systemkit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/SystemKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules/SystemKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/SystemKit/Tests/SystemKitTests/SystemKitTests.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SystemKit" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SystemKit",
+      "-package-name",
+      "systemkit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/Sources/SystemKit/SystemKit.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/include/SystemKit-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "systemkit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SystemKitPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SystemKitPackageTests",
+      "-package-name",
+      "systemkit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/include/SystemKitPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "systemkit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SystemKitTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SystemKitTests",
+      "-package-name",
+      "systemkit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/Tests/SystemKitTests/SystemKitTests.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "systemkit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SystemKit" : [
+
+    ],
+    "SystemKitPackageTests" : [
+      "SystemKitTests",
+      "SystemKit"
+    ],
+    "SystemKitTests" : [
+      "SystemKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/Sources/SystemKit/SystemKit.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/SystemKitTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/SystemKit/Tests/SystemKitTests/SystemKitTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKitTests.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

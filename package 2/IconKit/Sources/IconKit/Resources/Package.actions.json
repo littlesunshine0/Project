@@ -1,0 +1,46 @@
+{
+  "actions": [
+    {
+      "id": "icon.get",
+      "name": "Get Icon",
+      "description": "Get an icon by name",
+      "icon": "photo",
+      "input": [
+        { "name": "name", "type": "string", "required": true }
+      ],
+      "output": "Icon",
+      "category": "read"
+    },
+    {
+      "id": "icon.generate",
+      "name": "Generate Icon",
+      "description": "Generate an icon",
+      "icon": "wand.and.stars",
+      "input": [
+        { "name": "description", "type": "string", "required": true }
+      ],
+      "output": "Icon",
+      "category": "create"
+    },
+    {
+      "id": "icon.list",
+      "name": "List Icons",
+      "description": "List all icons",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Icon]",
+      "category": "read"
+    },
+    {
+      "id": "icon.search",
+      "name": "Search Icons",
+      "description": "Search icons",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "query", "type": "string", "required": true }
+      ],
+      "output": "[Icon]",
+      "category": "read"
+    }
+  ]
+}

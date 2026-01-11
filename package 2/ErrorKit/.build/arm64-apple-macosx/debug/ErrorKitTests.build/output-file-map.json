@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/Tests/ErrorKitTests/ErrorKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.dia"
+  }
+}

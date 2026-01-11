@@ -1,0 +1,22 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "collecting", "name": "Collecting", "icon": "bubble.left", "color": "blue" },
+    { "id": "submitting", "name": "Submitting", "icon": "arrow.up.circle", "color": "orange" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "feedback.submitted", "name": "Feedback Submitted", "severity": "success" },
+    { "id": "rating.submitted", "name": "Rating Submitted", "severity": "success" },
+    { "id": "survey.completed", "name": "Survey Completed", "severity": "success" },
+    { "id": "feedback.error", "name": "Feedback Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "collecting", "event": "feedback.start" },
+    { "from": "collecting", "to": "submitting", "event": "feedback.submit" },
+    { "from": "submitting", "to": "completed", "event": "feedback.submitted" },
+    { "from": "submitting", "to": "error", "event": "feedback.error" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

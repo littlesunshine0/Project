@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CollaborationKit/Sources/CollaborationKit/CollaborationKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CollaborationKit/.build/arm64-apple-macosx/debug/CollaborationKit.build/CollaborationKit.dia"
+  }
+}

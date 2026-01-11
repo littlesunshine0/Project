@@ -1,0 +1,58 @@
+{
+  "actions": [
+    {
+      "id": "asset.load",
+      "name": "Load Asset",
+      "description": "Load an asset",
+      "icon": "photo",
+      "input": [
+        { "name": "path", "type": "string", "required": true }
+      ],
+      "output": "Asset",
+      "category": "read"
+    },
+    {
+      "id": "asset.import",
+      "name": "Import Asset",
+      "description": "Import an asset",
+      "icon": "square.and.arrow.down",
+      "input": [
+        { "name": "file", "type": "file", "required": true }
+      ],
+      "output": "Asset",
+      "category": "create"
+    },
+    {
+      "id": "asset.export",
+      "name": "Export Asset",
+      "description": "Export an asset",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "assetId", "type": "string", "required": true },
+        { "name": "format", "type": "string", "required": false }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "asset.list",
+      "name": "List Assets",
+      "description": "List all assets",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Asset]",
+      "category": "read"
+    },
+    {
+      "id": "asset.delete",
+      "name": "Delete Asset",
+      "description": "Delete an asset",
+      "icon": "trash",
+      "input": [
+        { "name": "assetId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    }
+  ]
+}

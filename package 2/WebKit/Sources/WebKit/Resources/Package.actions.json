@@ -1,0 +1,49 @@
+{
+  "actions": [
+    {
+      "id": "web.load",
+      "name": "Load URL",
+      "description": "Load a web URL",
+      "icon": "globe",
+      "input": [
+        { "name": "url", "type": "string", "required": true }
+      ],
+      "output": "WebPage",
+      "category": "execute"
+    },
+    {
+      "id": "web.render",
+      "name": "Render HTML",
+      "description": "Render HTML content",
+      "icon": "doc.text",
+      "input": [
+        { "name": "html", "type": "string", "required": true }
+      ],
+      "output": "WebPage",
+      "category": "execute"
+    },
+    {
+      "id": "web.screenshot",
+      "name": "Take Screenshot",
+      "description": "Take a screenshot of web content",
+      "icon": "camera",
+      "input": [
+        { "name": "url", "type": "string", "required": true }
+      ],
+      "output": "Image",
+      "category": "create"
+    },
+    {
+      "id": "web.extract",
+      "name": "Extract Content",
+      "description": "Extract content from web page",
+      "icon": "doc.text.magnifyingglass",
+      "input": [
+        { "name": "url", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": false }
+      ],
+      "output": "String",
+      "category": "read"
+    }
+  ]
+}

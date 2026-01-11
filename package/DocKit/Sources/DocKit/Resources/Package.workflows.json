@@ -1,0 +1,42 @@
+{
+  "workflows": [
+    {
+      "id": "doc.generate.project",
+      "name": "Generate Project Documentation",
+      "description": "Generate documentation for entire project",
+      "steps": [
+        { "id": "1", "action": "scan.project" },
+        { "id": "2", "action": "parse.all.files" },
+        { "id": "3", "action": "doc.generate" },
+        { "id": "4", "action": "create.index" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.doc.generate.all"]
+    },
+    {
+      "id": "doc.create.from.template",
+      "name": "Create from Template",
+      "description": "Create document from template",
+      "steps": [
+        { "id": "1", "action": "template.list" },
+        { "id": "2", "action": "ui.select.single" },
+        { "id": "3", "action": "template.apply" },
+        { "id": "4", "action": "doc.edit" }
+      ],
+      "triggers": ["menu.doc.new.template"]
+    },
+    {
+      "id": "doc.export.all",
+      "name": "Export All Documentation",
+      "description": "Export all docs to specified format",
+      "steps": [
+        { "id": "1", "action": "doc.list" },
+        { "id": "2", "action": "select.format" },
+        { "id": "3", "action": "doc.export.batch" },
+        { "id": "4", "action": "create.archive" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.doc.export.all"]
+    }
+  ]
+}

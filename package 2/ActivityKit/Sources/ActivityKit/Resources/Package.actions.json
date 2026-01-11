@@ -1,0 +1,47 @@
+{
+  "actions": [
+    {
+      "id": "activity.log",
+      "name": "Log Activity",
+      "description": "Log an activity",
+      "icon": "clock",
+      "input": [
+        { "name": "type", "type": "string", "required": true },
+        { "name": "data", "type": "object", "required": false }
+      ],
+      "output": "Activity",
+      "category": "create"
+    },
+    {
+      "id": "activity.list",
+      "name": "List Activities",
+      "description": "List recent activities",
+      "icon": "list.bullet",
+      "input": [
+        { "name": "limit", "type": "int", "required": false }
+      ],
+      "output": "[Activity]",
+      "category": "read"
+    },
+    {
+      "id": "achievement.unlock",
+      "name": "Unlock Achievement",
+      "description": "Unlock an achievement",
+      "icon": "star.fill",
+      "input": [
+        { "name": "achievementId", "type": "string", "required": true }
+      ],
+      "output": "Achievement",
+      "category": "create"
+    },
+    {
+      "id": "achievement.list",
+      "name": "List Achievements",
+      "description": "List all achievements",
+      "icon": "star",
+      "input": [],
+      "output": "[Achievement]",
+      "category": "read"
+    }
+  ]
+}

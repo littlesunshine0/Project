@@ -1,0 +1,31 @@
+{
+  "menus": [
+    {
+      "id": "scaffold.main",
+      "type": "main",
+      "items": [
+        { "id": "scaffold.new", "title": "New Project", "icon": "folder.badge.plus", "action": "project.create" },
+        { "id": "scaffold.templates", "title": "Templates", "icon": "doc.on.doc", "action": "template.list" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "scaffold.browser", "type": "browser", "title": "Scaffold", "icon": "hammer" },
+    { "id": "scaffold.templates", "type": "grid", "title": "Templates", "icon": "square.grid.2x2" },
+    { "id": "scaffold.wizard", "type": "editor", "title": "Project Wizard", "icon": "wand.and.stars" }
+  ],
+  "animations": [
+    { "id": "scaffold.progress", "type": "progress", "duration": 0.5, "curve": "easeOut" },
+    { "id": "scaffold.complete", "type": "success", "duration": 0.3, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "scaffold.main", "systemName": "hammer" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

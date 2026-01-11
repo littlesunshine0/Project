@@ -1,0 +1,61 @@
+{
+  "agents": [
+    {
+      "id": "chat.context.manager",
+      "name": "Context Manager",
+      "description": "Manages chat context and memory",
+      "triggers": [
+        { "type": "event", "condition": "message.sent" },
+        { "type": "event", "condition": "context.change" }
+      ],
+      "actions": [
+        "analyze.message",
+        "update.context",
+        "prune.history",
+        "optimize.memory"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "chat.suggester",
+      "name": "Response Suggester",
+      "description": "Suggests responses and follow-up questions",
+      "triggers": [
+        { "type": "event", "condition": "response.complete" }
+      ],
+      "actions": [
+        "analyze.conversation",
+        "generate.suggestions",
+        "rank.suggestions"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "chat.summarizer",
+      "name": "Conversation Summarizer",
+      "description": "Summarizes long conversations",
+      "triggers": [
+        { "type": "event", "condition": "conversation.long" },
+        { "type": "command", "condition": "chat.summarize" }
+      ],
+      "actions": [
+        "analyze.history",
+        "extract.key.points",
+        "generate.summary"
+      ],
+      "config": {
+        "autoStart": false,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

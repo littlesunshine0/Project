@@ -1,0 +1,24 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "collecting", "name": "Collecting", "icon": "arrow.down.circle", "color": "blue" },
+    { "id": "processing", "name": "Processing", "icon": "gearshape.2", "color": "orange" },
+    { "id": "generating", "name": "Generating Report", "icon": "doc.text", "color": "purple" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "event.tracked", "name": "Event Tracked", "severity": "info" },
+    { "id": "metric.updated", "name": "Metric Updated", "severity": "info" },
+    { "id": "report.generated", "name": "Report Generated", "severity": "success" },
+    { "id": "analytics.error", "name": "Analytics Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "collecting", "event": "collect.start" },
+    { "from": "collecting", "to": "processing", "event": "collect.complete" },
+    { "from": "processing", "to": "idle", "event": "process.complete" },
+    { "from": "idle", "to": "generating", "event": "report.start" },
+    { "from": "generating", "to": "completed", "event": "report.generated" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

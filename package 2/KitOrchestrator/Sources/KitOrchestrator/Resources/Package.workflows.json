@@ -1,0 +1,31 @@
+{
+  "workflows": [
+    {
+      "id": "orchestrator.bootstrap",
+      "name": "Bootstrap System",
+      "description": "Bootstrap the package system",
+      "steps": [
+        { "id": "1", "action": "load.manifests" },
+        { "id": "2", "action": "resolve.dependencies" },
+        { "id": "3", "action": "wire.packages" },
+        { "id": "4", "action": "start.agents" },
+        { "id": "5", "action": "index.ml" },
+        { "id": "6", "action": "orchestrator.ready" }
+      ],
+      "triggers": ["app.launch"]
+    },
+    {
+      "id": "orchestrator.attach.package",
+      "name": "Attach Package",
+      "description": "Attach a new package",
+      "steps": [
+        { "id": "1", "action": "load.manifest" },
+        { "id": "2", "action": "validate.package" },
+        { "id": "3", "action": "package.attach" },
+        { "id": "4", "action": "wire.package" },
+        { "id": "5", "action": "notify.attached" }
+      ],
+      "triggers": ["api.package.attach"]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "actions": [
+    {
+      "id": "request.send",
+      "name": "Send Request",
+      "description": "Send an HTTP request",
+      "icon": "arrow.up.circle",
+      "input": [
+        { "name": "url", "type": "string", "required": true },
+        { "name": "method", "type": "string", "required": false },
+        { "name": "body", "type": "object", "required": false }
+      ],
+      "output": "Response",
+      "category": "execute"
+    },
+    {
+      "id": "request.get",
+      "name": "GET Request",
+      "description": "Send a GET request",
+      "icon": "arrow.down.circle",
+      "input": [
+        { "name": "url", "type": "string", "required": true }
+      ],
+      "output": "Response",
+      "category": "read"
+    },
+    {
+      "id": "request.post",
+      "name": "POST Request",
+      "description": "Send a POST request",
+      "icon": "arrow.up.circle",
+      "input": [
+        { "name": "url", "type": "string", "required": true },
+        { "name": "body", "type": "object", "required": true }
+      ],
+      "output": "Response",
+      "category": "create"
+    },
+    {
+      "id": "endpoint.register",
+      "name": "Register Endpoint",
+      "description": "Register an API endpoint",
+      "icon": "link",
+      "input": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "url", "type": "string", "required": true }
+      ],
+      "output": "Endpoint",
+      "category": "create"
+    },
+    {
+      "id": "connection.check",
+      "name": "Check Connection",
+      "description": "Check network connection",
+      "icon": "wifi",
+      "input": [],
+      "output": "ConnectionStatus",
+      "category": "read"
+    }
+  ]
+}

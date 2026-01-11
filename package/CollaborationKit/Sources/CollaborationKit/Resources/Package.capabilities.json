@@ -1,0 +1,8 @@
+{
+  "nodes": ["Share", "Comment", "Version", "Collaborator", "Permission"],
+  "actions": ["share.create", "share.revoke", "comment.add", "comment.resolve", "version.create", "version.restore", "permission.grant"],
+  "agents": ["ConflictResolver", "VersionTracker", "PermissionManager"],
+  "commands": ["/share", "/comment", "/version create", "/version restore", "/collaborators"],
+  "ui": ["browser", "list", "timeline"],
+  "ml": ["prediction"]
+}

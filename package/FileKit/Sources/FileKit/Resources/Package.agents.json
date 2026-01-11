@@ -1,0 +1,41 @@
+{
+  "agents": [
+    {
+      "id": "file.watcher",
+      "name": "File Watcher",
+      "description": "Watches for file changes",
+      "triggers": [
+        { "type": "fileChange", "condition": "*" }
+      ],
+      "actions": [
+        "detect.change",
+        "notify.change",
+        "trigger.reload"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "file.auto.save",
+      "name": "Auto Save",
+      "description": "Automatically saves files",
+      "triggers": [
+        { "type": "schedule", "condition": "every.30.seconds" },
+        { "type": "event", "condition": "content.changed" }
+      ],
+      "actions": [
+        "check.dirty",
+        "file.write",
+        "notify.saved"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

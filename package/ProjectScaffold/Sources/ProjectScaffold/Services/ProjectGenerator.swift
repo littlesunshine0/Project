@@ -1,0 +1,224 @@
+//
+//  ProjectGenerator.swift
+//  ProjectScaffold
+//
+//  Generates complete project structure
+//
+
+import Foundation
+
+/// Generates complete project structure with modular architecture
+public class ProjectGenerator: @unchecked Sendable {
+    
+    private let fileManager = FileManager.default
+    private let featureGenerator = FeatureGenerator()
+    
+    public init() {}
+    
+    /// Create a new project with modular architecture
+    public func createProject(
+        config: ProjectConfig,
+        at basePath: URL
+    ) throws -> URL {
+        let projectPath = basePath.appendingPathComponent(config.name)
+        
+        // Create main directories
+        let directories = [
+            "Sources/\(config.name)",
+            "Sources/\(config.name)/Features",
+            "Sources/\(config.name)/Core",
+            "Sources/\(config.name)/Resources",
+            "Tests/\(config.name)Tests",
+            "Database"
+        ]
+        
+        for dir in directories {
+            let dirPath = projectPath.appendingPathComponent(dir)
+            try fileManager.createDirectory(at: dirPath, withIntermediateDirectories: true)
+        }
+        
+        // Create Package.swift
+        try createPackageSwift(config: config, at: projectPath)
+        
+        // Create Core module if requested
+        if config.includeCoreModule {
+            try createCoreModule(config: config, at: projectPath)
+        }
+        
+        // Create database schema if requested
+        if config.includeDatabase {
+            try createDatabaseSchema(at: projectPath)
+        }
+        
+        // Create requested features
+        let featuresPath = projectPath.appendingPathComponent("Sources/\(config.name)/Features")
+        for featureName in config.features {
+            try featureGenerator.createFeature(name: featureName, at: featuresPath)
+        }
+        
+        // Create project manifest
+        try createProjectManifest(config: config, at: projectPath)
+        
+        return projectPath
+    }
+    
+    private func createPackageSwift(config: ProjectConfig, at projectPath: URL) throws {
+        let platformStr: String
+        switch config.platform {
+        case .macOS:
+            platformStr = ".macOS(.v13)"
+        case .iOS:
+            platformStr = ".iOS(.v16)"
+        case .visionOS:
+            platformStr = ".visionOS(.v1)"
+        case .multiplatform:
+            platformStr = ".macOS(.v13), .iOS(.v16)"
+        }
+        
+        let content = """
+        // swift-tools-version: 5.9
+        // \(config.name)
+        
+        import PackageDescription
+        
+        let package = Package(
+            name: "\(config.name)",
+            platforms: [
+                \(platformStr)
+            ],
+            products: [
+                .library(
+                    name: "\(config.name)",
+                    targets: ["\(config.name)"]
+                )
+            ],
+            dependencies: [],
+            targets: [
+                .target(
+                    name: "\(config.name)",
+                    dependencies: [],
+                    path: "Sources/\(config.name)"
+                ),
+                .testTarget(
+                    name: "\(config.name)Tests",
+                    dependencies: ["\(config.name)"],
+                    path: "Tests/\(config.name)Tests"
+                )
+            ]
+        )
+        """
+        
+        let packagePath = projectPath.appendingPathComponent("Package.swift")
+        try content.write(to: packagePath, atomically: true, encoding: .utf8)
+    }
+    
+    private func createCoreModule(config: ProjectConfig, at projectPath: URL) throws {
+        let corePath = projectPath.appendingPathComponent("Sources/\(config.name)/Core")
+        
+        // Create CoreTypes.swift
+        let coreTypesContent = """
+        //
+        //  CoreTypes.swift
+        //  \(config.name) Core
+        //
+        //  Base types, protocols, and enums
+        //
+        
+        import Foundation
+        
+        // MARK: - Content Type
+        
+        public enum ContentType: String, Codable, CaseIterable {
+            case model
+            case service
+            case view
+            case viewModel
+            case `protocol`
+        }
+        
+        // MARK: - Identifiable Content
+        
+        public protocol IdentifiableContent: Identifiable, Codable {
+            var id: UUID { get }
+            var name: String { get }
+            var type: ContentType { get }
+        }
+        """
+        
+        try coreTypesContent.write(
+            to: corePath.appendingPathComponent("CoreTypes.swift"),
+            atomically: true,
+            encoding: .utf8
+        )
+    }
+    
+    private func createDatabaseSchema(at projectPath: URL) throws {
+        let schemaContent = """
+        -- \(projectPath.lastPathComponent) Database Schema
+        -- Auto-generated by ProjectScaffold
+        
+        -- Feature modules
+        CREATE TABLE IF NOT EXISTS feature_modules (
+            id TEXT PRIMARY KEY NOT NULL,
+            name TEXT NOT NULL UNIQUE,
+            version TEXT NOT NULL DEFAULT '1.0.0',
+            description TEXT,
+            tags TEXT,
+            created_at REAL NOT NULL DEFAULT (julianday('now')),
+            updated_at REAL NOT NULL DEFAULT (julianday('now'))
+        );
+        
+        -- Code units
+        CREATE TABLE IF NOT EXISTS code_units (
+            id TEXT PRIMARY KEY NOT NULL,
+            file_name TEXT NOT NULL,
+            file_path TEXT NOT NULL,
+            feature_id TEXT,
+            category TEXT NOT NULL,
+            kind TEXT NOT NULL,
+            name TEXT NOT NULL,
+            description TEXT,
+            tags TEXT,
+            line_count INTEGER,
+            created_at REAL NOT NULL DEFAULT (julianday('now')),
+            updated_at REAL NOT NULL DEFAULT (julianday('now')),
+            FOREIGN KEY (feature_id) REFERENCES feature_modules(id)
+        );
+        
+        -- Dependencies
+        CREATE TABLE IF NOT EXISTS code_dependencies (
+            id TEXT PRIMARY KEY NOT NULL,
+            source_id TEXT NOT NULL,
+            target_id TEXT NOT NULL,
+            dependency_type TEXT NOT NULL DEFAULT 'use',
+            FOREIGN KEY (source_id) REFERENCES code_units(id),
+            FOREIGN KEY (target_id) REFERENCES code_units(id)
+        );
+        
+        -- Indexes
+        CREATE INDEX IF NOT EXISTS idx_code_units_feature ON code_units(feature_id);
+        CREATE INDEX IF NOT EXISTS idx_code_units_category ON code_units(category);
+        CREATE INDEX IF NOT EXISTS idx_code_units_kind ON code_units(kind);
+        """
+        
+        let schemaPath = projectPath.appendingPathComponent("Database/Schema.sql")
+        try schemaContent.write(to: schemaPath, atomically: true, encoding: .utf8)
+    }
+    
+    private func createProjectManifest(config: ProjectConfig, at projectPath: URL) throws {
+        let manifest: [String: Any] = [
+            "name": config.name,
+            "version": "1.0.0",
+            "bundleIdentifier": config.bundleIdentifier,
+            "platform": config.platform.rawValue,
+            "features": config.features,
+            "includeDatabase": config.includeDatabase,
+            "includeCoreModule": config.includeCoreModule,
+            "createdAt": ISO8601DateFormatter().string(from: Date())
+        ]
+        
+        let manifestPath = projectPath.appendingPathComponent("project_manifest.json")
+        let data = try JSONSerialization.data(withJSONObject: manifest, options: [.prettyPrinted, .sortedKeys])
+        try data.write(to: manifestPath)
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "menus": [
+    {
+      "id": "syntax.main",
+      "type": "main",
+      "items": [
+        { "id": "syntax.highlight", "title": "Highlight", "icon": "paintbrush", "action": "syntax.highlight" },
+        { "id": "syntax.validate", "title": "Validate", "icon": "checkmark.seal", "action": "syntax.validate" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "syntax.browser", "type": "browser", "title": "Syntax", "icon": "chevron.left.forwardslash.chevron.right" },
+    { "id": "syntax.editor", "type": "editor", "title": "Code Editor", "icon": "doc.text" }
+  ],
+  "animations": [
+    { "id": "syntax.highlight", "type": "fade", "duration": 0.2, "curve": "easeInOut" }
+  ],
+  "icons": [
+    { "id": "syntax.main", "systemName": "chevron.left.forwardslash.chevron.right" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

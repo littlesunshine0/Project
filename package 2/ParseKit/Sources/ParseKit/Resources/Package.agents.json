@@ -1,0 +1,22 @@
+{
+  "agents": [
+    {
+      "id": "parse.format.detector",
+      "name": "Format Detector",
+      "description": "Detects input format",
+      "triggers": [
+        { "type": "event", "condition": "parse.request" }
+      ],
+      "actions": [
+        "analyze.input",
+        "detect.format",
+        "select.parser"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 2
+      }
+    }
+  ]
+}

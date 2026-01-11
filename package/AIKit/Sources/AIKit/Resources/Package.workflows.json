@@ -1,0 +1,39 @@
+{
+  "workflows": [
+    {
+      "id": "ai.generate.content",
+      "name": "Generate Content",
+      "description": "Generate content using AI",
+      "steps": [
+        { "id": "1", "action": "ui.show.prompt" },
+        { "id": "2", "action": "model.load" },
+        { "id": "3", "action": "generate" },
+        { "id": "4", "action": "ui.show.result" }
+      ],
+      "triggers": ["menu.ai.generate"]
+    },
+    {
+      "id": "ai.classify.content",
+      "name": "Classify Content",
+      "description": "Classify selected content",
+      "steps": [
+        { "id": "1", "action": "get.selection" },
+        { "id": "2", "action": "classify" },
+        { "id": "3", "action": "apply.tags" }
+      ],
+      "triggers": ["menu.ai.classify"]
+    },
+    {
+      "id": "ai.similarity.search",
+      "name": "Find Similar",
+      "description": "Find similar content",
+      "steps": [
+        { "id": "1", "action": "get.selection" },
+        { "id": "2", "action": "embed" },
+        { "id": "3", "action": "similarity.search" },
+        { "id": "4", "action": "ui.show.results" }
+      ],
+      "triggers": ["menu.ai.similar"]
+    }
+  ]
+}

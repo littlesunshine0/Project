@@ -1,0 +1,26 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "syncing", "name": "Syncing", "icon": "arrow.triangle.2.circlepath", "color": "blue" },
+    { "id": "sharing", "name": "Sharing", "icon": "square.and.arrow.up", "color": "orange" },
+    { "id": "conflict", "name": "Conflict", "icon": "exclamationmark.triangle", "color": "yellow" },
+    { "id": "error", "name": "Error", "icon": "xmark.circle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "share.created", "name": "Share Created", "severity": "success" },
+    { "id": "sync.completed", "name": "Sync Completed", "severity": "success" },
+    { "id": "conflict.detected", "name": "Conflict Detected", "severity": "warning" },
+    { "id": "comment.added", "name": "Comment Added", "severity": "info" },
+    { "id": "collab.error", "name": "Collaboration Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "syncing", "event": "sync.start" },
+    { "from": "syncing", "to": "idle", "event": "sync.completed" },
+    { "from": "idle", "to": "sharing", "event": "share.start" },
+    { "from": "sharing", "to": "completed", "event": "share.created" },
+    { "from": "syncing", "to": "conflict", "event": "conflict.detected" },
+    { "from": "conflict", "to": "idle", "event": "conflict.resolved" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

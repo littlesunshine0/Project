@@ -1,0 +1,92 @@
+{
+  "actions": [
+    {
+      "id": "lesson.start",
+      "name": "Start Lesson",
+      "description": "Start a learning lesson",
+      "icon": "play.fill",
+      "input": [
+        { "name": "lessonId", "type": "string", "required": true }
+      ],
+      "output": "Lesson",
+      "category": "execute"
+    },
+    {
+      "id": "lesson.complete",
+      "name": "Complete Lesson",
+      "description": "Mark lesson as complete",
+      "icon": "checkmark.circle",
+      "input": [
+        { "name": "lessonId", "type": "string", "required": true }
+      ],
+      "output": "Progress",
+      "category": "update"
+    },
+    {
+      "id": "course.create",
+      "name": "Create Course",
+      "description": "Create a new course",
+      "icon": "plus",
+      "input": [
+        { "name": "title", "type": "string", "required": true },
+        { "name": "description", "type": "string", "required": false }
+      ],
+      "output": "Course",
+      "category": "create"
+    },
+    {
+      "id": "course.list",
+      "name": "List Courses",
+      "description": "List all courses",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Course]",
+      "category": "read"
+    },
+    {
+      "id": "progress.get",
+      "name": "Get Progress",
+      "description": "Get learning progress",
+      "icon": "chart.bar",
+      "input": [
+        { "name": "courseId", "type": "string", "required": false }
+      ],
+      "output": "Progress",
+      "category": "read"
+    },
+    {
+      "id": "progress.reset",
+      "name": "Reset Progress",
+      "description": "Reset learning progress",
+      "icon": "arrow.counterclockwise",
+      "input": [
+        { "name": "courseId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    },
+    {
+      "id": "quiz.start",
+      "name": "Start Quiz",
+      "description": "Start a quiz",
+      "icon": "questionmark.circle",
+      "input": [
+        { "name": "lessonId", "type": "string", "required": true }
+      ],
+      "output": "Quiz",
+      "category": "execute"
+    },
+    {
+      "id": "quiz.submit",
+      "name": "Submit Quiz",
+      "description": "Submit quiz answers",
+      "icon": "checkmark.seal",
+      "input": [
+        { "name": "quizId", "type": "string", "required": true },
+        { "name": "answers", "type": "array", "required": true }
+      ],
+      "output": "QuizResult",
+      "category": "execute"
+    }
+  ]
+}

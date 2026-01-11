@@ -1,0 +1,17 @@
+{
+  "workflows": [
+    {
+      "id": "indexer.full.rebuild",
+      "name": "Full Rebuild",
+      "description": "Rebuild entire index",
+      "steps": [
+        { "id": "1", "action": "index.clear" },
+        { "id": "2", "action": "scan.all.content" },
+        { "id": "3", "action": "index.add.batch" },
+        { "id": "4", "action": "index.optimize" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.index.rebuild"]
+    }
+  ]
+}

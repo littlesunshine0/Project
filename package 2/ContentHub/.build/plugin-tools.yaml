@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "ContentHub-arm64-apple-macosx26.0-debug.module": ["<ContentHub-arm64-apple-macosx26.0-debug.module>"]
+  "ContentHubPackageTests-arm64-apple-macosx26.0-debug.module": ["<ContentHubPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "ContentHubPackageTests-arm64-apple-macosx26.0-debug.test": ["<ContentHubPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "ContentHubTests-arm64-apple-macosx26.0-debug.module": ["<ContentHubTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<ContentHub-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<ContentHub-arm64-apple-macosx26.0-debug.module>","<ContentHubPackageTests-arm64-apple-macosx26.0-debug.test>","<ContentHubTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/Tests/ContentHubTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/ContentHub.swift","/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/ContentStore.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ContentHub/Tests/ContentHubTests/ContentHubTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<ContentHub-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHub.swiftmodule"]
+    outputs: ["<ContentHub-arm64-apple-macosx26.0-debug.module>"]
+
+  "<ContentHubPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubPackageTests.swiftmodule"]
+    outputs: ["<ContentHubPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<ContentHubPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.xctest/Contents/MacOS/ContentHubPackageTests"]
+    outputs: ["<ContentHubPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<ContentHubTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubTests.swiftmodule"]
+    outputs: ["<ContentHubTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.ContentHub-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/ContentHub.swift","/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/ContentStore.swift","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHub.swiftmodule"]
+    description: "Compiling Swift Module 'ContentHub' (2 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ContentHub","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHub.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/include/ContentHub-Swift.h","-color-diagnostics","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","contenthub"]
+
+  "C.ContentHubPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'ContentHubPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ContentHubPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/include/ContentHubPackageTests-Swift.h","-color-diagnostics","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","contenthub"]
+
+  "C.ContentHubPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.xctest/Contents/MacOS/ContentHubPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/ContentHubPackageTests.xctest/Contents/MacOS/ContentHubPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.xctest/Contents/MacOS/ContentHubPackageTests","-module-name","ContentHubPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHub.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.ContentHubTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/Tests/ContentHubTests/ContentHubTests.swift","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHub.swiftmodule","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.swift.o","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubTests.swiftmodule"]
+    description: "Compiling Swift Module 'ContentHubTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ContentHubTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules/ContentHubTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","contenthub"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/","/Users/tempadmin/Desktop/Project/package/ContentHub/Tests/ContentHubTests/","/Users/tempadmin/Desktop/Project/package/ContentHub/Package.swift","/Users/tempadmin/Desktop/Project/package/ContentHub/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

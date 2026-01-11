@@ -1,0 +1,21 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "navigating", "name": "Navigating", "icon": "arrow.right", "color": "blue" },
+    { "id": "loading", "name": "Loading", "icon": "arrow.clockwise", "color": "orange" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "route.changed", "name": "Route Changed", "severity": "info" },
+    { "id": "screen.loaded", "name": "Screen Loaded", "severity": "success" },
+    { "id": "navigation.error", "name": "Navigation Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "navigating", "event": "navigate.start" },
+    { "from": "navigating", "to": "loading", "event": "route.changed" },
+    { "from": "loading", "to": "idle", "event": "screen.loaded" },
+    { "from": "navigating", "to": "error", "event": "navigation.error" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

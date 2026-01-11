@@ -1,0 +1,8 @@
+{
+  "nodes": ["Document", "Section", "Template", "Version", "Comment"],
+  "actions": ["doc.create", "doc.update", "doc.delete", "doc.generate", "doc.export", "doc.publish", "doc.validate", "template.apply"],
+  "agents": ["DocGenerator", "LinkChecker", "StyleEnforcer", "FreshnessMonitor"],
+  "commands": ["/doc create", "/doc generate", "/doc export", "/doc publish", "/doc validate", "/docs"],
+  "ui": ["browser", "list", "editor"],
+  "ml": ["generation", "search", "classification"]
+}

@@ -1,0 +1,8 @@
+{
+  "nodes": ["Lesson", "Course", "Progress", "Quiz", "Achievement"],
+  "actions": ["lesson.start", "lesson.complete", "course.enroll", "course.complete", "progress.track", "quiz.submit", "achievement.unlock"],
+  "agents": ["ProgressTracker", "LessonRecommender", "QuizGenerator"],
+  "commands": ["/learn start", "/learn progress", "/courses", "/lessons", "/achievements"],
+  "ui": ["browser", "list", "timeline"],
+  "ml": ["recommendation", "prediction", "classification"]
+}

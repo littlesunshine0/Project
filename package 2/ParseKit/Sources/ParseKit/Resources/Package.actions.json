@@ -1,0 +1,48 @@
+{
+  "actions": [
+    {
+      "id": "parse.json",
+      "name": "Parse JSON",
+      "description": "Parse JSON string",
+      "icon": "curlybraces",
+      "input": [
+        { "name": "input", "type": "string", "required": true }
+      ],
+      "output": "Object",
+      "category": "execute"
+    },
+    {
+      "id": "parse.xml",
+      "name": "Parse XML",
+      "description": "Parse XML string",
+      "icon": "chevron.left.forwardslash.chevron.right",
+      "input": [
+        { "name": "input", "type": "string", "required": true }
+      ],
+      "output": "Object",
+      "category": "execute"
+    },
+    {
+      "id": "parse.markdown",
+      "name": "Parse Markdown",
+      "description": "Parse Markdown string",
+      "icon": "doc.richtext",
+      "input": [
+        { "name": "input", "type": "string", "required": true }
+      ],
+      "output": "Document",
+      "category": "execute"
+    },
+    {
+      "id": "parse.csv",
+      "name": "Parse CSV",
+      "description": "Parse CSV string",
+      "icon": "tablecells",
+      "input": [
+        { "name": "input", "type": "string", "required": true }
+      ],
+      "output": "[Object]",
+      "category": "execute"
+    }
+  ]
+}

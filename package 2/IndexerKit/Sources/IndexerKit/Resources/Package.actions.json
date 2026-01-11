@@ -1,0 +1,62 @@
+{
+  "actions": [
+    {
+      "id": "index.create",
+      "name": "Create Index",
+      "description": "Create a new index",
+      "icon": "plus.circle",
+      "input": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "config", "type": "object", "required": false }
+      ],
+      "output": "Index",
+      "category": "create"
+    },
+    {
+      "id": "index.add",
+      "name": "Add to Index",
+      "description": "Add content to index",
+      "icon": "plus",
+      "input": [
+        { "name": "indexId", "type": "string", "required": true },
+        { "name": "content", "type": "object", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    },
+    {
+      "id": "index.search",
+      "name": "Search Index",
+      "description": "Search the index",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "indexId", "type": "string", "required": true },
+        { "name": "query", "type": "string", "required": true }
+      ],
+      "output": "[SearchResult]",
+      "category": "read"
+    },
+    {
+      "id": "index.rebuild",
+      "name": "Rebuild Index",
+      "description": "Rebuild the index",
+      "icon": "arrow.clockwise",
+      "input": [
+        { "name": "indexId", "type": "string", "required": true }
+      ],
+      "output": "Index",
+      "category": "update"
+    },
+    {
+      "id": "index.optimize",
+      "name": "Optimize Index",
+      "description": "Optimize index performance",
+      "icon": "gearshape.2",
+      "input": [
+        { "name": "indexId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    }
+  ]
+}

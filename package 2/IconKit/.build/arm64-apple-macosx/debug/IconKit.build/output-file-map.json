@@ -1,0 +1,306 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Components/CapabilityIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CapabilityIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CapabilityIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CapabilityIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CapabilityIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CapabilityIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Components/IconEditor.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconEditor.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconEditor.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconEditor~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconEditor.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconEditor.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Components/IconPicker.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconPicker.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconPicker.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconPicker~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconPicker.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconPicker.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Core/ColorTheory.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ColorTheory.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ColorTheory.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ColorTheory~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ColorTheory.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ColorTheory.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Core/IconAnimations.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconAnimations.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconAnimations.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconAnimations~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconAnimations.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconAnimations.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Core/IconDefinition.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDefinition.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDefinition.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDefinition~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDefinition.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDefinition.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Core/IconRegistry.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconRegistry.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconRegistry.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconRegistry~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconRegistry.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconRegistry.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Core/IconStyle.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStyle.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStyle.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStyle~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStyle.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStyle.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Core/IconVariantType.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconVariantType.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconVariantType.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconVariantType~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconVariantType.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconVariantType.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Core/ProjectIconType.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ProjectIconType.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ProjectIconType.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ProjectIconType~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ProjectIconType.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ProjectIconType.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Export/XCAssetExporter.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/XCAssetExporter.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/XCAssetExporter.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/XCAssetExporter~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/XCAssetExporter.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/XCAssetExporter.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/IconKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/AIKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AIKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AIKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AIKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AIKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AIKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/AgentKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AgentKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AgentKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AgentKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AgentKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AgentKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/AnalyticsKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnalyticsKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnalyticsKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnalyticsKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnalyticsKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnalyticsKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/BridgeKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/BridgeKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/BridgeKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/BridgeKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/BridgeKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/BridgeKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/ChatKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ChatKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ChatKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ChatKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ChatKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ChatKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/CollaborationKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CollaborationKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CollaborationKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CollaborationKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CollaborationKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CollaborationKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/CommandKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CommandKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CommandKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CommandKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CommandKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/CommandKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/ContentHubIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ContentHubIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ContentHubIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ContentHubIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ContentHubIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ContentHubIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/DocKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/DocKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/DocKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/DocKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/DocKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/DocKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/ExportKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ExportKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ExportKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ExportKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ExportKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ExportKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/FeedbackKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FeedbackKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FeedbackKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FeedbackKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FeedbackKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FeedbackKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/FlowKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FlowKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FlowKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FlowKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FlowKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/FlowKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/IconKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/IdeaKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IdeaKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IdeaKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IdeaKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IdeaKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IdeaKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/IndexerKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IndexerKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IndexerKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IndexerKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IndexerKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IndexerKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/KitIconBase.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconBase.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconBase.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconBase~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconBase.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconBase.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/KnowledgeKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KnowledgeKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KnowledgeKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KnowledgeKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KnowledgeKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KnowledgeKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/LearnKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/LearnKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/LearnKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/LearnKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/LearnKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/LearnKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/NLUKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/NLUKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/NLUKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/NLUKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/NLUKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/NLUKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/ParseKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ParseKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ParseKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ParseKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ParseKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/ParseKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/SearchKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/SearchKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/SearchKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/SearchKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/SearchKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/SearchKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Icons/WorkflowKitIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/WorkflowKitIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/WorkflowKitIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/WorkflowKitIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/WorkflowKitIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/WorkflowKitIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Services/IconBatchService.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBatchService.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBatchService.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBatchService~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBatchService.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBatchService.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Services/IconGenerationService.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGenerationService.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGenerationService.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGenerationService~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGenerationService.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGenerationService.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Services/IconStorageService.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStorageService.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStorageService.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStorageService~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStorageService.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconStorageService.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Views/AnimatedIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnimatedIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnimatedIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnimatedIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnimatedIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/AnimatedIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Views/IconBrowserView.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBrowserView.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBrowserView.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBrowserView~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBrowserView.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconBrowserView.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Views/IconDesign.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDesign.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDesign.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDesign~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDesign.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDesign.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Views/IconDetailView.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDetailView.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDetailView.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDetailView~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDetailView.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconDetailView.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Views/IconGalleryView.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGalleryView.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGalleryView.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGalleryView~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGalleryView.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/IconGalleryView.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/IconKit/Sources/IconKit/Views/KitIconComparisonView.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconComparisonView.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconComparisonView.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconComparisonView~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconComparisonView.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKit.build/KitIconComparisonView.dia"
+  }
+}

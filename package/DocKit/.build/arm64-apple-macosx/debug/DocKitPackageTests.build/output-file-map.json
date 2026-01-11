@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKitPackageTests.build/runner.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKitPackageTests.build/runner.dia"
+  }
+}

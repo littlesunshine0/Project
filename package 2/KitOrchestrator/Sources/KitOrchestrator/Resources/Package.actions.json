@@ -1,0 +1,62 @@
+{
+  "actions": [
+    {
+      "id": "orchestrator.start",
+      "name": "Start Orchestrator",
+      "description": "Start the package orchestrator",
+      "icon": "play.fill",
+      "input": [],
+      "output": "OrchestratorStatus",
+      "category": "execute"
+    },
+    {
+      "id": "orchestrator.stop",
+      "name": "Stop Orchestrator",
+      "description": "Stop the package orchestrator",
+      "icon": "stop.fill",
+      "input": [],
+      "output": "Bool",
+      "category": "execute"
+    },
+    {
+      "id": "package.attach",
+      "name": "Attach Package",
+      "description": "Attach a package to the orchestrator",
+      "icon": "plus.circle",
+      "input": [
+        { "name": "packageId", "type": "string", "required": true }
+      ],
+      "output": "Package",
+      "category": "create"
+    },
+    {
+      "id": "package.detach",
+      "name": "Detach Package",
+      "description": "Detach a package from the orchestrator",
+      "icon": "minus.circle",
+      "input": [
+        { "name": "packageId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "packages.list",
+      "name": "List Packages",
+      "description": "List all attached packages",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Package]",
+      "category": "read"
+    },
+    {
+      "id": "orchestrator.status",
+      "name": "Get Status",
+      "description": "Get orchestrator status",
+      "icon": "info.circle",
+      "input": [],
+      "output": "OrchestratorStatus",
+      "category": "read"
+    }
+  ]
+}

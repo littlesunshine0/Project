@@ -1,0 +1,20 @@
+{
+  "nodes": ["Agent", "Task", "Memory", "Trigger", "Action", "Capability"],
+  "actions": [
+    "agent.create", "agent.start", "agent.stop", "agent.pause", "agent.resume",
+    "agent.delete", "agent.configure", "agent.train", "agent.test",
+    "agent.list", "agent.search", "agent.status",
+    "task.assign", "task.complete", "task.cancel",
+    "memory.show", "memory.clear", "memory.export",
+    "capability.add", "capability.remove"
+  ],
+  "agents": ["CodeAssistant", "TaskAutomator", "DocumentationAgent", "TestAgent", "ReviewAgent", "SecurityAgent"],
+  "commands": [
+    "/agent create", "/agent start", "/agent stop", "/agent pause", "/agent resume",
+    "/agent list", "/agent delete", "/agent status", "/agent config",
+    "/agent train", "/agent test", "/agent ask", "/agent tell", "/agent task",
+    "/agent memory", "/agent memory clear", "/agent export", "/agent import"
+  ],
+  "ui": ["browser", "list", "editor", "gallery", "settings"],
+  "ml": ["prediction", "generation", "classification", "embedding", "recommendation"]
+}

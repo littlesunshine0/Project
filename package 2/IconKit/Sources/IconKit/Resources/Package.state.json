@@ -1,0 +1,18 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "loading", "name": "Loading", "icon": "arrow.clockwise", "color": "blue" },
+    { "id": "generating", "name": "Generating", "icon": "wand.and.stars", "color": "purple" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "icon.loaded", "name": "Icon Loaded", "severity": "success" },
+    { "id": "icon.generated", "name": "Icon Generated", "severity": "success" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "loading", "event": "icon.load" },
+    { "from": "loading", "to": "idle", "event": "icon.loaded" },
+    { "from": "idle", "to": "generating", "event": "icon.generate" },
+    { "from": "generating", "to": "completed", "event": "icon.generated" }
+  ]
+}

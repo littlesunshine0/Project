@@ -1,0 +1,42 @@
+{
+  "workflows": [
+    {
+      "id": "collab.share.content",
+      "name": "Share Content",
+      "description": "Share content with collaborators",
+      "steps": [
+        { "id": "1", "action": "ui.show.share.dialog" },
+        { "id": "2", "action": "select.recipients" },
+        { "id": "3", "action": "set.permissions" },
+        { "id": "4", "action": "share.create" },
+        { "id": "5", "action": "notify.recipients" }
+      ],
+      "triggers": ["shortcut.⇧⌘S", "menu.collab.share"]
+    },
+    {
+      "id": "collab.review.changes",
+      "name": "Review Changes",
+      "description": "Review and approve changes",
+      "steps": [
+        { "id": "1", "action": "version.list" },
+        { "id": "2", "action": "show.diff" },
+        { "id": "3", "action": "approve.or.reject" },
+        { "id": "4", "action": "notify.author" }
+      ],
+      "triggers": ["menu.collab.review"]
+    },
+    {
+      "id": "collab.resolve.conflict",
+      "name": "Resolve Conflict",
+      "description": "Resolve sync conflict",
+      "steps": [
+        { "id": "1", "action": "show.conflict" },
+        { "id": "2", "action": "show.diff" },
+        { "id": "3", "action": "select.resolution" },
+        { "id": "4", "action": "conflict.resolve" },
+        { "id": "5", "action": "sync.start" }
+      ],
+      "triggers": ["conflict.detected"]
+    }
+  ]
+}

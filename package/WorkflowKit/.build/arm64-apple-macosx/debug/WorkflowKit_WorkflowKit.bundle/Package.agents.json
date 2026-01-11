@@ -1,0 +1,131 @@
+{
+  "agents": [
+    {
+      "id": "workflow.suggester",
+      "name": "Workflow Suggester",
+      "description": "Suggests workflows based on context and user patterns",
+      "triggers": [
+        { "type": "event", "condition": "context.change" },
+        { "type": "event", "condition": "task.start" },
+        { "type": "event", "condition": "file.open" }
+      ],
+      "actions": [
+        "analyze.context",
+        "match.workflows",
+        "rank.suggestions",
+        "suggest.workflows"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "workflow.execution.monitor",
+      "name": "Execution Monitor",
+      "description": "Monitors workflow execution and tracks progress",
+      "triggers": [
+        { "type": "event", "condition": "workflow.started" },
+        { "type": "event", "condition": "step.completed" },
+        { "type": "event", "condition": "workflow.failed" }
+      ],
+      "actions": [
+        "track.progress",
+        "log.events",
+        "update.status",
+        "alert.issues",
+        "collect.metrics"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 10
+      }
+    },
+    {
+      "id": "workflow.error.recovery",
+      "name": "Error Recovery Agent",
+      "description": "Handles workflow errors and suggests recovery options",
+      "triggers": [
+        { "type": "event", "condition": "step.failed" },
+        { "type": "event", "condition": "workflow.error" }
+      ],
+      "actions": [
+        "analyze.error",
+        "identify.cause",
+        "suggest.fix",
+        "auto.retry",
+        "notify.user"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "critical",
+        "maxConcurrent": 5
+      }
+    },
+    {
+      "id": "workflow.schedule.optimizer",
+      "name": "Schedule Optimizer",
+      "description": "Optimizes workflow schedules to avoid conflicts",
+      "triggers": [
+        { "type": "event", "condition": "schedule.conflict" },
+        { "type": "event", "condition": "resource.constraint" },
+        { "type": "schedule", "condition": "daily" }
+      ],
+      "actions": [
+        "analyze.schedules",
+        "detect.conflicts",
+        "suggest.times",
+        "resolve.conflicts",
+        "optimize.order"
+      ],
+      "config": {
+        "autoStart": false,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "workflow.performance.analyzer",
+      "name": "Performance Analyzer",
+      "description": "Analyzes workflow performance and suggests optimizations",
+      "triggers": [
+        { "type": "event", "condition": "workflow.completed" },
+        { "type": "schedule", "condition": "weekly" }
+      ],
+      "actions": [
+        "collect.metrics",
+        "analyze.performance",
+        "identify.bottlenecks",
+        "suggest.optimizations",
+        "generate.report"
+      ],
+      "config": {
+        "autoStart": false,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "workflow.template.recommender",
+      "name": "Template Recommender",
+      "description": "Recommends workflow templates based on task description",
+      "triggers": [
+        { "type": "event", "condition": "workflow.create" },
+        { "type": "event", "condition": "task.describe" }
+      ],
+      "actions": [
+        "parse.description",
+        "match.templates",
+        "rank.templates",
+        "suggest.customizations"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

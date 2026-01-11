@@ -1,0 +1,8 @@
+{
+  "nodes": ["AppIdea", "Feature", "Requirement", "Mockup", "Roadmap"],
+  "actions": ["appidea.create", "appidea.refine", "feature.add", "requirement.define", "mockup.generate", "roadmap.plan"],
+  "agents": ["IdeaRefiner", "FeatureSuggester", "RoadmapPlanner"],
+  "commands": ["/appidea create", "/appidea refine", "/features", "/requirements", "/roadmap"],
+  "ui": ["browser", "canvas", "timeline"],
+  "ml": ["generation", "recommendation"]
+}

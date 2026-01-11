@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/Sources/SyntaxKit/SyntaxKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.dia"
+  }
+}

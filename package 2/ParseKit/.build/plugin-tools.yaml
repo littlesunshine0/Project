@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "ParseKit-arm64-apple-macosx26.0-debug.module": ["<ParseKit-arm64-apple-macosx26.0-debug.module>"]
+  "ParseKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<ParseKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "ParseKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<ParseKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "ParseKitTests-arm64-apple-macosx26.0-debug.module": ["<ParseKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<ParseKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<ParseKit-arm64-apple-macosx26.0-debug.module>","<ParseKitPackageTests-arm64-apple-macosx26.0-debug.test>","<ParseKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/Sources/ParseKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/Tests/ParseKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ParseKit/Sources/ParseKit/ParseKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/ParseKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ParseKit/Tests/ParseKitTests/ParseKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<ParseKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKit.swiftmodule"]
+    outputs: ["<ParseKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<ParseKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitPackageTests.swiftmodule"]
+    outputs: ["<ParseKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<ParseKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.xctest/Contents/MacOS/ParseKitPackageTests"]
+    outputs: ["<ParseKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<ParseKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/ParseKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitTests.swiftmodule"]
+    outputs: ["<ParseKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.ParseKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/Sources/ParseKit/ParseKit.swift","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKit.swiftmodule"]
+    description: "Compiling Swift Module 'ParseKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ParseKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/include/ParseKit-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","parsekit"]
+
+  "C.ParseKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'ParseKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ParseKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/include/ParseKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","parsekit"]
+
+  "C.ParseKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKit.build/ParseKit.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/ParseKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.xctest/Contents/MacOS/ParseKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/ParseKitPackageTests.xctest/Contents/MacOS/ParseKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.xctest/Contents/MacOS/ParseKitPackageTests","-module-name","ParseKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.ParseKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/Tests/ParseKitTests/ParseKitTests.swift","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/ParseKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'ParseKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ParseKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules/ParseKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ParseKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ParseKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","parsekit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ParseKit/Sources/ParseKit/","/Users/tempadmin/Desktop/Project/package/ParseKit/Tests/ParseKitTests/","/Users/tempadmin/Desktop/Project/package/ParseKit/Package.swift","/Users/tempadmin/Desktop/Project/package/ParseKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

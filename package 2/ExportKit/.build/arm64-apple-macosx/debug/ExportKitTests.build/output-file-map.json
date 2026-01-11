@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ExportKit/.build/arm64-apple-macosx/debug/ExportKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ExportKit/Tests/ExportKitTests/ExportKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ExportKit/.build/arm64-apple-macosx/debug/ExportKitTests.build/ExportKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ExportKit/.build/arm64-apple-macosx/debug/ExportKitTests.build/ExportKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ExportKit/.build/arm64-apple-macosx/debug/ExportKitTests.build/ExportKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ExportKit/.build/arm64-apple-macosx/debug/ExportKitTests.build/ExportKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ExportKit/.build/arm64-apple-macosx/debug/ExportKitTests.build/ExportKitTests.dia"
+  }
+}

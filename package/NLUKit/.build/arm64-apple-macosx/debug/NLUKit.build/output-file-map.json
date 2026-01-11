@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/NLUKit/.build/arm64-apple-macosx/debug/NLUKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/NLUKit/Sources/NLUKit/NLUKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/NLUKit/.build/arm64-apple-macosx/debug/NLUKit.build/NLUKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/NLUKit/.build/arm64-apple-macosx/debug/NLUKit.build/NLUKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/NLUKit/.build/arm64-apple-macosx/debug/NLUKit.build/NLUKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/NLUKit/.build/arm64-apple-macosx/debug/NLUKit.build/NLUKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/NLUKit/.build/arm64-apple-macosx/debug/NLUKit.build/NLUKit.dia"
+  }
+}

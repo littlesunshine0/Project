@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/SystemKit/Sources/SystemKit/SystemKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/SystemKit/.build/arm64-apple-macosx/debug/SystemKit.build/SystemKit.dia"
+  }
+}

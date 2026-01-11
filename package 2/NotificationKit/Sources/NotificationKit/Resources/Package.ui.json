@@ -1,0 +1,33 @@
+{
+  "menus": [
+    {
+      "id": "notification.main",
+      "type": "main",
+      "items": [
+        { "id": "notif.center", "title": "Notification Center", "icon": "bell", "action": "notification.center.show" },
+        { "id": "notif.settings", "title": "Settings", "icon": "gearshape", "action": "notification.settings" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "notification.browser", "type": "browser", "title": "Notifications", "icon": "bell" },
+    { "id": "notification.list", "type": "list", "title": "All Notifications", "icon": "list.bullet" },
+    { "id": "notification.settings", "type": "settings", "title": "Settings", "icon": "gearshape" }
+  ],
+  "animations": [
+    { "id": "notification.appear", "type": "slide", "duration": 0.3, "curve": "spring" },
+    { "id": "notification.dismiss", "type": "fade", "duration": 0.2, "curve": "easeOut" }
+  ],
+  "icons": [
+    { "id": "notification.main", "systemName": "bell" },
+    { "id": "notification.alert", "systemName": "bell.badge" },
+    { "id": "notification.badge", "systemName": "app.badge" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

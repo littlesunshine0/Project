@@ -1,0 +1,49 @@
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Argument.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentDiscussion.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentHelp.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentVisibility.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/CompletionKind.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Errors.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Flag.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/NameSpecification.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Option.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/OptionGroup.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/AsyncParsableCommand.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandGroup.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift'
+'/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableCommand.swift'
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputKey.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Mutex.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Platform.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SwiftExtensions.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/CodingKeyValidator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/NonsenseFlagsValidator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/ParsableArgumentsValidation.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/PositionalArgumentsValidator.swift
+/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Validators/UniqueNamesValidator.swift

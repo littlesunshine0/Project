@@ -1,0 +1,22 @@
+{
+  "agents": [
+    {
+      "id": "system.monitor",
+      "name": "System Monitor",
+      "description": "Monitors system resources",
+      "triggers": [
+        { "type": "schedule", "condition": "every.minute" }
+      ],
+      "actions": [
+        "collect.metrics",
+        "check.thresholds",
+        "alert.issues"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

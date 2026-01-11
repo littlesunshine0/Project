@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SyntaxKit-arm64-apple-macosx26.0-debug.module": ["<SyntaxKit-arm64-apple-macosx26.0-debug.module>"]
+  "SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "SyntaxKitTests-arm64-apple-macosx26.0-debug.module": ["<SyntaxKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<SyntaxKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<SyntaxKit-arm64-apple-macosx26.0-debug.module>","<SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.test>","<SyntaxKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/Sources/SyntaxKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/Tests/SyntaxKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/SyntaxKit/Sources/SyntaxKit/SyntaxKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/SyntaxKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/SyntaxKit/Tests/SyntaxKitTests/SyntaxKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<SyntaxKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKit.swiftmodule"]
+    outputs: ["<SyntaxKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitPackageTests.swiftmodule"]
+    outputs: ["<SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.xctest/Contents/MacOS/SyntaxKitPackageTests"]
+    outputs: ["<SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<SyntaxKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/SyntaxKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitTests.swiftmodule"]
+    outputs: ["<SyntaxKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.SyntaxKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/Sources/SyntaxKit/SyntaxKit.swift","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKit.swiftmodule"]
+    description: "Compiling Swift Module 'SyntaxKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SyntaxKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/include/SyntaxKit-Swift.h","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","syntaxkit"]
+
+  "C.SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'SyntaxKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SyntaxKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/include/SyntaxKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","syntaxkit"]
+
+  "C.SyntaxKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKit.build/SyntaxKit.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/SyntaxKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.xctest/Contents/MacOS/SyntaxKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.xctest/Contents/MacOS/SyntaxKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.xctest/Contents/MacOS/SyntaxKitPackageTests","-module-name","SyntaxKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.SyntaxKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/Tests/SyntaxKitTests/SyntaxKitTests.swift","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/SyntaxKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'SyntaxKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SyntaxKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules/SyntaxKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/SyntaxKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/SyntaxKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","syntaxkit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/SyntaxKit/Sources/SyntaxKit/","/Users/tempadmin/Desktop/Project/package/SyntaxKit/Tests/SyntaxKitTests/","/Users/tempadmin/Desktop/Project/package/SyntaxKit/Package.swift","/Users/tempadmin/Desktop/Project/package/SyntaxKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

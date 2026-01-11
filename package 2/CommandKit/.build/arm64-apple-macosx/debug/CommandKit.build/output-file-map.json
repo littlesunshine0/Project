@@ -1,0 +1,187 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/CommandKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/CommandKitContract.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitContract.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitContract.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitContract~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitContract.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitContract.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/CommandKitManifest.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitManifest.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitManifest.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitManifest~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitManifest.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitManifest.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/CommandKitPackage.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitPackage.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitPackage.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitPackage~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitPackage.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKitPackage.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/Command.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/Command.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/Command.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/Command~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/Command.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/Command.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/CommandCategory.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCategory.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCategory.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCategory~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCategory.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCategory.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/CommandError.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandError.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandError.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandError~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandError.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandError.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/CommandFormat.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandFormat.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandFormat.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandFormat~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandFormat.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandFormat.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/CommandKind.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKind.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKind.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKind~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKind.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandKind.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/CommandSection.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandSection.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandSection.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandSection~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandSection.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandSection.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/CommandType.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandType.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandType.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandType~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandType.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandType.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Models/ExecutionResult.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/ExecutionResult.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/ExecutionResult.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/ExecutionResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/ExecutionResult.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/ExecutionResult.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Services/CommandComposer.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandComposer.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandComposer.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandComposer~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandComposer.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandComposer.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Services/CommandGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Services/CommandManager.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandManager.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandManager.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandManager.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandManager.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Services/CommandParser.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandParser.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandParser.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandParser.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandParser.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/ViewModels/CommandViewModel.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandViewModel.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandViewModel.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandViewModel.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandViewModel.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandBrowser.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandBrowser.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandBrowser.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandBrowser~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandBrowser.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandBrowser.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandCard.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCard.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCard.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCard.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandCard.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandColumn.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandColumn.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandColumn.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandColumn~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandColumn.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandColumn.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandGallery.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGallery.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGallery.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGallery~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGallery.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandGallery.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandList.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandList.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandList.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandList~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandList.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandList.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandRow.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandRow.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandRow.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandRow~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandRow.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandRow.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/Sources/CommandKit/Views/CommandTable.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandTable.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandTable.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandTable~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandTable.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/CommandTable.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/resource_bundle_accessor.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/CommandKit/.build/arm64-apple-macosx/debug/CommandKit.build/resource_bundle_accessor.dia"
+  }
+}

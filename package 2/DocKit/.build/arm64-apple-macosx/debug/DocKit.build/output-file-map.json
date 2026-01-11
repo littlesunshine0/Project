@@ -1,0 +1,103 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/AutoDoc/AutoDocEngine.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/AutoDocEngine.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/AutoDocEngine.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/AutoDocEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/AutoDocEngine.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/AutoDocEngine.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/DocKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocKit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/APIDocGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/APIDocGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/APIDocGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/APIDocGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/APIDocGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/APIDocGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/ChangelogGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ChangelogGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ChangelogGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ChangelogGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ChangelogGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ChangelogGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/ConfigGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ConfigGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ConfigGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ConfigGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ConfigGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/ConfigGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/DesignDocGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DesignDocGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DesignDocGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DesignDocGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DesignDocGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DesignDocGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/READMEGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/READMEGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/READMEGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/READMEGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/READMEGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/READMEGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/RequirementsGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/RequirementsGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/RequirementsGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/RequirementsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/RequirementsGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/RequirementsGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/SpecsGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/SpecsGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/SpecsGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/SpecsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/SpecsGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/SpecsGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Generators/TasksGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/TasksGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/TasksGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/TasksGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/TasksGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/TasksGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Parsers/DocumentParser.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocumentParser.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocumentParser.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocumentParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocumentParser.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocumentParser.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Services/DocComposer.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocComposer.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocComposer.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocComposer~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocComposer.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocComposer.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Services/DocManager.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocManager.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocManager.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocManager.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocManager.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DocKit/Sources/DocKit/Views/DocCard.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocCard.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocCard.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocCard.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DocKit/.build/arm64-apple-macosx/debug/DocKit.build/DocCard.dia"
+  }
+}

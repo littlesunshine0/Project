@@ -1,0 +1,61 @@
+{
+  "agents": [
+    {
+      "id": "analytics.collector",
+      "name": "Event Collector",
+      "description": "Collects and batches analytics events",
+      "triggers": [
+        { "type": "event", "condition": "event.tracked" },
+        { "type": "schedule", "condition": "every.5.minutes" }
+      ],
+      "actions": [
+        "batch.events",
+        "validate.data",
+        "send.batch",
+        "cleanup.sent"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "analytics.aggregator",
+      "name": "Metric Aggregator",
+      "description": "Aggregates metrics in real-time",
+      "triggers": [
+        { "type": "event", "condition": "event.tracked" },
+        { "type": "schedule", "condition": "hourly" }
+      ],
+      "actions": [
+        "aggregate.events",
+        "calculate.metrics",
+        "update.dashboards"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "analytics.anomaly.detector",
+      "name": "Anomaly Detector",
+      "description": "Detects anomalies in metrics",
+      "triggers": [
+        { "type": "event", "condition": "metric.updated" }
+      ],
+      "actions": [
+        "analyze.trends",
+        "detect.anomalies",
+        "alert.team"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

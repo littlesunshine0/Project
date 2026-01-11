@@ -1,0 +1,180 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Models/Command.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Command.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Command.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Command~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Command.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Command.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Models/Workflow.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Workflow.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Workflow.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Workflow~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Workflow.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/Workflow.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Models/WorkflowError.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowError.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowError.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowError~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowError.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowError.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Models/WorkflowExecution.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExecution.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExecution.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExecution~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExecution.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExecution.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Models/WorkflowFormat.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowFormat.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowFormat.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowFormat~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowFormat.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowFormat.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Models/WorkflowKind.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKind.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKind.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKind~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKind.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKind.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Services/CommandExecutor.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/CommandExecutor.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/CommandExecutor.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/CommandExecutor~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/CommandExecutor.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/CommandExecutor.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Services/WorkflowComposer.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowComposer.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowComposer.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowComposer~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowComposer.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowComposer.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Services/WorkflowExtractor.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExtractor.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExtractor.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExtractor~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExtractor.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowExtractor.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Services/WorkflowGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Services/WorkflowManager.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowManager.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowManager.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowManager.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowManager.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Services/WorkflowOrchestrator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowOrchestrator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowOrchestrator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowOrchestrator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowOrchestrator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowOrchestrator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Services/WorkflowParser.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowParser.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowParser.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowParser.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowParser.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/ViewModels/WorkflowViewModel.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowViewModel.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowViewModel.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowViewModel.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowViewModel.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Views/WorkflowBrowser.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowBrowser.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowBrowser.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowBrowser~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowBrowser.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowBrowser.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Views/WorkflowCard.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowCard.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowCard.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowCard.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowCard.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Views/WorkflowGallery.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGallery.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGallery.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGallery~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGallery.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowGallery.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Views/WorkflowIcon.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowIcon.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowIcon.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowIcon.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowIcon.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Views/WorkflowList.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowList.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowList.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowList~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowList.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowList.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/Views/WorkflowRow.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowRow.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowRow.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowRow~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowRow.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowRow.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/WorkflowKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/WorkflowKitContract.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitContract.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitContract.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitContract~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitContract.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitContract.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/WorkflowKitManifest.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitManifest.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitManifest.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitManifest~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitManifest.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitManifest.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/Sources/WorkflowKit/WorkflowKitPackage.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitPackage.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitPackage.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitPackage~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitPackage.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/WorkflowKitPackage.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/resource_bundle_accessor.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WorkflowKit/.build/arm64-apple-macosx/debug/WorkflowKit.build/resource_bundle_accessor.dia"
+  }
+}

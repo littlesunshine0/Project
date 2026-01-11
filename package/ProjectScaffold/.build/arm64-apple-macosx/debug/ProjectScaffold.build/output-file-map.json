@@ -1,0 +1,61 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Sources/ProjectScaffold/Models/CodeUnit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/CodeUnit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/CodeUnit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/CodeUnit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/CodeUnit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/CodeUnit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Sources/ProjectScaffold/Models/FeatureManifest.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureManifest.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureManifest.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureManifest~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureManifest.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureManifest.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Sources/ProjectScaffold/Models/ProjectConfig.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectConfig.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectConfig.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectConfig~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectConfig.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectConfig.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Sources/ProjectScaffold/ProjectScaffold.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffold.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffold.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffold~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffold.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffold.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Sources/ProjectScaffold/ProjectScaffoldContract.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffoldContract.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffoldContract.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffoldContract~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffoldContract.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectScaffoldContract.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Sources/ProjectScaffold/Services/FeatureGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/FeatureGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Sources/ProjectScaffold/Services/ProjectGenerator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectGenerator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectGenerator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectGenerator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/ProjectGenerator.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/resource_bundle_accessor.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffold.build/resource_bundle_accessor.dia"
+  }
+}

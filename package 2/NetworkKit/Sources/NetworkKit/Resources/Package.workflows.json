@@ -1,0 +1,26 @@
+{
+  "workflows": [
+    {
+      "id": "network.api.call",
+      "name": "API Call",
+      "description": "Make an API call with retry",
+      "steps": [
+        { "id": "1", "action": "connection.check" },
+        { "id": "2", "action": "request.send" },
+        { "id": "3", "action": "handle.response" }
+      ],
+      "triggers": ["api.call"]
+    },
+    {
+      "id": "network.offline.queue",
+      "name": "Offline Queue",
+      "description": "Queue requests when offline",
+      "steps": [
+        { "id": "1", "action": "queue.request" },
+        { "id": "2", "action": "wait.connection" },
+        { "id": "3", "action": "process.queue" }
+      ],
+      "triggers": ["request.offline"]
+    }
+  ]
+}

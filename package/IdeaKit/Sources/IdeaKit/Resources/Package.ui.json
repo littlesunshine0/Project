@@ -1,0 +1,30 @@
+{
+  "menus": [
+    {
+      "id": "idea.main",
+      "type": "main",
+      "items": [
+        { "id": "idea.new", "title": "New Idea", "icon": "lightbulb", "action": "idea.capture", "shortcut": "⌘I" },
+        { "id": "idea.list", "title": "All Ideas", "icon": "list.bullet", "action": "idea.list" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "idea.browser", "type": "browser", "title": "Ideas", "icon": "lightbulb" },
+    { "id": "idea.list", "type": "list", "title": "Idea List", "icon": "list.bullet" },
+    { "id": "idea.board", "type": "canvas", "title": "Idea Board", "icon": "square.grid.2x2" }
+  ],
+  "animations": [
+    { "id": "idea.capture", "type": "scale", "duration": 0.3, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "idea.main", "systemName": "lightbulb" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

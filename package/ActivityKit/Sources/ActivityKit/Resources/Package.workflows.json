@@ -1,0 +1,15 @@
+{
+  "workflows": [
+    {
+      "id": "activity.track.session",
+      "name": "Track Session",
+      "description": "Track a work session",
+      "steps": [
+        { "id": "1", "action": "session.start" },
+        { "id": "2", "action": "activity.log" },
+        { "id": "3", "action": "check.achievements" }
+      ],
+      "triggers": ["app.launch"]
+    }
+  ]
+}

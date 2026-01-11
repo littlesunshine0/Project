@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/UserKit/.build/arm64-apple-macosx/debug/UserKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/UserKit/Tests/UserKitTests/UserKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/UserKit/.build/arm64-apple-macosx/debug/UserKitTests.build/UserKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/UserKit/.build/arm64-apple-macosx/debug/UserKitTests.build/UserKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/UserKit/.build/arm64-apple-macosx/debug/UserKitTests.build/UserKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/UserKit/.build/arm64-apple-macosx/debug/UserKitTests.build/UserKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/UserKit/.build/arm64-apple-macosx/debug/UserKitTests.build/UserKitTests.dia"
+  }
+}

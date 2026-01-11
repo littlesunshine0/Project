@@ -1,0 +1,26 @@
+{
+  "workflows": [
+    {
+      "id": "nav.quick.switch",
+      "name": "Quick Switch",
+      "description": "Quick switch between screens",
+      "steps": [
+        { "id": "1", "action": "ui.show.switcher" },
+        { "id": "2", "action": "select.screen" },
+        { "id": "3", "action": "navigate.to" }
+      ],
+      "triggers": ["shortcut.⌘K"]
+    },
+    {
+      "id": "nav.handle.deeplink",
+      "name": "Handle Deep Link",
+      "description": "Process incoming deep link",
+      "steps": [
+        { "id": "1", "action": "parse.deeplink" },
+        { "id": "2", "action": "resolve.route" },
+        { "id": "3", "action": "navigate.to" }
+      ],
+      "triggers": ["deeplink.received"]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "actions": [
+    {
+      "id": "agent.create",
+      "name": "Create Agent",
+      "description": "Create a new AI agent",
+      "icon": "plus",
+      "input": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "type", "type": "string", "required": true },
+        { "name": "config", "type": "object", "required": false }
+      ],
+      "output": "Agent",
+      "shortcut": "⇧⌘A",
+      "category": "create"
+    },
+    {
+      "id": "agent.start",
+      "name": "Start Agent",
+      "description": "Start an agent",
+      "icon": "play.fill",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "execute"
+    },
+    {
+      "id": "agent.stop",
+      "name": "Stop Agent",
+      "description": "Stop a running agent",
+      "icon": "stop.fill",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "execute"
+    },
+    {
+      "id": "agent.delete",
+      "name": "Delete Agent",
+      "description": "Delete an agent",
+      "icon": "trash",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "shortcut": "⌘⌫",
+      "category": "delete"
+    },
+    {
+      "id": "agent.list",
+      "name": "List Agents",
+      "description": "List all agents",
+      "icon": "list.bullet",
+      "input": [
+        { "name": "status", "type": "string", "required": false }
+      ],
+      "output": "[Agent]",
+      "category": "read"
+    },
+    {
+      "id": "agent.configure",
+      "name": "Configure Agent",
+      "description": "Update agent configuration",
+      "icon": "gearshape",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true },
+        { "name": "config", "type": "object", "required": true }
+      ],
+      "output": "Agent",
+      "category": "update"
+    },
+    {
+      "id": "agent.assign.task",
+      "name": "Assign Task",
+      "description": "Assign a task to an agent",
+      "icon": "arrow.right.circle",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true },
+        { "name": "taskId", "type": "string", "required": true }
+      ],
+      "output": "Task",
+      "category": "execute"
+    },
+    {
+      "id": "task.create",
+      "name": "Create Task",
+      "description": "Create a new task",
+      "icon": "plus.circle",
+      "input": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "description", "type": "string", "required": false },
+        { "name": "priority", "type": "string", "required": false }
+      ],
+      "output": "Task",
+      "category": "create"
+    },
+    {
+      "id": "memory.store",
+      "name": "Store Memory",
+      "description": "Store data in agent memory",
+      "icon": "brain",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true },
+        { "name": "key", "type": "string", "required": true },
+        { "name": "value", "type": "object", "required": true }
+      ],
+      "output": "Bool",
+      "category": "create"
+    },
+    {
+      "id": "memory.recall",
+      "name": "Recall Memory",
+      "description": "Recall data from agent memory",
+      "icon": "brain.head.profile",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true },
+        { "name": "key", "type": "string", "required": true }
+      ],
+      "output": "Object",
+      "category": "read"
+    },
+    {
+      "id": "agent.export",
+      "name": "Export Agent",
+      "description": "Export agent configuration",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "agentId", "type": "string", "required": true }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "agent.import",
+      "name": "Import Agent",
+      "description": "Import agent from file",
+      "icon": "square.and.arrow.down",
+      "input": [
+        { "name": "file", "type": "file", "required": true }
+      ],
+      "output": "Agent",
+      "category": "create"
+    }
+  ]
+}

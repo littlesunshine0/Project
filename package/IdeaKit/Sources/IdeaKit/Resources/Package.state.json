@@ -1,0 +1,20 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "capturing", "name": "Capturing", "icon": "lightbulb", "color": "yellow" },
+    { "id": "refining", "name": "Refining", "icon": "pencil", "color": "orange" },
+    { "id": "organizing", "name": "Organizing", "icon": "folder", "color": "blue" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "idea.captured", "name": "Idea Captured", "severity": "success" },
+    { "id": "idea.refined", "name": "Idea Refined", "severity": "info" },
+    { "id": "idea.organized", "name": "Idea Organized", "severity": "success" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "capturing", "event": "capture.start" },
+    { "from": "capturing", "to": "refining", "event": "idea.captured" },
+    { "from": "refining", "to": "organizing", "event": "idea.refined" },
+    { "from": "organizing", "to": "completed", "event": "idea.organized" }
+  ]
+}

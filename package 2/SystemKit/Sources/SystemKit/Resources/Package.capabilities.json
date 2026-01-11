@@ -1,0 +1,8 @@
+{
+  "nodes": ["System", "Process", "Resource", "Monitor", "Config"],
+  "actions": ["system.info", "process.list", "process.kill", "resource.monitor", "config.get", "config.set"],
+  "agents": ["SystemMonitor", "ResourceTracker", "ProcessManager"],
+  "commands": ["/system info", "/process list", "/resource monitor", "/config"],
+  "ui": ["browser", "settings"],
+  "ml": ["prediction"]
+}

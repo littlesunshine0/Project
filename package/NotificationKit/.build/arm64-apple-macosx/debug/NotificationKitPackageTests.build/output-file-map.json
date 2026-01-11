@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/NotificationKit/.build/arm64-apple-macosx/debug/NotificationKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/NotificationKit/.build/arm64-apple-macosx/debug/NotificationKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/NotificationKit/.build/arm64-apple-macosx/debug/NotificationKitPackageTests.build/runner.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/NotificationKit/.build/arm64-apple-macosx/debug/NotificationKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/NotificationKit/.build/arm64-apple-macosx/debug/NotificationKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/NotificationKit/.build/arm64-apple-macosx/debug/NotificationKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/NotificationKit/.build/arm64-apple-macosx/debug/NotificationKitPackageTests.build/runner.dia"
+  }
+}

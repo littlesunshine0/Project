@@ -1,0 +1,8 @@
+{
+  "nodes": ["Asset", "Catalog", "Variant", "Metadata", "Transform"],
+  "actions": ["asset.import", "asset.export", "asset.transform", "catalog.create", "catalog.organize", "variant.generate", "metadata.extract"],
+  "agents": ["AssetOrganizer", "VariantGenerator", "MetadataExtractor"],
+  "commands": ["/asset import", "/asset export", "/asset transform", "/catalog create"],
+  "ui": ["browser", "gallery", "settings"],
+  "ml": ["classification", "recommendation"]
+}

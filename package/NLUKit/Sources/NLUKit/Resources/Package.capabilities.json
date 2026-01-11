@@ -1,0 +1,8 @@
+{
+  "nodes": ["Intent", "Entity", "Context", "Utterance", "Slot"],
+  "actions": ["intent.detect", "entity.extract", "context.update", "utterance.parse", "slot.fill"],
+  "agents": ["IntentClassifier", "EntityExtractor", "ContextManager"],
+  "commands": ["/nlu parse", "/nlu intent", "/nlu entities", "/nlu context"],
+  "ui": ["browser", "editor", "settings"],
+  "ml": ["classification", "extraction", "prediction"]
+}

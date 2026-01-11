@@ -1,0 +1,17 @@
+{
+  "workflows": [
+    {
+      "id": "scaffold.new.project",
+      "name": "New Project Wizard",
+      "description": "Create a new project with wizard",
+      "steps": [
+        { "id": "1", "action": "ui.show.wizard" },
+        { "id": "2", "action": "select.template" },
+        { "id": "3", "action": "configure.project" },
+        { "id": "4", "action": "project.create" },
+        { "id": "5", "action": "open.project" }
+      ],
+      "triggers": ["menu.scaffold.new"]
+    }
+  ]
+}

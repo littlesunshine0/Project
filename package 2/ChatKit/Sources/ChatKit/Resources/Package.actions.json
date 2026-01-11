@@ -1,0 +1,122 @@
+{
+  "actions": [
+    {
+      "id": "chat.create",
+      "name": "New Chat",
+      "description": "Start a new chat conversation",
+      "icon": "plus.bubble",
+      "input": [
+        { "name": "title", "type": "string", "required": false },
+        { "name": "context", "type": "object", "required": false }
+      ],
+      "output": "Chat",
+      "shortcut": "⌘N",
+      "category": "create"
+    },
+    {
+      "id": "message.send",
+      "name": "Send Message",
+      "description": "Send a message in the chat",
+      "icon": "arrow.up.circle.fill",
+      "input": [
+        { "name": "chatId", "type": "string", "required": true },
+        { "name": "content", "type": "string", "required": true }
+      ],
+      "output": "Message",
+      "shortcut": "↩",
+      "category": "create"
+    },
+    {
+      "id": "chat.delete",
+      "name": "Delete Chat",
+      "description": "Delete a chat conversation",
+      "icon": "trash",
+      "input": [
+        { "name": "chatId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "shortcut": "⌘⌫",
+      "category": "delete"
+    },
+    {
+      "id": "chat.list",
+      "name": "List Chats",
+      "description": "List all chat conversations",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Chat]",
+      "category": "read"
+    },
+    {
+      "id": "chat.search",
+      "name": "Search Chats",
+      "description": "Search chat history",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "query", "type": "string", "required": true }
+      ],
+      "output": "[Message]",
+      "shortcut": "⌘F",
+      "category": "read"
+    },
+    {
+      "id": "chat.export",
+      "name": "Export Chat",
+      "description": "Export chat to file",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "chatId", "type": "string", "required": true },
+        { "name": "format", "type": "string", "required": false }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "context.set",
+      "name": "Set Context",
+      "description": "Set chat context",
+      "icon": "doc.text",
+      "input": [
+        { "name": "chatId", "type": "string", "required": true },
+        { "name": "context", "type": "object", "required": true }
+      ],
+      "output": "Chat",
+      "category": "update"
+    },
+    {
+      "id": "context.clear",
+      "name": "Clear Context",
+      "description": "Clear chat context",
+      "icon": "xmark.circle",
+      "input": [
+        { "name": "chatId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    },
+    {
+      "id": "message.regenerate",
+      "name": "Regenerate Response",
+      "description": "Regenerate the last AI response",
+      "icon": "arrow.clockwise",
+      "input": [
+        { "name": "messageId", "type": "string", "required": true }
+      ],
+      "output": "Message",
+      "shortcut": "⇧⌘R",
+      "category": "execute"
+    },
+    {
+      "id": "message.copy",
+      "name": "Copy Message",
+      "description": "Copy message to clipboard",
+      "icon": "doc.on.doc",
+      "input": [
+        { "name": "messageId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "shortcut": "⌘C",
+      "category": "read"
+    }
+  ]
+}

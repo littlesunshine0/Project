@@ -1,0 +1,51 @@
+{
+  "menus": [
+    {
+      "id": "agent.main",
+      "type": "main",
+      "items": [
+        { "id": "agent.new", "title": "New Agent", "icon": "plus", "action": "agent.create", "shortcut": "⇧⌘A" },
+        { "id": "agent.list", "title": "All Agents", "icon": "list.bullet", "action": "agent.list" },
+        { "id": "agent.tasks", "title": "Tasks", "icon": "checklist", "action": "task.list" },
+        { "id": "agent.import", "title": "Import Agent", "icon": "square.and.arrow.down", "action": "agent.import" }
+      ]
+    },
+    {
+      "id": "agent.context",
+      "type": "context",
+      "items": [
+        { "id": "ctx.start", "title": "Start", "icon": "play.fill", "action": "agent.start" },
+        { "id": "ctx.stop", "title": "Stop", "icon": "stop.fill", "action": "agent.stop" },
+        { "id": "ctx.configure", "title": "Configure", "icon": "gearshape", "action": "agent.configure" },
+        { "id": "ctx.export", "title": "Export", "icon": "square.and.arrow.up", "action": "agent.export" },
+        { "id": "ctx.delete", "title": "Delete", "icon": "trash", "action": "agent.delete" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "agent.browser", "type": "browser", "title": "Agents", "icon": "cpu" },
+    { "id": "agent.list", "type": "list", "title": "Agent List", "icon": "list.bullet" },
+    { "id": "agent.gallery", "type": "grid", "title": "Agent Gallery", "icon": "square.grid.2x2" },
+    { "id": "agent.editor", "type": "editor", "title": "Agent Editor", "icon": "pencil" },
+    { "id": "agent.monitor", "type": "timeline", "title": "Monitor", "icon": "chart.line.uptrend.xyaxis" }
+  ],
+  "animations": [
+    { "id": "agent.start", "type": "progress", "duration": 0.3, "curve": "easeOut" },
+    { "id": "agent.success", "type": "success", "duration": 0.5, "curve": "spring" },
+    { "id": "agent.error", "type": "error", "duration": 0.3, "curve": "easeOut" },
+    { "id": "agent.thinking", "type": "loading", "duration": 1.0, "curve": "linear" }
+  ],
+  "icons": [
+    { "id": "agent.main", "systemName": "cpu" },
+    { "id": "agent.task", "systemName": "checklist" },
+    { "id": "agent.memory", "systemName": "brain" },
+    { "id": "agent.active", "systemName": "bolt.fill" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

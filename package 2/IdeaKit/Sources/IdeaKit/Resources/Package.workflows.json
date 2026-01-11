@@ -1,0 +1,27 @@
+{
+  "workflows": [
+    {
+      "id": "idea.quick.capture",
+      "name": "Quick Capture",
+      "description": "Quickly capture an idea",
+      "steps": [
+        { "id": "1", "action": "ui.show.quick.capture" },
+        { "id": "2", "action": "idea.capture" },
+        { "id": "3", "action": "notify.captured" }
+      ],
+      "triggers": ["shortcut.⌘I"]
+    },
+    {
+      "id": "idea.brainstorm",
+      "name": "Brainstorm Session",
+      "description": "Start a brainstorm session",
+      "steps": [
+        { "id": "1", "action": "ui.show.brainstorm" },
+        { "id": "2", "action": "capture.multiple" },
+        { "id": "3", "action": "organize.ideas" },
+        { "id": "4", "action": "link.related" }
+      ],
+      "triggers": ["menu.idea.brainstorm"]
+    }
+  ]
+}

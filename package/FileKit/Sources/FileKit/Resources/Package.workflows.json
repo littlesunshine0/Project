@@ -1,0 +1,26 @@
+{
+  "workflows": [
+    {
+      "id": "file.create.new",
+      "name": "Create New File",
+      "description": "Create a new file",
+      "steps": [
+        { "id": "1", "action": "ui.show.new.file.dialog" },
+        { "id": "2", "action": "file.create" },
+        { "id": "3", "action": "file.open" }
+      ],
+      "triggers": ["shortcut.⌘N", "menu.file.new"]
+    },
+    {
+      "id": "file.save.as",
+      "name": "Save As",
+      "description": "Save file with new name",
+      "steps": [
+        { "id": "1", "action": "ui.show.save.dialog" },
+        { "id": "2", "action": "file.copy" },
+        { "id": "3", "action": "notify.success" }
+      ],
+      "triggers": ["shortcut.⇧⌘S", "menu.file.save.as"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "menus": [
+    {
+      "id": "search.main",
+      "type": "main",
+      "items": [
+        { "id": "search.open", "title": "Search", "icon": "magnifyingglass", "action": "search.open", "shortcut": "⌘F" },
+        { "id": "search.global", "title": "Global Search", "icon": "globe", "action": "search.global", "shortcut": "⇧⌘F" },
+        { "id": "search.history", "title": "Search History", "icon": "clock", "action": "search.history" }
+      ]
+    },
+    {
+      "id": "search.context",
+      "type": "context",
+      "items": [
+        { "id": "ctx.open", "title": "Open", "icon": "arrow.right.circle", "action": "result.open" },
+        { "id": "ctx.preview", "title": "Preview", "icon": "eye", "action": "result.preview" },
+        { "id": "ctx.copy", "title": "Copy Path", "icon": "doc.on.doc", "action": "result.copy.path" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "search.browser", "type": "browser", "title": "Search", "icon": "magnifyingglass" },
+    { "id": "search.results", "type": "list", "title": "Results", "icon": "list.bullet" },
+    { "id": "search.preview", "type": "detail", "title": "Preview", "icon": "eye" }
+  ],
+  "animations": [
+    { "id": "search.start", "type": "progress", "duration": 0.2, "curve": "easeOut" },
+    { "id": "results.appear", "type": "fade", "duration": 0.3, "curve": "easeInOut" }
+  ],
+  "icons": [
+    { "id": "search.main", "systemName": "magnifyingglass" },
+    { "id": "search.result", "systemName": "doc.text" },
+    { "id": "search.filter", "systemName": "line.3.horizontal.decrease.circle" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

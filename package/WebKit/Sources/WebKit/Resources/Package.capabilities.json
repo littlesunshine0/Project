@@ -1,0 +1,8 @@
+{
+  "nodes": ["WebView", "Request", "Response", "Cookie", "Script"],
+  "actions": ["web.load", "web.navigate", "web.execute", "request.send", "cookie.set", "cookie.get", "script.inject"],
+  "agents": ["WebLoader", "ScriptExecutor"],
+  "commands": ["/web load", "/web navigate", "/web execute"],
+  "ui": ["browser", "settings"],
+  "ml": ["prediction"]
+}

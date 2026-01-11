@@ -1,0 +1,10 @@
+{
+  "id": "com.flowkit.userkit",
+  "name": "UserKit",
+  "version": "1.0.0",
+  "category": "core",
+  "platforms": ["macOS", "iOS", "visionOS"],
+  "dependencies": ["DataKit", "CoreKit"],
+  "author": "FlowKit Team",
+  "license": "MIT"
+}

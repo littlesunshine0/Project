@@ -1,0 +1,40 @@
+{
+  "agents": [
+    {
+      "id": "notification.scheduler",
+      "name": "Notification Scheduler",
+      "description": "Manages scheduled notifications",
+      "triggers": [
+        { "type": "schedule", "condition": "every.minute" }
+      ],
+      "actions": [
+        "check.scheduled",
+        "send.due",
+        "cleanup.sent"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "notification.grouper",
+      "name": "Notification Grouper",
+      "description": "Groups similar notifications",
+      "triggers": [
+        { "type": "event", "condition": "notification.received" }
+      ],
+      "actions": [
+        "analyze.notification",
+        "find.similar",
+        "group.notifications"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

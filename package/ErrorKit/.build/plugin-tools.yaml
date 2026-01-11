@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "ErrorKit-arm64-apple-macosx26.0-debug.module": ["<ErrorKit-arm64-apple-macosx26.0-debug.module>"]
+  "ErrorKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<ErrorKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "ErrorKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<ErrorKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "ErrorKitTests-arm64-apple-macosx26.0-debug.module": ["<ErrorKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<ErrorKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<ErrorKit-arm64-apple-macosx26.0-debug.module>","<ErrorKitPackageTests-arm64-apple-macosx26.0-debug.test>","<ErrorKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/Sources/ErrorKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/Tests/ErrorKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ErrorKit/Sources/ErrorKit/ErrorKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/ErrorKit.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/ErrorKit/Tests/ErrorKitTests/ErrorKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<ErrorKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/ErrorKit.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKit.swiftmodule"]
+    outputs: ["<ErrorKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<ErrorKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitPackageTests.swiftmodule"]
+    outputs: ["<ErrorKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<ErrorKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.xctest/Contents/MacOS/ErrorKitPackageTests"]
+    outputs: ["<ErrorKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<ErrorKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitTests.swiftmodule"]
+    outputs: ["<ErrorKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.ErrorKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/Sources/ErrorKit/ErrorKit.swift","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/ErrorKit.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKit.swiftmodule"]
+    description: "Compiling Swift Module 'ErrorKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ErrorKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/include/ErrorKit-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","errorkit"]
+
+  "C.ErrorKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'ErrorKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ErrorKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/include/ErrorKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","errorkit"]
+
+  "C.ErrorKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKit.build/ErrorKit.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.xctest/Contents/MacOS/ErrorKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/ErrorKitPackageTests.xctest/Contents/MacOS/ErrorKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.xctest/Contents/MacOS/ErrorKitPackageTests","-module-name","ErrorKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.ErrorKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/Tests/ErrorKitTests/ErrorKitTests.swift","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/ErrorKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'ErrorKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ErrorKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules/ErrorKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ErrorKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/ErrorKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","errorkit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/ErrorKit/Sources/ErrorKit/","/Users/tempadmin/Desktop/Project/package/ErrorKit/Tests/ErrorKitTests/","/Users/tempadmin/Desktop/Project/package/ErrorKit/Package.swift","/Users/tempadmin/Desktop/Project/package/ErrorKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

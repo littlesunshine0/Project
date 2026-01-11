@@ -1,0 +1,43 @@
+{
+  "menus": [
+    {
+      "id": "file.main",
+      "type": "main",
+      "items": [
+        { "id": "file.new", "title": "New File", "icon": "doc.badge.plus", "action": "file.create", "shortcut": "⌘N" },
+        { "id": "file.open", "title": "Open", "icon": "folder", "action": "file.open", "shortcut": "⌘O" },
+        { "id": "file.save", "title": "Save", "icon": "square.and.arrow.down", "action": "file.write", "shortcut": "⌘S" }
+      ]
+    },
+    {
+      "id": "file.context",
+      "type": "context",
+      "items": [
+        { "id": "ctx.copy", "title": "Copy", "icon": "doc.on.doc", "action": "file.copy" },
+        { "id": "ctx.move", "title": "Move", "icon": "arrow.right.doc.on.clipboard", "action": "file.move" },
+        { "id": "ctx.delete", "title": "Delete", "icon": "trash", "action": "file.delete" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "file.browser", "type": "browser", "title": "Files", "icon": "folder" },
+    { "id": "file.list", "type": "list", "title": "File List", "icon": "list.bullet" },
+    { "id": "file.grid", "type": "grid", "title": "File Grid", "icon": "square.grid.2x2" }
+  ],
+  "animations": [
+    { "id": "file.save", "type": "success", "duration": 0.3, "curve": "spring" },
+    { "id": "file.delete", "type": "fade", "duration": 0.2, "curve": "easeOut" }
+  ],
+  "icons": [
+    { "id": "file.main", "systemName": "folder" },
+    { "id": "file.doc", "systemName": "doc" },
+    { "id": "file.folder", "systemName": "folder.fill" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AgentKit/.build/arm64-apple-macosx/debug/AgentKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AgentKit/Tests/AgentKitTests/AgentKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AgentKit/.build/arm64-apple-macosx/debug/AgentKitTests.build/AgentKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AgentKit/.build/arm64-apple-macosx/debug/AgentKitTests.build/AgentKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AgentKit/.build/arm64-apple-macosx/debug/AgentKitTests.build/AgentKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AgentKit/.build/arm64-apple-macosx/debug/AgentKitTests.build/AgentKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AgentKit/.build/arm64-apple-macosx/debug/AgentKitTests.build/AgentKitTests.dia"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "connecting", "name": "Connecting", "icon": "link", "color": "blue" },
+    { "id": "connected", "name": "Connected", "icon": "checkmark.circle", "color": "green" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" }
+  ],
+  "events": [
+    { "id": "bridge.connected", "name": "Bridge Connected", "severity": "success" },
+    { "id": "bridge.disconnected", "name": "Bridge Disconnected", "severity": "info" },
+    { "id": "bridge.error", "name": "Bridge Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "connecting", "event": "connect.start" },
+    { "from": "connecting", "to": "connected", "event": "bridge.connected" },
+    { "from": "connected", "to": "idle", "event": "bridge.disconnected" },
+    { "from": "connecting", "to": "error", "event": "bridge.error" }
+  ]
+}

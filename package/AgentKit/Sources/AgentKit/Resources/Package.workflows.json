@@ -1,0 +1,44 @@
+{
+  "workflows": [
+    {
+      "id": "agent.create.wizard",
+      "name": "Create Agent Wizard",
+      "description": "Guided agent creation process",
+      "steps": [
+        { "id": "1", "action": "ui.show.wizard" },
+        { "id": "2", "action": "select.agent.type" },
+        { "id": "3", "action": "configure.agent" },
+        { "id": "4", "action": "agent.create" },
+        { "id": "5", "action": "agent.start" },
+        { "id": "6", "action": "notify.success" }
+      ],
+      "triggers": ["menu.agent.new"]
+    },
+    {
+      "id": "agent.task.assignment",
+      "name": "Task Assignment Flow",
+      "description": "Assign task to best available agent",
+      "steps": [
+        { "id": "1", "action": "task.create" },
+        { "id": "2", "action": "analyze.requirements" },
+        { "id": "3", "action": "find.best.agent" },
+        { "id": "4", "action": "agent.assign.task" },
+        { "id": "5", "action": "monitor.execution" }
+      ],
+      "triggers": ["task.new"]
+    },
+    {
+      "id": "agent.batch.start",
+      "name": "Start All Agents",
+      "description": "Start all configured agents",
+      "steps": [
+        { "id": "1", "action": "agent.list" },
+        { "id": "2", "action": "filter.configured" },
+        { "id": "3", "action": "agent.start.batch" },
+        { "id": "4", "action": "verify.status" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["app.launch", "menu.agents.start.all"]
+    }
+  ]
+}

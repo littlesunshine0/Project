@@ -1,0 +1,71 @@
+{
+  "actions": [
+    {
+      "id": "node.create",
+      "name": "Create Node",
+      "description": "Create a new node",
+      "icon": "plus.circle",
+      "input": [
+        { "name": "type", "type": "string", "required": true },
+        { "name": "data", "type": "object", "required": false }
+      ],
+      "output": "Node",
+      "category": "create"
+    },
+    {
+      "id": "node.get",
+      "name": "Get Node",
+      "description": "Get a node by ID",
+      "icon": "doc",
+      "input": [
+        { "name": "nodeId", "type": "string", "required": true }
+      ],
+      "output": "Node",
+      "category": "read"
+    },
+    {
+      "id": "node.update",
+      "name": "Update Node",
+      "description": "Update a node",
+      "icon": "pencil",
+      "input": [
+        { "name": "nodeId", "type": "string", "required": true },
+        { "name": "changes", "type": "object", "required": true }
+      ],
+      "output": "Node",
+      "category": "update"
+    },
+    {
+      "id": "node.delete",
+      "name": "Delete Node",
+      "description": "Delete a node",
+      "icon": "trash",
+      "input": [
+        { "name": "nodeId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "state.get",
+      "name": "Get State",
+      "description": "Get app state",
+      "icon": "square.stack.3d.up",
+      "input": [],
+      "output": "AppState",
+      "category": "read"
+    },
+    {
+      "id": "state.set",
+      "name": "Set State",
+      "description": "Set app state",
+      "icon": "square.stack.3d.down.right",
+      "input": [
+        { "name": "key", "type": "string", "required": true },
+        { "name": "value", "type": "object", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/Tests/ContentHubTests/ContentHubTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHubTests.build/ContentHubTests.dia"
+  }
+}

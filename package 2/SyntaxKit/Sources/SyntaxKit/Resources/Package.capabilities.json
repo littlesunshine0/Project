@@ -1,0 +1,8 @@
+{
+  "nodes": ["Syntax", "Grammar", "Token", "Rule", "Highlight"],
+  "actions": ["syntax.parse", "syntax.highlight", "grammar.load", "token.extract", "rule.apply"],
+  "agents": ["SyntaxParser", "HighlightEngine"],
+  "commands": ["/syntax parse", "/syntax highlight", "/grammar load"],
+  "ui": ["browser", "editor", "settings"],
+  "ml": ["classification"]
+}

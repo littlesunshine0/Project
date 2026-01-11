@@ -1,0 +1,38 @@
+{
+  "workflows": [
+    {
+      "id": "search.quick",
+      "name": "Quick Search",
+      "description": "Quick search in current scope",
+      "steps": [
+        { "id": "1", "action": "ui.show.search" },
+        { "id": "2", "action": "search.query" },
+        { "id": "3", "action": "ui.show.results" }
+      ],
+      "triggers": ["shortcut.⌘F"]
+    },
+    {
+      "id": "search.global",
+      "name": "Global Search",
+      "description": "Search across all content",
+      "steps": [
+        { "id": "1", "action": "ui.show.global.search" },
+        { "id": "2", "action": "search.query", "input": { "scope": "all" } },
+        { "id": "3", "action": "ui.show.results" }
+      ],
+      "triggers": ["shortcut.⇧⌘F"]
+    },
+    {
+      "id": "search.reindex",
+      "name": "Rebuild Index",
+      "description": "Rebuild search index",
+      "steps": [
+        { "id": "1", "action": "index.delete.all" },
+        { "id": "2", "action": "scan.all.content" },
+        { "id": "3", "action": "index.create" },
+        { "id": "4", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.search.reindex"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "indexing", "name": "Indexing", "icon": "arrow.clockwise", "color": "blue" },
+    { "id": "searching", "name": "Searching", "icon": "magnifyingglass", "color": "blue" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "search.started", "name": "Search Started", "severity": "info" },
+    { "id": "search.completed", "name": "Search Completed", "severity": "success" },
+    { "id": "index.updated", "name": "Index Updated", "severity": "info" },
+    { "id": "search.error", "name": "Search Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "searching", "event": "search.started" },
+    { "from": "searching", "to": "completed", "event": "search.completed" },
+    { "from": "idle", "to": "indexing", "event": "index.start" },
+    { "from": "indexing", "to": "idle", "event": "index.updated" },
+    { "from": "searching", "to": "error", "event": "search.error" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

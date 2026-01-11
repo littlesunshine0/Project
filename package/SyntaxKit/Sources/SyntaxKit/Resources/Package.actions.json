@@ -1,0 +1,49 @@
+{
+  "actions": [
+    {
+      "id": "syntax.highlight",
+      "name": "Highlight Syntax",
+      "description": "Apply syntax highlighting",
+      "icon": "paintbrush",
+      "input": [
+        { "name": "code", "type": "string", "required": true },
+        { "name": "language", "type": "string", "required": true }
+      ],
+      "output": "HighlightedCode",
+      "category": "execute"
+    },
+    {
+      "id": "syntax.parse",
+      "name": "Parse Code",
+      "description": "Parse code into AST",
+      "icon": "doc.text.magnifyingglass",
+      "input": [
+        { "name": "code", "type": "string", "required": true },
+        { "name": "language", "type": "string", "required": true }
+      ],
+      "output": "AST",
+      "category": "execute"
+    },
+    {
+      "id": "syntax.validate",
+      "name": "Validate Syntax",
+      "description": "Validate code syntax",
+      "icon": "checkmark.seal",
+      "input": [
+        { "name": "code", "type": "string", "required": true },
+        { "name": "language", "type": "string", "required": true }
+      ],
+      "output": "ValidationResult",
+      "category": "execute"
+    },
+    {
+      "id": "language.list",
+      "name": "List Languages",
+      "description": "List supported languages",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Language]",
+      "category": "read"
+    }
+  ]
+}

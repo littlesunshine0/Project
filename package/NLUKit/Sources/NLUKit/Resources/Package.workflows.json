@@ -1,0 +1,40 @@
+{
+  "workflows": [
+    {
+      "id": "nlu.process.input",
+      "name": "Process Input",
+      "description": "Process user input through NLU pipeline",
+      "steps": [
+        { "id": "1", "action": "language.detect" },
+        { "id": "2", "action": "intent.detect" },
+        { "id": "3", "action": "entity.extract" },
+        { "id": "4", "action": "context.update" }
+      ],
+      "triggers": ["user.input"]
+    },
+    {
+      "id": "nlu.train.intent",
+      "name": "Train Custom Intent",
+      "description": "Train a new custom intent",
+      "steps": [
+        { "id": "1", "action": "ui.show.wizard" },
+        { "id": "2", "action": "collect.examples" },
+        { "id": "3", "action": "intent.train" },
+        { "id": "4", "action": "validate.model" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.nlu.train"]
+    },
+    {
+      "id": "nlu.test.model",
+      "name": "Test NLU Model",
+      "description": "Test NLU model with sample inputs",
+      "steps": [
+        { "id": "1", "action": "ui.show.test" },
+        { "id": "2", "action": "run.tests" },
+        { "id": "3", "action": "show.results" }
+      ],
+      "triggers": ["menu.nlu.test"]
+    }
+  ]
+}

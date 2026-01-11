@@ -1,0 +1,28 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "typing", "name": "Typing", "icon": "ellipsis.bubble", "color": "blue" },
+    { "id": "sending", "name": "Sending", "icon": "arrow.up.circle", "color": "blue" },
+    { "id": "waiting", "name": "Waiting for Response", "icon": "hourglass", "color": "orange" },
+    { "id": "streaming", "name": "Streaming", "icon": "waveform", "color": "green" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "message.sent", "name": "Message Sent", "severity": "info" },
+    { "id": "message.received", "name": "Message Received", "severity": "success" },
+    { "id": "chat.started", "name": "Chat Started", "severity": "info" },
+    { "id": "chat.ended", "name": "Chat Ended", "severity": "info" },
+    { "id": "chat.error", "name": "Chat Error", "severity": "error" },
+    { "id": "context.updated", "name": "Context Updated", "severity": "info" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "typing", "event": "user.typing" },
+    { "from": "typing", "to": "sending", "event": "message.send" },
+    { "from": "sending", "to": "waiting", "event": "message.sent" },
+    { "from": "waiting", "to": "streaming", "event": "response.start" },
+    { "from": "streaming", "to": "idle", "event": "response.complete" },
+    { "from": "waiting", "to": "error", "event": "chat.error" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "menus": [
+    {
+      "id": "feedback.main",
+      "type": "main",
+      "items": [
+        { "id": "feedback.send", "title": "Send Feedback", "icon": "bubble.left", "action": "feedback.create" },
+        { "id": "feedback.rate", "title": "Rate", "icon": "star", "action": "rating.show" },
+        { "id": "feedback.survey", "title": "Survey", "icon": "list.bullet.clipboard", "action": "survey.show" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "feedback.browser", "type": "browser", "title": "Feedback", "icon": "bubble.left" },
+    { "id": "feedback.form", "type": "editor", "title": "Feedback Form", "icon": "pencil" },
+    { "id": "feedback.list", "type": "list", "title": "Feedback List", "icon": "list.bullet" }
+  ],
+  "animations": [
+    { "id": "feedback.submit", "type": "success", "duration": 0.3, "curve": "spring" },
+    { "id": "rating.star", "type": "scale", "duration": 0.2, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "feedback.main", "systemName": "bubble.left" },
+    { "id": "feedback.rating", "systemName": "star" },
+    { "id": "feedback.survey", "systemName": "list.bullet.clipboard" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

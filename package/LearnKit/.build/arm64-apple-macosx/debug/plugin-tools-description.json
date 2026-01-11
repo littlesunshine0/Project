@@ -1,0 +1,676 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.xctest/Contents/MacOS/LearnKitPackageTests",
+      "packagePath" : "/Users/tempadmin/Desktop/Project/package/LearnKit",
+      "productName" : "LearnKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.LearnKit-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/LearnKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Services/LearnManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Views/LearnCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "LearnKit",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKit.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnKit.swift.o",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnManager.swift.o",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnCard.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/include/LearnKit-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "learnkit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/LearnKit.swift",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Services/LearnManager.swift",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Views/LearnCard.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.LearnKitPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "LearnKitPackageTests",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKitPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/include/LearnKitPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "learnkit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.LearnKitTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/sources",
+      "importPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Tests/LearnKitTests/LearnKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "LearnKitTests",
+      "moduleOutputPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKitTests.swiftmodule",
+      "objects" : [
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/LearnKitTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "learnkit"
+      ],
+      "outputFileMapPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/LearnKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules/LearnKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tempadmin/Desktop/Project/package/LearnKit/Tests/LearnKitTests/LearnKitTests.swift"
+      ],
+      "tempsPath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "LearnKit" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "LearnKit",
+      "-package-name",
+      "learnkit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/LearnKit.swift",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Services/LearnManager.swift",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Views/LearnCard.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/include/LearnKit-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "learnkit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "LearnKitPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "LearnKitPackageTests",
+      "-package-name",
+      "learnkit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/include/LearnKitPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "learnkit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "LearnKitTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "LearnKitTests",
+      "-package-name",
+      "learnkit",
+      "-c",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/Tests/LearnKitTests/LearnKitTests.swift",
+      "-I",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "learnkit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "LearnKit" : [
+
+    ],
+    "LearnKitPackageTests" : [
+      "LearnKitTests",
+      "LearnKit"
+    ],
+    "LearnKitTests" : [
+      "LearnKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/LearnKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Services/LearnManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Sources/LearnKit/Views/LearnCard.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKit.build/LearnManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/LearnKitTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tempadmin/Desktop/Project/package/LearnKit/Tests/LearnKitTests/LearnKitTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/LearnKitTests.build/sources"
+    },
+    "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/tempadmin/Desktop/Project/package/LearnKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/FileKit/.build/arm64-apple-macosx/debug/FileKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/FileKit/Tests/FileKitTests/FileKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/FileKit/.build/arm64-apple-macosx/debug/FileKitTests.build/FileKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/FileKit/.build/arm64-apple-macosx/debug/FileKitTests.build/FileKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/FileKit/.build/arm64-apple-macosx/debug/FileKitTests.build/FileKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/FileKit/.build/arm64-apple-macosx/debug/FileKitTests.build/FileKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/FileKit/.build/arm64-apple-macosx/debug/FileKitTests.build/FileKitTests.dia"
+  }
+}

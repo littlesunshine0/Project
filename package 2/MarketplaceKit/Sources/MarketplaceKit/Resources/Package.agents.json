@@ -1,0 +1,22 @@
+{
+  "agents": [
+    {
+      "id": "marketplace.update.checker",
+      "name": "Update Checker",
+      "description": "Checks for package updates",
+      "triggers": [
+        { "type": "schedule", "condition": "daily" },
+        { "type": "event", "condition": "app.launch" }
+      ],
+      "actions": [
+        "check.updates",
+        "notify.available"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

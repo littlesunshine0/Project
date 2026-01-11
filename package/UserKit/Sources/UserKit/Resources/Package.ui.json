@@ -1,0 +1,33 @@
+{
+  "menus": [
+    {
+      "id": "user.main",
+      "type": "main",
+      "items": [
+        { "id": "user.profile", "title": "Profile", "icon": "person.circle", "action": "profile.show" },
+        { "id": "user.settings", "title": "Settings", "icon": "gearshape", "action": "settings.show" },
+        { "id": "user.logout", "title": "Log Out", "icon": "rectangle.portrait.and.arrow.right", "action": "user.logout" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "user.browser", "type": "browser", "title": "User", "icon": "person.circle" },
+    { "id": "user.profile", "type": "detail", "title": "Profile", "icon": "person" },
+    { "id": "user.settings", "type": "settings", "title": "Settings", "icon": "gearshape" }
+  ],
+  "animations": [
+    { "id": "user.login", "type": "success", "duration": 0.3, "curve": "spring" },
+    { "id": "user.logout", "type": "fade", "duration": 0.3, "curve": "easeOut" }
+  ],
+  "icons": [
+    { "id": "user.main", "systemName": "person.circle" },
+    { "id": "user.settings", "systemName": "gearshape" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

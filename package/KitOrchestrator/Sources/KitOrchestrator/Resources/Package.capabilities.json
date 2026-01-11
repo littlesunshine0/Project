@@ -1,0 +1,8 @@
+{
+  "nodes": ["Kit", "Registry", "Manifest", "Dependency", "Lifecycle"],
+  "actions": ["kit.register", "kit.unregister", "kit.start", "kit.stop", "dependency.resolve", "lifecycle.manage"],
+  "agents": ["KitManager", "DependencyResolver", "LifecycleMonitor"],
+  "commands": ["/kit register", "/kit list", "/kit start", "/kit stop"],
+  "ui": ["browser", "settings"],
+  "ml": ["prediction"]
+}

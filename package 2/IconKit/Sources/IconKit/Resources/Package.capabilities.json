@@ -1,0 +1,8 @@
+{
+  "nodes": ["Icon", "IconSet", "Symbol", "Glyph", "Asset"],
+  "actions": ["icon.get", "icon.search", "iconset.create", "iconset.export", "symbol.render", "asset.generate"],
+  "agents": ["IconMatcher", "AssetGenerator"],
+  "commands": ["/icon search", "/icon get", "/iconset create", "/iconset export"],
+  "ui": ["browser", "gallery", "settings"],
+  "ml": ["search", "recommendation"]
+}

@@ -1,0 +1,8 @@
+{
+  "nodes": ["Model", "Prediction", "Embedding", "Prompt", "Response"],
+  "actions": ["model.load", "model.predict", "model.embed", "prompt.create", "prompt.execute", "response.parse"],
+  "agents": ["ModelManager", "PredictionOptimizer", "EmbeddingIndexer"],
+  "commands": ["/ai predict", "/ai embed", "/ai models", "/ai prompt"],
+  "ui": ["browser", "settings"],
+  "ml": ["prediction", "embedding", "generation", "classification"]
+}

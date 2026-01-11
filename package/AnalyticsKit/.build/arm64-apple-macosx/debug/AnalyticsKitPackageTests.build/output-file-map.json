@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.dia"
+  }
+}

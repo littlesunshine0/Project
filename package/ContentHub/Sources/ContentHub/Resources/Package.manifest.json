@@ -1,0 +1,10 @@
+{
+  "id": "com.flowkit.contenthub",
+  "name": "ContentHub",
+  "version": "1.0.0",
+  "category": "content",
+  "platforms": ["macOS", "iOS", "visionOS"],
+  "dependencies": ["DataKit", "CoreKit"],
+  "author": "FlowKit Team",
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/Tests/KnowledgeKitTests/KnowledgeKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/KnowledgeKit/.build/arm64-apple-macosx/debug/KnowledgeKitTests.build/KnowledgeKitTests.dia"
+  }
+}

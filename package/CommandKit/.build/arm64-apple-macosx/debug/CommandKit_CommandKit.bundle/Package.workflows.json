@@ -1,0 +1,134 @@
+{
+  "workflows": [
+    {
+      "id": "command.quick.execute",
+      "name": "Quick Command Execution",
+      "description": "Execute a command quickly via palette",
+      "steps": [
+        { "id": "1", "action": "command.palette.open" },
+        { "id": "2", "action": "command.search", "input": { "query": "${userInput}" } },
+        { "id": "3", "action": "command.execute", "input": { "commandId": "${selectedCommand}" } }
+      ],
+      "triggers": ["shortcut.⌘K"]
+    },
+    {
+      "id": "command.create.custom",
+      "name": "Create Custom Command",
+      "description": "Create a new custom command with full configuration",
+      "steps": [
+        { "id": "1", "action": "ui.show.editor" },
+        { "id": "2", "action": "command.create", "input": { "name": "${name}", "syntax": "${syntax}", "handler": "${handler}" } },
+        { "id": "3", "action": "command.validate" },
+        { "id": "4", "action": "notify.success", "condition": "validation.passed" }
+      ],
+      "triggers": ["menu.command.new", "shortcut.⌘N"]
+    },
+    {
+      "id": "command.record.macro",
+      "name": "Record Command Macro",
+      "description": "Record a sequence of commands as a macro",
+      "steps": [
+        { "id": "1", "action": "macro.record", "input": { "name": "${macroName}" } },
+        { "id": "2", "action": "ui.show.recording.indicator" },
+        { "id": "3", "action": "await.user.commands" },
+        { "id": "4", "action": "macro.stop" },
+        { "id": "5", "action": "macro.save" },
+        { "id": "6", "action": "notify.success" }
+      ],
+      "triggers": ["menu.macro.record"]
+    },
+    {
+      "id": "command.batch.execute",
+      "name": "Batch Command Execution",
+      "description": "Execute multiple commands in sequence",
+      "steps": [
+        { "id": "1", "action": "command.list" },
+        { "id": "2", "action": "ui.select.multiple" },
+        { "id": "3", "action": "batch.create", "input": { "commands": "${selectedCommands}" } },
+        { "id": "4", "action": "batch.validate" },
+        { "id": "5", "action": "batch.execute" },
+        { "id": "6", "action": "notify.results" }
+      ],
+      "triggers": ["menu.batch.execute"]
+    },
+    {
+      "id": "command.import.file",
+      "name": "Import Commands from File",
+      "description": "Import commands from a JSON or YAML file",
+      "steps": [
+        { "id": "1", "action": "file.picker.show", "input": { "types": ["json", "yaml"] } },
+        { "id": "2", "action": "file.read", "input": { "path": "${selectedFile}" } },
+        { "id": "3", "action": "command.parse", "input": { "content": "${fileContent}" } },
+        { "id": "4", "action": "ui.show.preview", "input": { "commands": "${parsedCommands}" } },
+        { "id": "5", "action": "command.import", "input": { "commands": "${confirmedCommands}" }, "condition": "user.confirmed" },
+        { "id": "6", "action": "notify.success" }
+      ],
+      "triggers": ["menu.command.import"]
+    },
+    {
+      "id": "command.export.selected",
+      "name": "Export Selected Commands",
+      "description": "Export selected commands to a file",
+      "steps": [
+        { "id": "1", "action": "command.list" },
+        { "id": "2", "action": "ui.select.multiple" },
+        { "id": "3", "action": "ui.format.picker", "input": { "formats": ["json", "yaml"] } },
+        { "id": "4", "action": "command.export", "input": { "commandIds": "${selectedCommands}", "format": "${selectedFormat}" } },
+        { "id": "5", "action": "file.save.dialog" },
+        { "id": "6", "action": "notify.success" }
+      ],
+      "triggers": ["menu.command.export"]
+    },
+    {
+      "id": "command.create.alias",
+      "name": "Create Command Alias",
+      "description": "Create a shortcut alias for an existing command",
+      "steps": [
+        { "id": "1", "action": "command.search" },
+        { "id": "2", "action": "ui.select.single" },
+        { "id": "3", "action": "ui.prompt", "input": { "message": "Enter alias name" } },
+        { "id": "4", "action": "alias.create", "input": { "alias": "${aliasName}", "commandId": "${selectedCommand}" } },
+        { "id": "5", "action": "notify.success" }
+      ],
+      "triggers": ["menu.alias.create"]
+    },
+    {
+      "id": "command.template.apply",
+      "name": "Apply Command Template",
+      "description": "Create a command from a template",
+      "steps": [
+        { "id": "1", "action": "template.list" },
+        { "id": "2", "action": "ui.select.single" },
+        { "id": "3", "action": "ui.show.template.form", "input": { "template": "${selectedTemplate}" } },
+        { "id": "4", "action": "template.apply", "input": { "templateId": "${selectedTemplate}", "parameters": "${formValues}" } },
+        { "id": "5", "action": "command.validate" },
+        { "id": "6", "action": "notify.success" }
+      ],
+      "triggers": ["menu.template.apply"]
+    },
+    {
+      "id": "command.history.search",
+      "name": "Search Command History",
+      "description": "Search through command execution history",
+      "steps": [
+        { "id": "1", "action": "ui.show.search", "input": { "placeholder": "Search history..." } },
+        { "id": "2", "action": "history.search", "input": { "query": "${searchQuery}" } },
+        { "id": "3", "action": "ui.show.results", "input": { "results": "${searchResults}" } },
+        { "id": "4", "action": "command.execute", "input": { "commandId": "${selectedResult}" }, "condition": "user.selected" }
+      ],
+      "triggers": ["shortcut.⇧⌘H"]
+    },
+    {
+      "id": "command.error.recovery",
+      "name": "Recover from Command Error",
+      "description": "Automatically triggered when a command fails",
+      "steps": [
+        { "id": "1", "action": "error.analyze", "input": { "error": "${lastError}" } },
+        { "id": "2", "action": "error.suggest.fixes" },
+        { "id": "3", "action": "ui.show.suggestions", "input": { "suggestions": "${fixes}" } },
+        { "id": "4", "action": "command.execute", "input": { "commandId": "${selectedFix}" }, "condition": "user.selected" }
+      ],
+      "triggers": ["event.command.failed"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "menus": [
+    {
+      "id": "marketplace.main",
+      "type": "main",
+      "items": [
+        { "id": "mp.browse", "title": "Browse", "icon": "square.grid.2x2", "action": "package.browse" },
+        { "id": "mp.installed", "title": "Installed", "icon": "checkmark.circle", "action": "package.installed" },
+        { "id": "mp.updates", "title": "Updates", "icon": "arrow.clockwise", "action": "check.updates" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "marketplace.browser", "type": "browser", "title": "Marketplace", "icon": "bag" },
+    { "id": "marketplace.grid", "type": "grid", "title": "Packages", "icon": "square.grid.2x2" },
+    { "id": "marketplace.detail", "type": "detail", "title": "Package Detail", "icon": "doc.text" }
+  ],
+  "animations": [
+    { "id": "install.progress", "type": "progress", "duration": 0.5, "curve": "easeOut" },
+    { "id": "install.complete", "type": "success", "duration": 0.3, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "marketplace.main", "systemName": "bag" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

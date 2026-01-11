@@ -1,0 +1,40 @@
+{
+  "agents": [
+    {
+      "id": "nav.history.manager",
+      "name": "History Manager",
+      "description": "Manages navigation history",
+      "triggers": [
+        { "type": "event", "condition": "route.changed" }
+      ],
+      "actions": [
+        "record.navigation",
+        "update.history",
+        "prune.old"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "nav.deeplink.handler",
+      "name": "Deep Link Handler",
+      "description": "Handles incoming deep links",
+      "triggers": [
+        { "type": "event", "condition": "deeplink.received" }
+      ],
+      "actions": [
+        "parse.url",
+        "resolve.route",
+        "navigate.to"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

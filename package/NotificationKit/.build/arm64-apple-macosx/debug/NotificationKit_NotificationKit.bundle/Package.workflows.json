@@ -1,0 +1,25 @@
+{
+  "workflows": [
+    {
+      "id": "notification.quick.send",
+      "name": "Quick Notification",
+      "description": "Send a quick notification",
+      "steps": [
+        { "id": "1", "action": "notification.send" },
+        { "id": "2", "action": "log.notification" }
+      ],
+      "triggers": ["api.notification.send"]
+    },
+    {
+      "id": "notification.schedule.reminder",
+      "name": "Schedule Reminder",
+      "description": "Schedule a reminder notification",
+      "steps": [
+        { "id": "1", "action": "ui.show.schedule.dialog" },
+        { "id": "2", "action": "notification.schedule" },
+        { "id": "3", "action": "notify.scheduled" }
+      ],
+      "triggers": ["menu.notification.schedule"]
+    }
+  ]
+}

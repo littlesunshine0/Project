@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitPackageTests.build/runner.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitPackageTests.build/runner.dia"
+  }
+}

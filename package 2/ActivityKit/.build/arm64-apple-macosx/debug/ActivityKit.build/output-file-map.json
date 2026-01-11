@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ActivityKit/Sources/ActivityKit/ActivityKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ActivityKit/.build/arm64-apple-macosx/debug/ActivityKit.build/ActivityKit.dia"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "com.flowkit.kitorchestrator",
+  "name": "KitOrchestrator",
+  "version": "1.0.0",
+  "category": "core",
+  "platforms": ["macOS", "iOS", "visionOS"],
+  "dependencies": ["DataKit"],
+  "author": "FlowKit Team",
+  "license": "MIT"
+}

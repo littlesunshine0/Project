@@ -1,0 +1,3 @@
+module WebKitPackageTests {
+    header "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.build/include/WebKitPackageTests-Swift.h"
+}

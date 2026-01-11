@@ -1,0 +1,64 @@
+{
+  "agents": [
+    {
+      "id": "doc.generator",
+      "name": "Documentation Generator",
+      "description": "Automatically generates documentation from code",
+      "triggers": [
+        { "type": "fileChange", "condition": "*.swift" },
+        { "type": "command", "condition": "doc.generate" }
+      ],
+      "actions": [
+        "parse.code",
+        "extract.comments",
+        "generate.docs",
+        "format.output"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 2
+      }
+    },
+    {
+      "id": "doc.linker",
+      "name": "Documentation Linker",
+      "description": "Links related documentation and creates cross-references",
+      "triggers": [
+        { "type": "event", "condition": "doc.created" },
+        { "type": "event", "condition": "doc.updated" }
+      ],
+      "actions": [
+        "analyze.content",
+        "find.related",
+        "create.links",
+        "update.index"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "doc.validator",
+      "name": "Documentation Validator",
+      "description": "Validates documentation for completeness and accuracy",
+      "triggers": [
+        { "type": "event", "condition": "doc.saved" },
+        { "type": "schedule", "condition": "daily" }
+      ],
+      "actions": [
+        "check.completeness",
+        "verify.links",
+        "validate.examples",
+        "report.issues"
+      ],
+      "config": {
+        "autoStart": false,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/FeedbackKit/Tests/FeedbackKitTests/FeedbackKitTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitTests.build/FeedbackKitTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitTests.build/FeedbackKitTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitTests.build/FeedbackKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitTests.build/FeedbackKitTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/FeedbackKit/.build/arm64-apple-macosx/debug/FeedbackKitTests.build/FeedbackKitTests.dia"
+  }
+}

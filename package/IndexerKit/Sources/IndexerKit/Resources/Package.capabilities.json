@@ -1,0 +1,8 @@
+{
+  "nodes": ["Index", "Document", "Token", "Field", "Analyzer"],
+  "actions": ["index.create", "index.update", "index.delete", "index.search", "document.add", "document.remove", "analyzer.configure"],
+  "agents": ["IndexOptimizer", "DocumentProcessor", "TokenAnalyzer"],
+  "commands": ["/index create", "/index search", "/index update", "/index delete"],
+  "ui": ["browser", "settings"],
+  "ml": ["search", "embedding"]
+}

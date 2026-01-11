@@ -1,0 +1,20 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "parsing", "name": "Parsing", "icon": "doc.text.magnifyingglass", "color": "blue" },
+    { "id": "highlighting", "name": "Highlighting", "icon": "paintbrush", "color": "orange" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "syntax.parsed", "name": "Syntax Parsed", "severity": "success" },
+    { "id": "syntax.highlighted", "name": "Syntax Highlighted", "severity": "success" },
+    { "id": "syntax.error", "name": "Syntax Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "parsing", "event": "parse.start" },
+    { "from": "parsing", "to": "highlighting", "event": "syntax.parsed" },
+    { "from": "highlighting", "to": "completed", "event": "syntax.highlighted" },
+    { "from": "parsing", "to": "error", "event": "syntax.error" }
+  ]
+}

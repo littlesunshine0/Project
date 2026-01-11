@@ -1,0 +1,21 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "initializing", "name": "Initializing", "icon": "arrow.clockwise", "color": "blue" },
+    { "id": "running", "name": "Running", "icon": "play.fill", "color": "green" },
+    { "id": "paused", "name": "Paused", "icon": "pause.fill", "color": "yellow" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" }
+  ],
+  "events": [
+    { "id": "app.launched", "name": "App Launched", "severity": "info" },
+    { "id": "app.ready", "name": "App Ready", "severity": "success" },
+    { "id": "app.error", "name": "App Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "initializing", "event": "app.launch" },
+    { "from": "initializing", "to": "running", "event": "app.ready" },
+    { "from": "running", "to": "paused", "event": "app.pause" },
+    { "from": "paused", "to": "running", "event": "app.resume" },
+    { "from": "initializing", "to": "error", "event": "app.error" }
+  ]
+}

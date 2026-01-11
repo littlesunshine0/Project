@@ -1,0 +1,70 @@
+{
+  "actions": [
+    {
+      "id": "export.create",
+      "name": "Export",
+      "description": "Export content",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "content", "type": "object", "required": true },
+        { "name": "format", "type": "string", "required": true }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "export.pdf",
+      "name": "Export to PDF",
+      "description": "Export as PDF",
+      "icon": "doc.richtext",
+      "input": [
+        { "name": "content", "type": "object", "required": true }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "export.json",
+      "name": "Export to JSON",
+      "description": "Export as JSON",
+      "icon": "curlybraces",
+      "input": [
+        { "name": "content", "type": "object", "required": true }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "export.csv",
+      "name": "Export to CSV",
+      "description": "Export as CSV",
+      "icon": "tablecells",
+      "input": [
+        { "name": "content", "type": "array", "required": true }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "format.list",
+      "name": "List Formats",
+      "description": "List available formats",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Format]",
+      "category": "read"
+    },
+    {
+      "id": "template.apply",
+      "name": "Apply Template",
+      "description": "Apply export template",
+      "icon": "doc.on.doc",
+      "input": [
+        { "name": "templateId", "type": "string", "required": true },
+        { "name": "content", "type": "object", "required": true }
+      ],
+      "output": "URL",
+      "category": "export"
+    }
+  ]
+}

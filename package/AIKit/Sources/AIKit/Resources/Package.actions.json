@@ -1,0 +1,94 @@
+{
+  "actions": [
+    {
+      "id": "model.load",
+      "name": "Load Model",
+      "description": "Load an AI model",
+      "icon": "arrow.down.circle",
+      "input": [
+        { "name": "modelId", "type": "string", "required": true }
+      ],
+      "output": "Model",
+      "category": "execute"
+    },
+    {
+      "id": "predict",
+      "name": "Predict",
+      "description": "Make a prediction",
+      "icon": "brain",
+      "input": [
+        { "name": "modelId", "type": "string", "required": true },
+        { "name": "input", "type": "object", "required": true }
+      ],
+      "output": "Prediction",
+      "category": "execute"
+    },
+    {
+      "id": "generate",
+      "name": "Generate",
+      "description": "Generate content using AI",
+      "icon": "wand.and.stars",
+      "input": [
+        { "name": "prompt", "type": "string", "required": true },
+        { "name": "options", "type": "object", "required": false }
+      ],
+      "output": "Generation",
+      "category": "execute"
+    },
+    {
+      "id": "embed",
+      "name": "Create Embedding",
+      "description": "Create vector embedding",
+      "icon": "point.3.connected.trianglepath.dotted",
+      "input": [
+        { "name": "text", "type": "string", "required": true }
+      ],
+      "output": "Embedding",
+      "category": "execute"
+    },
+    {
+      "id": "classify",
+      "name": "Classify",
+      "description": "Classify content",
+      "icon": "tag",
+      "input": [
+        { "name": "content", "type": "string", "required": true },
+        { "name": "categories", "type": "array", "required": true }
+      ],
+      "output": "Classification",
+      "category": "execute"
+    },
+    {
+      "id": "model.list",
+      "name": "List Models",
+      "description": "List available models",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Model]",
+      "category": "read"
+    },
+    {
+      "id": "model.info",
+      "name": "Model Info",
+      "description": "Get model information",
+      "icon": "info.circle",
+      "input": [
+        { "name": "modelId", "type": "string", "required": true }
+      ],
+      "output": "ModelInfo",
+      "category": "read"
+    },
+    {
+      "id": "similarity.search",
+      "name": "Similarity Search",
+      "description": "Search by similarity",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "query", "type": "string", "required": true },
+        { "name": "limit", "type": "int", "required": false }
+      ],
+      "output": "[SearchResult]",
+      "category": "read"
+    }
+  ]
+}

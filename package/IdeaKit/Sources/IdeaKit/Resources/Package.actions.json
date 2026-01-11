@@ -1,0 +1,61 @@
+{
+  "actions": [
+    {
+      "id": "idea.capture",
+      "name": "Capture Idea",
+      "description": "Capture a new idea",
+      "icon": "lightbulb",
+      "input": [
+        { "name": "title", "type": "string", "required": true },
+        { "name": "description", "type": "string", "required": false }
+      ],
+      "output": "Idea",
+      "shortcut": "⌘I",
+      "category": "create"
+    },
+    {
+      "id": "idea.refine",
+      "name": "Refine Idea",
+      "description": "Refine an idea",
+      "icon": "pencil",
+      "input": [
+        { "name": "ideaId", "type": "string", "required": true },
+        { "name": "refinements", "type": "object", "required": true }
+      ],
+      "output": "Idea",
+      "category": "update"
+    },
+    {
+      "id": "idea.list",
+      "name": "List Ideas",
+      "description": "List all ideas",
+      "icon": "list.bullet",
+      "input": [],
+      "output": "[Idea]",
+      "category": "read"
+    },
+    {
+      "id": "idea.delete",
+      "name": "Delete Idea",
+      "description": "Delete an idea",
+      "icon": "trash",
+      "input": [
+        { "name": "ideaId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "idea.link",
+      "name": "Link Ideas",
+      "description": "Link related ideas",
+      "icon": "link",
+      "input": [
+        { "name": "sourceId", "type": "string", "required": true },
+        { "name": "targetId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    }
+  ]
+}

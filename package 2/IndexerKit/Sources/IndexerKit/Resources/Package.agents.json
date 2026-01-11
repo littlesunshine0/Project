@@ -1,0 +1,41 @@
+{
+  "agents": [
+    {
+      "id": "indexer.auto",
+      "name": "Auto Indexer",
+      "description": "Automatically indexes new content",
+      "triggers": [
+        { "type": "fileChange", "condition": "*" },
+        { "type": "event", "condition": "content.created" }
+      ],
+      "actions": [
+        "detect.new.content",
+        "index.add",
+        "update.stats"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "indexer.optimizer",
+      "name": "Index Optimizer",
+      "description": "Optimizes index periodically",
+      "triggers": [
+        { "type": "schedule", "condition": "daily" }
+      ],
+      "actions": [
+        "analyze.index",
+        "index.optimize",
+        "cleanup.stale"
+      ],
+      "config": {
+        "autoStart": false,
+        "priority": "low",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

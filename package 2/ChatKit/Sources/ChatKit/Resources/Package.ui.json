@@ -1,0 +1,45 @@
+{
+  "menus": [
+    {
+      "id": "chat.main",
+      "type": "main",
+      "items": [
+        { "id": "chat.new", "title": "New Chat", "icon": "plus.bubble", "action": "chat.create", "shortcut": "⌘N" },
+        { "id": "chat.history", "title": "Chat History", "icon": "clock", "action": "chat.list" },
+        { "id": "chat.search", "title": "Search", "icon": "magnifyingglass", "action": "chat.search", "shortcut": "⌘F" },
+        { "id": "chat.export", "title": "Export", "icon": "square.and.arrow.up", "action": "chat.export" }
+      ]
+    },
+    {
+      "id": "chat.context",
+      "type": "context",
+      "items": [
+        { "id": "ctx.copy", "title": "Copy", "icon": "doc.on.doc", "action": "message.copy" },
+        { "id": "ctx.regenerate", "title": "Regenerate", "icon": "arrow.clockwise", "action": "message.regenerate" },
+        { "id": "ctx.delete", "title": "Delete", "icon": "trash", "action": "chat.delete" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "chat.browser", "type": "browser", "title": "Chats", "icon": "bubble.left.and.bubble.right" },
+    { "id": "chat.list", "type": "list", "title": "Chat List", "icon": "list.bullet" },
+    { "id": "chat.conversation", "type": "detail", "title": "Conversation", "icon": "bubble.left" }
+  ],
+  "animations": [
+    { "id": "message.send", "type": "slide", "duration": 0.2, "curve": "easeOut" },
+    { "id": "message.receive", "type": "fade", "duration": 0.3, "curve": "easeInOut" },
+    { "id": "typing.indicator", "type": "loading", "duration": 0.5, "curve": "linear" }
+  ],
+  "icons": [
+    { "id": "chat.main", "systemName": "bubble.left.and.bubble.right" },
+    { "id": "chat.user", "systemName": "person.circle" },
+    { "id": "chat.ai", "systemName": "cpu" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

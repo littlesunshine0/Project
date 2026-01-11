@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "AnalyticsKit-arm64-apple-macosx26.0-debug.module": ["<AnalyticsKit-arm64-apple-macosx26.0-debug.module>"]
+  "AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "AnalyticsKitTests-arm64-apple-macosx26.0-debug.module": ["<AnalyticsKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<AnalyticsKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<AnalyticsKit-arm64-apple-macosx26.0-debug.module>","<AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.test>","<AnalyticsKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Sources/AnalyticsKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Tests/AnalyticsKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Sources/AnalyticsKit/AnalyticsKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/AnalyticsKit.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/AnalyticsKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Tests/AnalyticsKitTests/AnalyticsKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<AnalyticsKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/AnalyticsKit.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKit.swiftmodule"]
+    outputs: ["<AnalyticsKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitPackageTests.swiftmodule"]
+    outputs: ["<AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.xctest/Contents/MacOS/AnalyticsKitPackageTests"]
+    outputs: ["<AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<AnalyticsKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/AnalyticsKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitTests.swiftmodule"]
+    outputs: ["<AnalyticsKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.AnalyticsKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Sources/AnalyticsKit/AnalyticsKit.swift","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/AnalyticsKit.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKit.swiftmodule"]
+    description: "Compiling Swift Module 'AnalyticsKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","AnalyticsKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/include/AnalyticsKit-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","analyticskit"]
+
+  "C.AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'AnalyticsKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","AnalyticsKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/include/AnalyticsKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","analyticskit"]
+
+  "C.AnalyticsKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKit.build/AnalyticsKit.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/AnalyticsKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.xctest/Contents/MacOS/AnalyticsKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.xctest/Contents/MacOS/AnalyticsKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.xctest/Contents/MacOS/AnalyticsKitPackageTests","-module-name","AnalyticsKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.AnalyticsKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Tests/AnalyticsKitTests/AnalyticsKitTests.swift","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/AnalyticsKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'AnalyticsKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","AnalyticsKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules/AnalyticsKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/AnalyticsKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","analyticskit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Sources/AnalyticsKit/","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Tests/AnalyticsKitTests/","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Package.swift","/Users/tempadmin/Desktop/Project/package/AnalyticsKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

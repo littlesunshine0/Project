@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.dia"
+  }
+}

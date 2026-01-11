@@ -1,0 +1,10 @@
+{
+  "id": "com.flowkit.agentkit",
+  "name": "AgentKit",
+  "version": "1.0.0",
+  "category": "ai",
+  "platforms": ["macOS", "iOS", "visionOS"],
+  "dependencies": ["DataKit", "CoreKit", "AIKit"],
+  "author": "FlowKit Team",
+  "license": "MIT"
+}

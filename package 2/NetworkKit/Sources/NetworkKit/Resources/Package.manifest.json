@@ -1,0 +1,10 @@
+{
+  "id": "com.flowkit.networkkit",
+  "name": "NetworkKit",
+  "version": "1.0.0",
+  "category": "integration",
+  "platforms": ["macOS", "iOS", "visionOS"],
+  "dependencies": ["DataKit"],
+  "author": "FlowKit Team",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "agents": [
+    {
+      "id": "icon.suggester",
+      "name": "Icon Suggester",
+      "description": "Suggests icons based on context",
+      "triggers": [
+        { "type": "event", "condition": "icon.request" }
+      ],
+      "actions": [
+        "analyze.context",
+        "find.matching",
+        "rank.icons"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

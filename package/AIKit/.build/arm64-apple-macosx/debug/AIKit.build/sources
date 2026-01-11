@@ -1,0 +1,12 @@
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/AIKit.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/MemoryEngine.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/MemoryModels.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/PlanningEngine.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/PlanningModels.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/RiskEngine.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/RiskModels.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/StructureEngine.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/StructureModels.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/UnderstandingEngine.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/UnderstandingModels.swift
+/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Orchestrator/IntelligenceOrchestrator.swift

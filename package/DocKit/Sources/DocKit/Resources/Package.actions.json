@@ -1,0 +1,125 @@
+{
+  "actions": [
+    {
+      "id": "doc.create",
+      "name": "Create Document",
+      "description": "Create a new document",
+      "icon": "doc.badge.plus",
+      "input": [
+        { "name": "title", "type": "string", "required": true },
+        { "name": "type", "type": "string", "required": false, "defaultValue": "markdown" }
+      ],
+      "output": "Document",
+      "shortcut": "⌘N",
+      "category": "create"
+    },
+    {
+      "id": "doc.generate",
+      "name": "Generate Documentation",
+      "description": "Auto-generate documentation from code",
+      "icon": "wand.and.stars",
+      "input": [
+        { "name": "source", "type": "file", "required": true },
+        { "name": "format", "type": "string", "required": false }
+      ],
+      "output": "Document",
+      "shortcut": "⇧⌘G",
+      "category": "create"
+    },
+    {
+      "id": "doc.update",
+      "name": "Update Document",
+      "description": "Update an existing document",
+      "icon": "pencil",
+      "input": [
+        { "name": "docId", "type": "string", "required": true },
+        { "name": "content", "type": "string", "required": true }
+      ],
+      "output": "Document",
+      "shortcut": "⌘S",
+      "category": "update"
+    },
+    {
+      "id": "doc.delete",
+      "name": "Delete Document",
+      "description": "Delete a document",
+      "icon": "trash",
+      "input": [
+        { "name": "docId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "shortcut": "⌘⌫",
+      "category": "delete"
+    },
+    {
+      "id": "doc.list",
+      "name": "List Documents",
+      "description": "List all documents",
+      "icon": "list.bullet",
+      "input": [
+        { "name": "filter", "type": "string", "required": false }
+      ],
+      "output": "[Document]",
+      "category": "read"
+    },
+    {
+      "id": "doc.search",
+      "name": "Search Documents",
+      "description": "Search documents by query",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "query", "type": "string", "required": true }
+      ],
+      "output": "[Document]",
+      "shortcut": "⌘F",
+      "category": "read"
+    },
+    {
+      "id": "doc.export",
+      "name": "Export Document",
+      "description": "Export document to file",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "docId", "type": "string", "required": true },
+        { "name": "format", "type": "string", "required": false, "defaultValue": "pdf" }
+      ],
+      "output": "URL",
+      "category": "export"
+    },
+    {
+      "id": "doc.import",
+      "name": "Import Document",
+      "description": "Import document from file",
+      "icon": "square.and.arrow.down",
+      "input": [
+        { "name": "file", "type": "file", "required": true }
+      ],
+      "output": "Document",
+      "category": "create"
+    },
+    {
+      "id": "doc.preview",
+      "name": "Preview Document",
+      "description": "Preview document rendering",
+      "icon": "eye",
+      "input": [
+        { "name": "docId", "type": "string", "required": true }
+      ],
+      "output": "Void",
+      "shortcut": "⌘P",
+      "category": "read"
+    },
+    {
+      "id": "template.apply",
+      "name": "Apply Template",
+      "description": "Apply a documentation template",
+      "icon": "doc.on.doc",
+      "input": [
+        { "name": "templateId", "type": "string", "required": true },
+        { "name": "data", "type": "object", "required": false }
+      ],
+      "output": "Document",
+      "category": "create"
+    }
+  ]
+}

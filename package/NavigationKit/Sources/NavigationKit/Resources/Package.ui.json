@@ -1,0 +1,34 @@
+{
+  "menus": [
+    {
+      "id": "nav.main",
+      "type": "main",
+      "items": [
+        { "id": "nav.back", "title": "Back", "icon": "arrow.left", "action": "navigate.back", "shortcut": "⌘[" },
+        { "id": "nav.forward", "title": "Forward", "icon": "arrow.right", "action": "navigate.forward", "shortcut": "⌘]" },
+        { "id": "nav.home", "title": "Home", "icon": "house", "action": "navigate.home", "shortcut": "⌘H" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "nav.browser", "type": "browser", "title": "Navigation", "icon": "arrow.triangle.branch" },
+    { "id": "nav.history", "type": "list", "title": "History", "icon": "clock" }
+  ],
+  "animations": [
+    { "id": "nav.push", "type": "slide", "duration": 0.3, "curve": "easeInOut" },
+    { "id": "nav.pop", "type": "slide", "duration": 0.3, "curve": "easeInOut" },
+    { "id": "nav.modal", "type": "scale", "duration": 0.25, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "nav.main", "systemName": "arrow.triangle.branch" },
+    { "id": "nav.back", "systemName": "arrow.left" },
+    { "id": "nav.forward", "systemName": "arrow.right" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

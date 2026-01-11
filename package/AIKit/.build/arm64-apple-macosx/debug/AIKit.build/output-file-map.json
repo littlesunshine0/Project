@@ -1,0 +1,89 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/AIKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/AIKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/AIKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/AIKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/AIKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/AIKit.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/MemoryEngine.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryEngine.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryEngine.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryEngine.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryEngine.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/MemoryModels.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryModels.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryModels.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryModels.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/MemoryModels.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/PlanningEngine.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningEngine.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningEngine.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningEngine.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningEngine.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/PlanningModels.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningModels.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningModels.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningModels.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/PlanningModels.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/RiskEngine.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskEngine.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskEngine.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskEngine.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskEngine.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/RiskModels.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskModels.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskModels.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskModels.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/RiskModels.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/StructureEngine.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureEngine.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureEngine.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureEngine.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureEngine.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/StructureModels.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureModels.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureModels.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureModels.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/StructureModels.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/UnderstandingEngine.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingEngine.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingEngine.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingEngine.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingEngine.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Engines/UnderstandingModels.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingModels.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingModels.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingModels.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/UnderstandingModels.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/AIKit/Sources/AIKit/Orchestrator/IntelligenceOrchestrator.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/IntelligenceOrchestrator.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/IntelligenceOrchestrator.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/IntelligenceOrchestrator~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/IntelligenceOrchestrator.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/AIKit/.build/arm64-apple-macosx/debug/AIKit.build/IntelligenceOrchestrator.dia"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DesignKit/.build/arm64-apple-macosx/debug/DesignKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/DesignKit/Sources/DesignKit/DesignKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/DesignKit/.build/arm64-apple-macosx/debug/DesignKit.build/DesignKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/DesignKit/.build/arm64-apple-macosx/debug/DesignKit.build/DesignKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/DesignKit/.build/arm64-apple-macosx/debug/DesignKit.build/DesignKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/DesignKit/.build/arm64-apple-macosx/debug/DesignKit.build/DesignKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/DesignKit/.build/arm64-apple-macosx/debug/DesignKit.build/DesignKit.dia"
+  }
+}

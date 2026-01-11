@@ -1,0 +1,8 @@
+{
+  "nodes": ["Event", "Metric", "Report", "Dashboard", "Goal"],
+  "actions": ["event.track", "metric.record", "report.generate", "dashboard.create", "goal.set", "goal.track"],
+  "agents": ["EventCollector", "MetricAggregator", "InsightGenerator"],
+  "commands": ["/analytics track", "/analytics report", "/analytics dashboard", "/analytics goals"],
+  "ui": ["browser", "table", "settings"],
+  "ml": ["prediction", "classification"]
+}

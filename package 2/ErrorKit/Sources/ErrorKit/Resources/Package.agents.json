@@ -1,0 +1,41 @@
+{
+  "agents": [
+    {
+      "id": "error.handler",
+      "name": "Error Handler",
+      "description": "Handles errors automatically",
+      "triggers": [
+        { "type": "event", "condition": "error.occurred" }
+      ],
+      "actions": [
+        "analyze.error",
+        "determine.severity",
+        "handle.error",
+        "notify.user"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "critical",
+        "maxConcurrent": 5
+      }
+    },
+    {
+      "id": "error.reporter",
+      "name": "Error Reporter",
+      "description": "Reports errors to crash service",
+      "triggers": [
+        { "type": "event", "condition": "error.critical" }
+      ],
+      "actions": [
+        "collect.context",
+        "anonymize.data",
+        "send.report"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

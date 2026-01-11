@@ -1,0 +1,62 @@
+{
+  "agents": [
+    {
+      "id": "design.consistency.checker",
+      "name": "Consistency Checker",
+      "description": "Checks design consistency across components",
+      "triggers": [
+        { "type": "event", "condition": "component.created" },
+        { "type": "event", "condition": "style.applied" }
+      ],
+      "actions": [
+        "analyze.components",
+        "check.consistency",
+        "report.issues",
+        "suggest.fixes"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "design.accessibility.checker",
+      "name": "Accessibility Checker",
+      "description": "Validates accessibility compliance",
+      "triggers": [
+        { "type": "event", "condition": "component.updated" },
+        { "type": "command", "condition": "design.check.a11y" }
+      ],
+      "actions": [
+        "check.contrast",
+        "validate.labels",
+        "verify.focus",
+        "report.issues"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "design.token.sync",
+      "name": "Token Sync",
+      "description": "Syncs design tokens across components",
+      "triggers": [
+        { "type": "event", "condition": "token.updated" }
+      ],
+      "actions": [
+        "find.usages",
+        "update.components",
+        "regenerate.styles"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

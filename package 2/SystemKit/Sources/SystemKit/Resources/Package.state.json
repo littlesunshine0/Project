@@ -1,0 +1,19 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "monitoring", "name": "Monitoring", "icon": "chart.line.uptrend.xyaxis", "color": "blue" },
+    { "id": "warning", "name": "Warning", "icon": "exclamationmark.triangle", "color": "yellow" },
+    { "id": "critical", "name": "Critical", "icon": "xmark.octagon", "color": "red" }
+  ],
+  "events": [
+    { "id": "system.healthy", "name": "System Healthy", "severity": "success" },
+    { "id": "system.warning", "name": "System Warning", "severity": "warning" },
+    { "id": "system.critical", "name": "System Critical", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "monitoring", "event": "monitor.start" },
+    { "from": "monitoring", "to": "warning", "event": "system.warning" },
+    { "from": "monitoring", "to": "critical", "event": "system.critical" },
+    { "from": "warning", "to": "monitoring", "event": "system.healthy" }
+  ]
+}

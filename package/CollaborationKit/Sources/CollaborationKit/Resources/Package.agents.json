@@ -1,0 +1,62 @@
+{
+  "agents": [
+    {
+      "id": "collab.sync.manager",
+      "name": "Sync Manager",
+      "description": "Manages real-time synchronization",
+      "triggers": [
+        { "type": "event", "condition": "content.changed" },
+        { "type": "schedule", "condition": "every.minute" }
+      ],
+      "actions": [
+        "detect.changes",
+        "sync.changes",
+        "resolve.conflicts",
+        "notify.users"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 1
+      }
+    },
+    {
+      "id": "collab.conflict.resolver",
+      "name": "Conflict Resolver",
+      "description": "Automatically resolves simple conflicts",
+      "triggers": [
+        { "type": "event", "condition": "conflict.detected" }
+      ],
+      "actions": [
+        "analyze.conflict",
+        "suggest.resolution",
+        "auto.merge",
+        "notify.user"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "high",
+        "maxConcurrent": 2
+      }
+    },
+    {
+      "id": "collab.activity.tracker",
+      "name": "Activity Tracker",
+      "description": "Tracks collaboration activity",
+      "triggers": [
+        { "type": "event", "condition": "share.created" },
+        { "type": "event", "condition": "comment.added" }
+      ],
+      "actions": [
+        "log.activity",
+        "update.feed",
+        "notify.participants"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "normal",
+        "maxConcurrent": 1
+      }
+    }
+  ]
+}

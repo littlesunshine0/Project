@@ -1,0 +1,46 @@
+{
+  "menus": [
+    {
+      "id": "knowledge.main",
+      "type": "main",
+      "items": [
+        { "id": "kb.new", "title": "New Entry", "icon": "plus", "action": "knowledge.create", "shortcut": "⌘N" },
+        { "id": "kb.ingest", "title": "Ingest Content", "icon": "square.and.arrow.down", "action": "knowledge.ingest" },
+        { "id": "kb.search", "title": "Search", "icon": "magnifyingglass", "action": "knowledge.search", "shortcut": "⌘F" },
+        { "id": "kb.topics", "title": "Topics", "icon": "folder", "action": "topic.list" }
+      ]
+    },
+    {
+      "id": "knowledge.context",
+      "type": "context",
+      "items": [
+        { "id": "ctx.edit", "title": "Edit", "icon": "pencil", "action": "knowledge.update" },
+        { "id": "ctx.link", "title": "Link", "icon": "link", "action": "knowledge.link" },
+        { "id": "ctx.export", "title": "Export", "icon": "square.and.arrow.up", "action": "knowledge.export" },
+        { "id": "ctx.delete", "title": "Delete", "icon": "trash", "action": "knowledge.delete" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "knowledge.browser", "type": "browser", "title": "Knowledge", "icon": "brain" },
+    { "id": "knowledge.list", "type": "list", "title": "Entries", "icon": "list.bullet" },
+    { "id": "knowledge.graph", "type": "canvas", "title": "Graph", "icon": "point.3.connected.trianglepath.dotted" },
+    { "id": "knowledge.editor", "type": "editor", "title": "Editor", "icon": "pencil" }
+  ],
+  "animations": [
+    { "id": "ingest.progress", "type": "progress", "duration": 0.5, "curve": "easeOut" },
+    { "id": "link.create", "type": "success", "duration": 0.3, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "knowledge.main", "systemName": "brain" },
+    { "id": "knowledge.entry", "systemName": "doc.text" },
+    { "id": "knowledge.topic", "systemName": "folder" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

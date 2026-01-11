@@ -1,0 +1,25 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "connecting", "name": "Connecting", "icon": "wifi", "color": "blue" },
+    { "id": "sending", "name": "Sending", "icon": "arrow.up.circle", "color": "orange" },
+    { "id": "receiving", "name": "Receiving", "icon": "arrow.down.circle", "color": "blue" },
+    { "id": "offline", "name": "Offline", "icon": "wifi.slash", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "request.sent", "name": "Request Sent", "severity": "info" },
+    { "id": "response.received", "name": "Response Received", "severity": "success" },
+    { "id": "connection.lost", "name": "Connection Lost", "severity": "error" },
+    { "id": "connection.restored", "name": "Connection Restored", "severity": "success" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "connecting", "event": "connect.start" },
+    { "from": "connecting", "to": "idle", "event": "connect.complete" },
+    { "from": "idle", "to": "sending", "event": "request.start" },
+    { "from": "sending", "to": "receiving", "event": "request.sent" },
+    { "from": "receiving", "to": "completed", "event": "response.received" },
+    { "from": "idle", "to": "offline", "event": "connection.lost" },
+    { "from": "offline", "to": "idle", "event": "connection.restored" }
+  ]
+}

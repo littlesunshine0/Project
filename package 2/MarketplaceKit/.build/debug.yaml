@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MarketplaceKit-arm64-apple-macosx26.0-debug.module": ["<MarketplaceKit-arm64-apple-macosx26.0-debug.module>"]
+  "MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "MarketplaceKitTests-arm64-apple-macosx26.0-debug.module": ["<MarketplaceKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MarketplaceKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<MarketplaceKit-arm64-apple-macosx26.0-debug.module>","<MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.test>","<MarketplaceKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Sources/MarketplaceKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Tests/MarketplaceKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Sources/MarketplaceKit/MarketplaceKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/MarketplaceKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Tests/MarketplaceKitTests/MarketplaceKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<MarketplaceKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKit.swiftmodule"]
+    outputs: ["<MarketplaceKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitPackageTests.swiftmodule"]
+    outputs: ["<MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.xctest/Contents/MacOS/MarketplaceKitPackageTests"]
+    outputs: ["<MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<MarketplaceKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/MarketplaceKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitTests.swiftmodule"]
+    outputs: ["<MarketplaceKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.MarketplaceKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Sources/MarketplaceKit/MarketplaceKit.swift","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKit.swiftmodule"]
+    description: "Compiling Swift Module 'MarketplaceKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","MarketplaceKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/include/MarketplaceKit-Swift.h","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","marketplacekit"]
+
+  "C.MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'MarketplaceKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","MarketplaceKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/include/MarketplaceKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","marketplacekit"]
+
+  "C.MarketplaceKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/MarketplaceKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.xctest/Contents/MacOS/MarketplaceKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.xctest/Contents/MacOS/MarketplaceKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.xctest/Contents/MacOS/MarketplaceKitPackageTests","-module-name","MarketplaceKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.MarketplaceKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Tests/MarketplaceKitTests/MarketplaceKitTests.swift","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/MarketplaceKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'MarketplaceKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","MarketplaceKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules/MarketplaceKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","marketplacekit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Sources/MarketplaceKit/","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Tests/MarketplaceKitTests/","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Package.swift","/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

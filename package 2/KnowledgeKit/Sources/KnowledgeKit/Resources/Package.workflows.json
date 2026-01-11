@@ -1,0 +1,41 @@
+{
+  "workflows": [
+    {
+      "id": "knowledge.ingest.file",
+      "name": "Ingest File",
+      "description": "Ingest a file into knowledge base",
+      "steps": [
+        { "id": "1", "action": "file.select" },
+        { "id": "2", "action": "parse.content" },
+        { "id": "3", "action": "knowledge.ingest" },
+        { "id": "4", "action": "auto.link" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.kb.ingest"]
+    },
+    {
+      "id": "knowledge.ingest.folder",
+      "name": "Ingest Folder",
+      "description": "Ingest entire folder into knowledge base",
+      "steps": [
+        { "id": "1", "action": "folder.select" },
+        { "id": "2", "action": "scan.files" },
+        { "id": "3", "action": "knowledge.ingest.batch" },
+        { "id": "4", "action": "build.graph" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.kb.ingest.folder"]
+    },
+    {
+      "id": "knowledge.explore",
+      "name": "Explore Knowledge",
+      "description": "Explore knowledge graph",
+      "steps": [
+        { "id": "1", "action": "ui.show.graph" },
+        { "id": "2", "action": "load.graph.data" },
+        { "id": "3", "action": "render.graph" }
+      ],
+      "triggers": ["menu.kb.explore"]
+    }
+  ]
+}

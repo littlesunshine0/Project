@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.build/runner.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/WebKit/.build/arm64-apple-macosx/debug/WebKitPackageTests.build/runner.dia"
+  }
+}

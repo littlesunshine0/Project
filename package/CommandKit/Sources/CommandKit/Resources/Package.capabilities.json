@@ -1,0 +1,21 @@
+{
+  "nodes": ["Command", "CommandTemplate", "CommandHistory", "CommandAlias", "Macro"],
+  "actions": [
+    "command.create", "command.execute", "command.delete", "command.update",
+    "command.list", "command.search", "command.favorite", "command.export",
+    "command.import", "command.duplicate", "command.share",
+    "template.create", "template.apply", "template.delete",
+    "macro.record", "macro.play", "macro.stop",
+    "alias.create", "alias.delete",
+    "history.show", "history.clear", "history.search"
+  ],
+  "agents": ["CommandSuggester", "HistoryTracker", "AutocompleteAgent", "ErrorRecoveryAgent", "CommandOptimizer"],
+  "commands": [
+    "/run", "/commands", "/help", "/history", "/clear", "/alias", "/unalias",
+    "/search", "/find", "/filter", "/templates", "/template create", "/template apply",
+    "/batch", "/queue", "/export", "/import", "/favorite", "/favorites",
+    "/macro record", "/macro stop", "/macro play", "/macros", "/stats", "/version"
+  ],
+  "ui": ["browser", "list", "editor", "table", "gallery"],
+  "ml": ["prediction", "recommendation", "search", "classification"]
+}

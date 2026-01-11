@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "AssetKit-arm64-apple-macosx26.0-debug.module": ["<AssetKit-arm64-apple-macosx26.0-debug.module>"]
+  "AssetKitPackageTests-arm64-apple-macosx26.0-debug.module": ["<AssetKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+  "AssetKitPackageTests-arm64-apple-macosx26.0-debug.test": ["<AssetKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+  "AssetKitTests-arm64-apple-macosx26.0-debug.module": ["<AssetKitTests-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<AssetKit-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<AssetKit-arm64-apple-macosx26.0-debug.module>","<AssetKitPackageTests-arm64-apple-macosx26.0-debug.test>","<AssetKitTests-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/Sources/AssetKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/Tests/AssetKitTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/AssetKit/Sources/AssetKit/AssetKit.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.derived/runner.swift"]
+
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/AssetKit.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/AssetKitTests.swift.o"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tempadmin/Desktop/Project/package/AssetKit/Tests/AssetKitTests/AssetKitTests.swift"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/sources"]
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/sources"
+
+  "/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<AssetKit-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/AssetKit.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKit.swiftmodule"]
+    outputs: ["<AssetKit-arm64-apple-macosx26.0-debug.module>"]
+
+  "<AssetKitPackageTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitPackageTests.swiftmodule"]
+    outputs: ["<AssetKitPackageTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "<AssetKitPackageTests-arm64-apple-macosx26.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.xctest/Contents/MacOS/AssetKitPackageTests"]
+    outputs: ["<AssetKitPackageTests-arm64-apple-macosx26.0-debug.test>"]
+
+  "<AssetKitTests-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/AssetKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitTests.swiftmodule"]
+    outputs: ["<AssetKitTests-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.AssetKit-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/Sources/AssetKit/AssetKit.swift","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/AssetKit.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKit.swiftmodule"]
+    description: "Compiling Swift Module 'AssetKit' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","AssetKit","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKit.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/sources","-I","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/include/AssetKit-Swift.h","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","assetkit"]
+
+  "C.AssetKitPackageTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.derived/runner.swift","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitTests.swiftmodule","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'AssetKitPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","AssetKitPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitPackageTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/include/AssetKitPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","assetkit"]
+
+  "C.AssetKitPackageTests-arm64-apple-macosx26.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKit.build/AssetKit.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.build/runner.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/AssetKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.xctest/Contents/MacOS/AssetKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/AssetKitPackageTests.xctest/Contents/MacOS/AssetKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug","-o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.xctest/Contents/MacOS/AssetKitPackageTests","-module-name","AssetKitPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKit.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.AssetKitTests-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/Tests/AssetKitTests/AssetKitTests.swift","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKit.swiftmodule","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/sources"]
+    outputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/AssetKitTests.swift.o","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitTests.swiftmodule"]
+    description: "Compiling Swift Module 'AssetKitTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","AssetKitTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules/AssetKitTests.swiftmodule","-output-file-map","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/AssetKitTests.build/sources","-I","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/tempadmin/Desktop/Project/package/AssetKit/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","assetkit"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tempadmin/Desktop/Project/package/AssetKit/Sources/AssetKit/","/Users/tempadmin/Desktop/Project/package/AssetKit/Tests/AssetKitTests/","/Users/tempadmin/Desktop/Project/package/AssetKit/Package.swift","/Users/tempadmin/Desktop/Project/package/AssetKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

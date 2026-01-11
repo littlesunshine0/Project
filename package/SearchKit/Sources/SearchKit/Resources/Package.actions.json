@@ -1,0 +1,98 @@
+{
+  "actions": [
+    {
+      "id": "search.query",
+      "name": "Search",
+      "description": "Execute a search query",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "query", "type": "string", "required": true },
+        { "name": "scope", "type": "string", "required": false },
+        { "name": "limit", "type": "int", "required": false, "defaultValue": "50" }
+      ],
+      "output": "[SearchResult]",
+      "shortcut": "⌘F",
+      "category": "read"
+    },
+    {
+      "id": "search.semantic",
+      "name": "Semantic Search",
+      "description": "Search using semantic understanding",
+      "icon": "brain",
+      "input": [
+        { "name": "query", "type": "string", "required": true },
+        { "name": "threshold", "type": "string", "required": false }
+      ],
+      "output": "[SearchResult]",
+      "category": "read"
+    },
+    {
+      "id": "index.create",
+      "name": "Create Index",
+      "description": "Create a search index",
+      "icon": "plus.circle",
+      "input": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "sources", "type": "array", "required": true }
+      ],
+      "output": "Index",
+      "category": "create"
+    },
+    {
+      "id": "index.update",
+      "name": "Update Index",
+      "description": "Update search index",
+      "icon": "arrow.clockwise",
+      "input": [
+        { "name": "indexId", "type": "string", "required": true }
+      ],
+      "output": "Index",
+      "category": "update"
+    },
+    {
+      "id": "index.delete",
+      "name": "Delete Index",
+      "description": "Delete a search index",
+      "icon": "trash",
+      "input": [
+        { "name": "indexId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "search.filter",
+      "name": "Filter Results",
+      "description": "Filter search results",
+      "icon": "line.3.horizontal.decrease.circle",
+      "input": [
+        { "name": "results", "type": "array", "required": true },
+        { "name": "filters", "type": "object", "required": true }
+      ],
+      "output": "[SearchResult]",
+      "category": "read"
+    },
+    {
+      "id": "search.suggest",
+      "name": "Get Suggestions",
+      "description": "Get search suggestions",
+      "icon": "text.bubble",
+      "input": [
+        { "name": "prefix", "type": "string", "required": true }
+      ],
+      "output": "[String]",
+      "category": "read"
+    },
+    {
+      "id": "search.history",
+      "name": "Search History",
+      "description": "Get search history",
+      "icon": "clock",
+      "input": [
+        { "name": "limit", "type": "int", "required": false }
+      ],
+      "output": "[Query]",
+      "category": "read"
+    }
+  ]
+}

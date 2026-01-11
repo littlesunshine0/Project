@@ -1,0 +1,82 @@
+{
+  "menus": [
+    {
+      "id": "command.main",
+      "type": "main",
+      "items": [
+        { "id": "cmd.new", "title": "New Command", "icon": "plus", "action": "command.create", "shortcut": "⌘N" },
+        { "id": "cmd.palette", "title": "Command Palette", "icon": "command", "action": "command.palette.open", "shortcut": "⌘K" },
+        { "id": "cmd.history", "title": "History", "icon": "clock.arrow.circlepath", "action": "history.show", "shortcut": "⇧⌘H" },
+        { "id": "cmd.templates", "title": "Templates", "icon": "doc.text", "action": "template.list" },
+        { "id": "cmd.macros", "title": "Macros", "icon": "repeat", "action": "macro.list" },
+        { "id": "cmd.favorites", "title": "Favorites", "icon": "star", "action": "command.favorites" },
+        { "id": "cmd.import", "title": "Import Commands", "icon": "square.and.arrow.down", "action": "command.import" },
+        { "id": "cmd.export", "title": "Export Commands", "icon": "square.and.arrow.up", "action": "command.export" }
+      ]
+    },
+    {
+      "id": "command.context",
+      "type": "context",
+      "items": [
+        { "id": "ctx.execute", "title": "Execute", "icon": "play.fill", "action": "command.execute" },
+        { "id": "ctx.copy", "title": "Copy", "icon": "doc.on.doc", "action": "command.copy" },
+        { "id": "ctx.edit", "title": "Edit", "icon": "pencil", "action": "command.update" },
+        { "id": "ctx.duplicate", "title": "Duplicate", "icon": "plus.square.on.square", "action": "command.duplicate" },
+        { "id": "ctx.favorite", "title": "Add to Favorites", "icon": "star", "action": "command.favorite" },
+        { "id": "ctx.share", "title": "Share", "icon": "square.and.arrow.up", "action": "command.share" },
+        { "id": "ctx.delete", "title": "Delete", "icon": "trash", "action": "command.delete" }
+      ]
+    },
+    {
+      "id": "command.help",
+      "type": "help",
+      "items": [
+        { "id": "help.docs", "title": "Documentation", "icon": "book", "action": "showDocs" },
+        { "id": "help.shortcuts", "title": "Keyboard Shortcuts", "icon": "keyboard", "action": "showShortcuts", "shortcut": "⌘/" },
+        { "id": "help.syntax", "title": "Command Syntax Guide", "icon": "text.book.closed", "action": "showSyntaxGuide" },
+        { "id": "help.about", "title": "About CommandKit", "icon": "info.circle", "action": "showAbout" }
+      ]
+    },
+    {
+      "id": "command.toolbar",
+      "type": "toolbar",
+      "items": [
+        { "id": "tb.new", "title": "New", "icon": "plus", "action": "command.create" },
+        { "id": "tb.search", "title": "Search", "icon": "magnifyingglass", "action": "command.search" },
+        { "id": "tb.record", "title": "Record Macro", "icon": "record.circle", "action": "macro.record" }
+      ]
+    }
+  ],
+  "views": [
+    { "id": "command.browser", "type": "browser", "title": "Commands", "icon": "command" },
+    { "id": "command.list", "type": "list", "title": "Command List", "icon": "list.bullet" },
+    { "id": "command.table", "type": "table", "title": "Command Table", "icon": "tablecells" },
+    { "id": "command.gallery", "type": "grid", "title": "Command Gallery", "icon": "square.grid.2x2" },
+    { "id": "command.editor", "type": "editor", "title": "Command Editor", "icon": "pencil" },
+    { "id": "command.history", "type": "timeline", "title": "History", "icon": "clock.arrow.circlepath" },
+    { "id": "command.settings", "type": "settings", "title": "Settings", "icon": "gearshape" }
+  ],
+  "animations": [
+    { "id": "execute.start", "type": "progress", "duration": 0.3, "curve": "easeOut" },
+    { "id": "execute.success", "type": "success", "duration": 0.5, "curve": "spring" },
+    { "id": "execute.error", "type": "error", "duration": 0.3, "curve": "easeOut" },
+    { "id": "suggestion.appear", "type": "fade", "duration": 0.2, "curve": "easeInOut" },
+    { "id": "palette.open", "type": "scale", "duration": 0.25, "curve": "spring" }
+  ],
+  "icons": [
+    { "id": "command.main", "systemName": "command" },
+    { "id": "command.item", "systemName": "terminal" },
+    { "id": "command.template", "systemName": "doc.text" },
+    { "id": "command.macro", "systemName": "repeat" },
+    { "id": "command.alias", "systemName": "link" },
+    { "id": "command.history", "systemName": "clock.arrow.circlepath" },
+    { "id": "command.favorite", "systemName": "star.fill" }
+  ],
+  "colorScheme": "adaptive",
+  "accessibility": {
+    "voiceOver": true,
+    "reduceMotion": true,
+    "highContrast": true,
+    "dynamicType": true
+  }
+}

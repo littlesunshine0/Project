@@ -1,0 +1,16 @@
+{
+  "workflows": [
+    {
+      "id": "appidea.full.flow",
+      "name": "App Idea Flow",
+      "description": "Complete app idea workflow",
+      "steps": [
+        { "id": "1", "action": "appidea.create" },
+        { "id": "2", "action": "appidea.validate" },
+        { "id": "3", "action": "appidea.plan" },
+        { "id": "4", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.appidea.new"]
+    }
+  ]
+}

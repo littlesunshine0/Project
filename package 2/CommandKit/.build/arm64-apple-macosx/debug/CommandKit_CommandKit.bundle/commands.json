@@ -1,0 +1,361 @@
+{
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "workflow",
+      "description": "Execute or manage workflows",
+      "syntax": "/workflow <name> [args...]",
+      "type": "workflow",
+      "category": "workflow",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "name", "type": "string", "required": true, "description": "Workflow name to execute"},
+        {"name": "args", "type": "array", "required": false, "description": "Arguments to pass to workflow"}
+      ],
+      "examples": ["/workflow build", "/workflow deploy --env production", "/workflow test --coverage"],
+      "aliases": ["wf", "w"]
+    },
+    {
+      "name": "run",
+      "description": "Run a command or script",
+      "syntax": "/run <command>",
+      "type": "run",
+      "category": "system",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "command", "type": "string", "required": true, "description": "Command to execute"}
+      ],
+      "examples": ["/run npm install", "/run swift build", "/run make clean"],
+      "aliases": ["r", "exec"]
+    },
+    {
+      "name": "search",
+      "description": "Search across all content",
+      "syntax": "/search <query> [--type <type>]",
+      "type": "search",
+      "category": "general",
+      "format": "slash",
+      "kind": "query",
+      "parameters": [
+        {"name": "query", "type": "string", "required": true, "description": "Search query"},
+        {"name": "type", "type": "string", "required": false, "description": "Filter by type (docs, code, workflows)"}
+      ],
+      "examples": ["/search authentication", "/search --type docs API", "/search error handling"],
+      "aliases": ["s", "find"]
+    },
+    {
+      "name": "docs",
+      "description": "Search and view documentation",
+      "syntax": "/docs [query]",
+      "type": "docs",
+      "category": "documentation",
+      "format": "slash",
+      "kind": "query",
+      "parameters": [
+        {"name": "query", "type": "string", "required": false, "description": "Documentation search query"}
+      ],
+      "examples": ["/docs", "/docs SwiftUI", "/docs async await"],
+      "aliases": ["d", "doc"]
+    },
+    {
+      "name": "help",
+      "description": "Show help for commands",
+      "syntax": "/help [command]",
+      "type": "help",
+      "category": "system",
+      "format": "slash",
+      "kind": "query",
+      "parameters": [
+        {"name": "command", "type": "string", "required": false, "description": "Command to get help for"}
+      ],
+      "examples": ["/help", "/help workflow", "/help search"],
+      "aliases": ["h", "?"]
+    },
+    {
+      "name": "create",
+      "description": "Create a new item",
+      "syntax": "/create <type> <name>",
+      "type": "create",
+      "category": "general",
+      "format": "slash",
+      "kind": "mutation",
+      "parameters": [
+        {"name": "type", "type": "string", "required": true, "description": "Type of item (workflow, agent, doc)"},
+        {"name": "name", "type": "string", "required": true, "description": "Name for the new item"}
+      ],
+      "examples": ["/create workflow deploy", "/create agent monitor", "/create doc README"],
+      "aliases": ["new", "add"]
+    },
+    {
+      "name": "delete",
+      "description": "Delete an item",
+      "syntax": "/delete <type> <name>",
+      "type": "delete",
+      "category": "general",
+      "format": "slash",
+      "kind": "mutation",
+      "parameters": [
+        {"name": "type", "type": "string", "required": true, "description": "Type of item"},
+        {"name": "name", "type": "string", "required": true, "description": "Name of item to delete"}
+      ],
+      "examples": ["/delete workflow old-deploy", "/delete agent unused"],
+      "aliases": ["rm", "remove"]
+    },
+    {
+      "name": "list",
+      "description": "List items of a type",
+      "syntax": "/list <type> [--filter <filter>]",
+      "type": "list",
+      "category": "general",
+      "format": "slash",
+      "kind": "query",
+      "parameters": [
+        {"name": "type", "type": "string", "required": true, "description": "Type to list (workflows, agents, docs)"},
+        {"name": "filter", "type": "string", "required": false, "description": "Filter results"}
+      ],
+      "examples": ["/list workflows", "/list agents --filter running", "/list docs"],
+      "aliases": ["ls", "l"]
+    },
+    {
+      "name": "open",
+      "description": "Open a file or project",
+      "syntax": "/open <path>",
+      "type": "open",
+      "category": "file",
+      "format": "slash",
+      "kind": "navigation",
+      "parameters": [
+        {"name": "path", "type": "path", "required": true, "description": "Path to open"}
+      ],
+      "examples": ["/open Package.swift", "/open ./src", "/open ~/Projects"],
+      "aliases": ["o"]
+    },
+    {
+      "name": "close",
+      "description": "Close current file or panel",
+      "syntax": "/close [--all]",
+      "type": "close",
+      "category": "file",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "all", "type": "boolean", "required": false, "description": "Close all open files"}
+      ],
+      "examples": ["/close", "/close --all"],
+      "aliases": ["x"]
+    },
+    {
+      "name": "save",
+      "description": "Save current file",
+      "syntax": "/save [path]",
+      "type": "save",
+      "category": "file",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "path", "type": "path", "required": false, "description": "Save to specific path"}
+      ],
+      "examples": ["/save", "/save backup.swift"],
+      "aliases": []
+    },
+    {
+      "name": "config",
+      "description": "View or modify configuration",
+      "syntax": "/config [key] [value]",
+      "type": "config",
+      "category": "configuration",
+      "format": "slash",
+      "kind": "mutation",
+      "parameters": [
+        {"name": "key", "type": "string", "required": false, "description": "Configuration key"},
+        {"name": "value", "type": "string", "required": false, "description": "New value to set"}
+      ],
+      "examples": ["/config", "/config theme dark", "/config editor.fontSize 14"],
+      "aliases": ["cfg", "settings"]
+    },
+    {
+      "name": "analytics",
+      "description": "View analytics and metrics",
+      "syntax": "/analytics [period]",
+      "type": "analytics",
+      "category": "analytics",
+      "format": "slash",
+      "kind": "query",
+      "parameters": [
+        {"name": "period", "type": "string", "required": false, "description": "Time period (today, week, month)"}
+      ],
+      "examples": ["/analytics", "/analytics week", "/analytics month"],
+      "aliases": ["stats", "metrics"]
+    },
+    {
+      "name": "history",
+      "description": "View command history",
+      "syntax": "/history [count]",
+      "type": "history",
+      "category": "system",
+      "format": "slash",
+      "kind": "query",
+      "parameters": [
+        {"name": "count", "type": "number", "required": false, "description": "Number of items to show", "defaultValue": "10"}
+      ],
+      "examples": ["/history", "/history 20"],
+      "aliases": ["hist"]
+    },
+    {
+      "name": "clear",
+      "description": "Clear the screen or history",
+      "syntax": "/clear [--history]",
+      "type": "clear",
+      "category": "system",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "history", "type": "boolean", "required": false, "description": "Also clear command history"}
+      ],
+      "examples": ["/clear", "/clear --history"],
+      "aliases": ["cls"]
+    },
+    {
+      "name": "agent",
+      "description": "Manage agents",
+      "syntax": "/agent <action> [name]",
+      "type": "run",
+      "category": "workflow",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "action", "type": "string", "required": true, "description": "Action (start, stop, status, list)"},
+        {"name": "name", "type": "string", "required": false, "description": "Agent name"}
+      ],
+      "examples": ["/agent list", "/agent start monitor", "/agent stop builder", "/agent status"],
+      "aliases": ["ag"]
+    },
+    {
+      "name": "export",
+      "description": "Export data to file",
+      "syntax": "/export <type> <path>",
+      "type": "export",
+      "category": "file",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "type", "type": "string", "required": true, "description": "Type to export (workflows, config, data)"},
+        {"name": "path", "type": "path", "required": true, "description": "Export destination path"}
+      ],
+      "examples": ["/export workflows ./backup.json", "/export config ./settings.json"],
+      "aliases": []
+    },
+    {
+      "name": "import",
+      "description": "Import data from file",
+      "syntax": "/import <path>",
+      "type": "import",
+      "category": "file",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "path", "type": "path", "required": true, "description": "Path to import from"}
+      ],
+      "examples": ["/import ./workflows.json", "/import ~/backup/config.json"],
+      "aliases": []
+    },
+    {
+      "name": "pause",
+      "description": "Pause a running workflow or agent",
+      "syntax": "/pause [name]",
+      "type": "pause",
+      "category": "workflow",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "name", "type": "string", "required": false, "description": "Name of workflow/agent to pause"}
+      ],
+      "examples": ["/pause", "/pause deploy"],
+      "aliases": []
+    },
+    {
+      "name": "resume",
+      "description": "Resume a paused workflow or agent",
+      "syntax": "/resume [name]",
+      "type": "resume",
+      "category": "workflow",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "name", "type": "string", "required": false, "description": "Name of workflow/agent to resume"}
+      ],
+      "examples": ["/resume", "/resume deploy"],
+      "aliases": []
+    },
+    {
+      "name": "cancel",
+      "description": "Cancel a running workflow or agent",
+      "syntax": "/cancel [name]",
+      "type": "cancel",
+      "category": "workflow",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "name", "type": "string", "required": false, "description": "Name of workflow/agent to cancel"}
+      ],
+      "examples": ["/cancel", "/cancel deploy"],
+      "aliases": ["abort", "stop"]
+    },
+    {
+      "name": "goto",
+      "description": "Navigate to a location",
+      "syntax": "/goto <destination>",
+      "type": "run",
+      "category": "navigation",
+      "format": "slash",
+      "kind": "navigation",
+      "parameters": [
+        {"name": "destination", "type": "string", "required": true, "description": "Destination (dashboard, workflows, agents, docs, settings)"}
+      ],
+      "examples": ["/goto dashboard", "/goto workflows", "/goto settings"],
+      "aliases": ["go", "nav"]
+    },
+    {
+      "name": "theme",
+      "description": "Change the color theme",
+      "syntax": "/theme <name>",
+      "type": "config",
+      "category": "configuration",
+      "format": "slash",
+      "kind": "mutation",
+      "parameters": [
+        {"name": "name", "type": "string", "required": true, "description": "Theme name (light, dark, auto)"}
+      ],
+      "examples": ["/theme dark", "/theme light", "/theme auto"],
+      "aliases": []
+    },
+    {
+      "name": "version",
+      "description": "Show version information",
+      "syntax": "/version",
+      "type": "help",
+      "category": "system",
+      "format": "slash",
+      "kind": "query",
+      "parameters": [],
+      "examples": ["/version"],
+      "aliases": ["v", "ver"]
+    },
+    {
+      "name": "reload",
+      "description": "Reload configuration and plugins",
+      "syntax": "/reload [--hard]",
+      "type": "run",
+      "category": "system",
+      "format": "slash",
+      "kind": "action",
+      "parameters": [
+        {"name": "hard", "type": "boolean", "required": false, "description": "Perform hard reload"}
+      ],
+      "examples": ["/reload", "/reload --hard"],
+      "aliases": ["refresh"]
+    }
+  ]
+}

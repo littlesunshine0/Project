@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/ContentHub.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentHub.dia"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ContentHub/Sources/ContentHub/ContentStore.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ContentHub/.build/arm64-apple-macosx/debug/ContentHub.build/ContentStore.dia"
+  }
+}

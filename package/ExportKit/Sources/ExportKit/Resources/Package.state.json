@@ -1,0 +1,21 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "preparing", "name": "Preparing", "icon": "doc.badge.gearshape", "color": "blue" },
+    { "id": "exporting", "name": "Exporting", "icon": "square.and.arrow.up", "color": "orange" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "completed", "name": "Completed", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "export.started", "name": "Export Started", "severity": "info" },
+    { "id": "export.completed", "name": "Export Completed", "severity": "success" },
+    { "id": "export.error", "name": "Export Error", "severity": "error" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "preparing", "event": "export.start" },
+    { "from": "preparing", "to": "exporting", "event": "prepare.complete" },
+    { "from": "exporting", "to": "completed", "event": "export.completed" },
+    { "from": "exporting", "to": "error", "event": "export.error" },
+    { "from": "error", "to": "idle", "event": "reset" }
+  ]
+}

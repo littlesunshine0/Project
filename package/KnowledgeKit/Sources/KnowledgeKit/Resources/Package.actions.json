@@ -1,0 +1,98 @@
+{
+  "actions": [
+    {
+      "id": "knowledge.create",
+      "name": "Create Knowledge",
+      "description": "Create a new knowledge entry",
+      "icon": "plus",
+      "input": [
+        { "name": "title", "type": "string", "required": true },
+        { "name": "content", "type": "string", "required": true },
+        { "name": "tags", "type": "array", "required": false }
+      ],
+      "output": "Knowledge",
+      "shortcut": "⌘N",
+      "category": "create"
+    },
+    {
+      "id": "knowledge.update",
+      "name": "Update Knowledge",
+      "description": "Update a knowledge entry",
+      "icon": "pencil",
+      "input": [
+        { "name": "knowledgeId", "type": "string", "required": true },
+        { "name": "changes", "type": "object", "required": true }
+      ],
+      "output": "Knowledge",
+      "category": "update"
+    },
+    {
+      "id": "knowledge.delete",
+      "name": "Delete Knowledge",
+      "description": "Delete a knowledge entry",
+      "icon": "trash",
+      "input": [
+        { "name": "knowledgeId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "delete"
+    },
+    {
+      "id": "knowledge.search",
+      "name": "Search Knowledge",
+      "description": "Search knowledge base",
+      "icon": "magnifyingglass",
+      "input": [
+        { "name": "query", "type": "string", "required": true }
+      ],
+      "output": "[Knowledge]",
+      "shortcut": "⌘F",
+      "category": "read"
+    },
+    {
+      "id": "knowledge.ingest",
+      "name": "Ingest Content",
+      "description": "Ingest content into knowledge base",
+      "icon": "square.and.arrow.down",
+      "input": [
+        { "name": "source", "type": "file", "required": true }
+      ],
+      "output": "[Knowledge]",
+      "category": "create"
+    },
+    {
+      "id": "knowledge.link",
+      "name": "Link Knowledge",
+      "description": "Create link between knowledge entries",
+      "icon": "link",
+      "input": [
+        { "name": "sourceId", "type": "string", "required": true },
+        { "name": "targetId", "type": "string", "required": true }
+      ],
+      "output": "Bool",
+      "category": "update"
+    },
+    {
+      "id": "topic.create",
+      "name": "Create Topic",
+      "description": "Create a new topic",
+      "icon": "folder.badge.plus",
+      "input": [
+        { "name": "name", "type": "string", "required": true }
+      ],
+      "output": "Topic",
+      "category": "create"
+    },
+    {
+      "id": "knowledge.export",
+      "name": "Export Knowledge",
+      "description": "Export knowledge base",
+      "icon": "square.and.arrow.up",
+      "input": [
+        { "name": "format", "type": "string", "required": false }
+      ],
+      "output": "URL",
+      "category": "export"
+    }
+  ]
+}

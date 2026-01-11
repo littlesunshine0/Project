@@ -1,0 +1,11 @@
+{
+  "id": "com.flowkit.commandkit",
+  "name": "CommandKit",
+  "version": "1.0.0",
+  "category": "core",
+  "platforms": ["macOS", "iOS", "visionOS"],
+  "dependencies": ["DataKit", "CoreKit"],
+  "author": "FlowKit Team",
+  "license": "MIT",
+  "repository": "https://github.com/flowkit/commandkit"
+}

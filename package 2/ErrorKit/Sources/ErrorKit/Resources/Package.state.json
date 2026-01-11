@@ -1,0 +1,22 @@
+{
+  "states": [
+    { "id": "idle", "name": "Idle", "icon": "circle", "color": "gray" },
+    { "id": "handling", "name": "Handling", "icon": "gearshape", "color": "orange" },
+    { "id": "recovering", "name": "Recovering", "icon": "arrow.counterclockwise", "color": "blue" },
+    { "id": "error", "name": "Error", "icon": "exclamationmark.triangle", "color": "red" },
+    { "id": "resolved", "name": "Resolved", "icon": "checkmark.circle", "color": "green" }
+  ],
+  "events": [
+    { "id": "error.occurred", "name": "Error Occurred", "severity": "error" },
+    { "id": "error.handled", "name": "Error Handled", "severity": "info" },
+    { "id": "error.recovered", "name": "Error Recovered", "severity": "success" },
+    { "id": "error.reported", "name": "Error Reported", "severity": "info" }
+  ],
+  "transitions": [
+    { "from": "idle", "to": "handling", "event": "error.occurred" },
+    { "from": "handling", "to": "recovering", "event": "recovery.start" },
+    { "from": "recovering", "to": "resolved", "event": "error.recovered" },
+    { "from": "recovering", "to": "error", "event": "recovery.failed" },
+    { "from": "handling", "to": "idle", "event": "error.handled" }
+  ]
+}

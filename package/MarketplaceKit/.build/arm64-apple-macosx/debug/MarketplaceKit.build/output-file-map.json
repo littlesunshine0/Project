@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/Sources/MarketplaceKit/MarketplaceKit.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/MarketplaceKit/.build/arm64-apple-macosx/debug/MarketplaceKit.build/MarketplaceKit.dia"
+  }
+}

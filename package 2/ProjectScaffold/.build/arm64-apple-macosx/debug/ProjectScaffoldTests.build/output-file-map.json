@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffoldTests.build/master.swiftdeps"
+  },
+  "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/Tests/ProjectScaffoldTests/ProjectScaffoldTests.swift": {
+    "dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffoldTests.build/ProjectScaffoldTests.d",
+    "object": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffoldTests.build/ProjectScaffoldTests.swift.o",
+    "swiftmodule": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffoldTests.build/ProjectScaffoldTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffoldTests.build/ProjectScaffoldTests.swiftdeps",
+    "diagnostics": "/Users/tempadmin/Desktop/Project/package/ProjectScaffold/.build/arm64-apple-macosx/debug/ProjectScaffoldTests.build/ProjectScaffoldTests.dia"
+  }
+}

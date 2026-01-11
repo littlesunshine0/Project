@@ -1,0 +1,23 @@
+{
+  "nodes": ["Workflow", "Step", "Trigger", "Condition", "Action", "Variable"],
+  "actions": [
+    "workflow.create", "workflow.run", "workflow.stop", "workflow.pause", "workflow.resume",
+    "workflow.delete", "workflow.duplicate", "workflow.export", "workflow.import",
+    "workflow.list", "workflow.search", "workflow.validate",
+    "step.add", "step.remove", "step.move", "step.edit",
+    "trigger.add", "trigger.remove", "trigger.list",
+    "template.list", "template.apply", "template.save",
+    "schedule.set", "schedule.remove"
+  ],
+  "agents": ["WorkflowSuggester", "ExecutionMonitor", "ErrorRecoveryAgent", "ScheduleOptimizer", "PerformanceAnalyzer"],
+  "commands": [
+    "/workflow create", "/workflow run", "/workflow stop", "/workflow pause", "/workflow resume",
+    "/workflow list", "/workflow delete", "/workflow duplicate",
+    "/workflow step add", "/workflow step remove",
+    "/workflow trigger add", "/workflow triggers",
+    "/workflow templates", "/workflow template apply",
+    "/workflow schedule", "/workflow status", "/workflow history", "/workflow logs"
+  ],
+  "ui": ["browser", "list", "editor", "timeline", "canvas"],
+  "ml": ["prediction", "optimization", "recommendation", "classification"]
+}

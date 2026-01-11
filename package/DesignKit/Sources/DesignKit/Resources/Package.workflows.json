@@ -1,0 +1,41 @@
+{
+  "workflows": [
+    {
+      "id": "design.component.create",
+      "name": "Create Component",
+      "description": "Create a new design component",
+      "steps": [
+        { "id": "1", "action": "ui.show.wizard" },
+        { "id": "2", "action": "select.type" },
+        { "id": "3", "action": "component.create" },
+        { "id": "4", "action": "style.apply" },
+        { "id": "5", "action": "design.preview" }
+      ],
+      "triggers": ["menu.design.new"]
+    },
+    {
+      "id": "design.theme.apply",
+      "name": "Apply Theme",
+      "description": "Apply theme to all components",
+      "steps": [
+        { "id": "1", "action": "theme.list" },
+        { "id": "2", "action": "ui.select.single" },
+        { "id": "3", "action": "theme.set" },
+        { "id": "4", "action": "regenerate.all" },
+        { "id": "5", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.design.theme"]
+    },
+    {
+      "id": "design.export.all",
+      "name": "Export All",
+      "description": "Export all design assets",
+      "steps": [
+        { "id": "1", "action": "select.format" },
+        { "id": "2", "action": "design.export" },
+        { "id": "3", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.design.export"]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "workflows": [
+    {
+      "id": "analytics.daily.report",
+      "name": "Daily Report",
+      "description": "Generate daily analytics report",
+      "steps": [
+        { "id": "1", "action": "collect.daily.data" },
+        { "id": "2", "action": "aggregate.metrics" },
+        { "id": "3", "action": "report.generate", "input": { "type": "daily" } },
+        { "id": "4", "action": "notify.stakeholders" }
+      ],
+      "triggers": ["schedule.daily"]
+    },
+    {
+      "id": "analytics.export.data",
+      "name": "Export Data",
+      "description": "Export analytics data",
+      "steps": [
+        { "id": "1", "action": "ui.show.export.dialog" },
+        { "id": "2", "action": "select.timerange" },
+        { "id": "3", "action": "analytics.export" },
+        { "id": "4", "action": "notify.complete" }
+      ],
+      "triggers": ["menu.analytics.export"]
+    },
+    {
+      "id": "analytics.funnel.analysis",
+      "name": "Funnel Analysis",
+      "description": "Analyze conversion funnel",
+      "steps": [
+        { "id": "1", "action": "select.funnel.steps" },
+        { "id": "2", "action": "funnel.analyze" },
+        { "id": "3", "action": "show.visualization" }
+      ],
+      "triggers": ["menu.analytics.funnel"]
+    }
+  ]
+}

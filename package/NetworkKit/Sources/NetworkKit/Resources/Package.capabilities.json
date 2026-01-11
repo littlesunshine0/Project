@@ -1,0 +1,8 @@
+{
+  "nodes": ["Request", "Response", "Endpoint", "Session", "Cache"],
+  "actions": ["request.send", "request.cancel", "response.parse", "endpoint.configure", "session.create", "cache.clear"],
+  "agents": ["RequestOptimizer", "CacheManager", "RetryHandler"],
+  "commands": ["/network request", "/network cache clear", "/network endpoints"],
+  "ui": ["browser", "settings"],
+  "ml": ["prediction"]
+}

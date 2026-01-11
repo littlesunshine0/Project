@@ -1,0 +1,8 @@
+{
+  "nodes": ["Chat", "Message", "Context", "Thread", "Attachment"],
+  "actions": ["chat.create", "chat.send", "chat.delete", "chat.export", "message.edit", "message.delete", "context.add", "context.clear"],
+  "agents": ["ContextManager", "ResponseEnhancer", "HistoryOrganizer", "SmartSuggester"],
+  "commands": ["/chat new", "/chat send", "/chat clear", "/chat export", "/chat model", "/chat context"],
+  "ui": ["browser", "list", "editor"],
+  "ml": ["generation", "embedding", "recommendation"]
+}

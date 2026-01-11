@@ -1,0 +1,22 @@
+{
+  "agents": [
+    {
+      "id": "asset.optimizer",
+      "name": "Asset Optimizer",
+      "description": "Optimizes assets for performance",
+      "triggers": [
+        { "type": "event", "condition": "asset.imported" }
+      ],
+      "actions": [
+        "analyze.asset",
+        "optimize.size",
+        "generate.variants"
+      ],
+      "config": {
+        "autoStart": true,
+        "priority": "low",
+        "maxConcurrent": 2
+      }
+    }
+  ]
+}
