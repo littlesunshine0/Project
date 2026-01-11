@@ -1,6 +1,6 @@
 //
-//  FlowKitHost.swift
-//  FlowKit
+//  ProjectHost.swift
+//  Project
 //
 //  The single global object that bridges UI and Kits.
 //  Views talk to this. Nothing else.
@@ -14,23 +14,23 @@ import IdeaKit
 import IconKit
 import ChatKit
 import AIKit
-import WorkflowKit
+import WorkProject
 import AgentKit
 import CommandKit
 import SearchKit
 import NLUKit
 
-// MARK: - FlowKitHost
+// MARK: - ProjectHost
 
 /// The single bridge between the UI layer and all Kit packages.
 /// This is the only object views should interact with.
 @MainActor
 @Observable
-public final class FlowKitHost {
+public final class ProjectHost {
     
     // MARK: - Singleton
     
-    public static let shared = FlowKitHost()
+    public static let shared = ProjectHost()
     
     // MARK: - Kit Facades
     
@@ -64,7 +64,7 @@ public final class FlowKitHost {
     /// Initialize the host with a project directory
     public func initialize(projectPath: String? = nil) async {
         isLoading = true
-        statusMessage = "Initializing FlowKit..."
+        statusMessage = "Initializing Project..."
         
         // If a path is provided, scan it
         if let path = projectPath {
@@ -264,7 +264,7 @@ public final class ChatSession {
         // Welcome message
         messages.append(FlowChatMessage(
             role: .assistant,
-            content: "Welcome to FlowKit. I'm your project intelligence assistant.\n\nTry:\n• \"Show all views\"\n• \"Explain this project\"\n• \"Find scripts\"\n• \"Create a new workflow\""
+            content: "Welcome to Project. I'm your project intelligence assistant.\n\nTry:\n• \"Show all views\"\n• \"Explain this project\"\n• \"Find scripts\"\n• \"Create a new workflow\""
         ))
     }
     
@@ -297,5 +297,5 @@ public enum ChatRole {
 
 // MARK: - Environment Key
 
-// Note: For Swift 6 concurrency, we pass FlowKitHost.shared directly
+// Note: For Swift 6 concurrency, we pass ProjectHost.shared directly
 // rather than using EnvironmentKey which has isolation issues.
