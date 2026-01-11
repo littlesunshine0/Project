@@ -14,7 +14,7 @@ import IdeaKit
 import IconKit
 import ChatKit
 import AIKit
-import WorkProject
+import WorkflowKit
 import AgentKit
 import CommandKit
 import SearchKit
