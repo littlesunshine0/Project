@@ -1,8 +1,0 @@
-{
-  "nodes": ["Bridge", "Adapter", "Protocol", "Message", "Channel"],
-  "actions": ["bridge.create", "bridge.connect", "bridge.disconnect", "adapter.register", "message.send", "message.receive", "channel.open"],
-  "agents": ["ConnectionManager", "MessageRouter", "ProtocolHandler"],
-  "commands": ["/bridge connect", "/bridge disconnect", "/bridge status"],
-  "ui": ["browser", "settings"],
-  "ml": ["prediction"]
-}

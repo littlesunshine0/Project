@@ -1,8 +1,0 @@
-{
-  "nodes": ["Content", "Collection", "Category", "Tag", "Media"],
-  "actions": ["content.create", "content.update", "content.delete", "content.publish", "collection.create", "category.assign", "media.upload"],
-  "agents": ["ContentOrganizer", "MediaProcessor", "PublishScheduler"],
-  "commands": ["/content create", "/content publish", "/collections", "/categories"],
-  "ui": ["browser", "gallery", "editor"],
-  "ml": ["classification", "recommendation"]
-}

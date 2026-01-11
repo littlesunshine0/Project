@@ -1,8 +1,0 @@
-{
-  "nodes": ["Parser", "AST", "Token", "Rule", "Transform"],
-  "actions": ["parse.text", "parse.file", "ast.traverse", "ast.transform", "token.extract", "rule.define"],
-  "agents": ["ParserOptimizer", "ASTAnalyzer"],
-  "commands": ["/parse text", "/parse file", "/ast traverse"],
-  "ui": ["browser", "editor"],
-  "ml": ["classification"]
-}

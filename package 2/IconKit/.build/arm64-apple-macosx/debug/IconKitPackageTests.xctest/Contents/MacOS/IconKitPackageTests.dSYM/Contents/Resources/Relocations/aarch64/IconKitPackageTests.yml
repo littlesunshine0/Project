@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/tempadmin/Desktop/Project/package/IconKit/.build/arm64-apple-macosx/debug/IconKitPackageTests.xctest/Contents/MacOS/IconKitPackageTests'
-relocations:     []
-...

@@ -1,8 +1,0 @@
-{
-  "nodes": ["Component", "Style", "Theme", "Token", "Layout"],
-  "actions": ["component.create", "component.update", "style.apply", "theme.switch", "token.define", "layout.configure"],
-  "agents": ["StyleEnforcer", "ThemeManager", "AccessibilityChecker"],
-  "commands": ["/design component", "/design style", "/design theme", "/design tokens"],
-  "ui": ["browser", "gallery", "editor", "settings"],
-  "ml": ["recommendation", "classification"]
-}

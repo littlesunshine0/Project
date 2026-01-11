@@ -1,8 +1,0 @@
-{
-  "nodes": ["Query", "Result", "Index", "Filter", "Facet"],
-  "actions": ["search.query", "search.filter", "search.sort", "index.create", "index.update", "index.delete", "result.export"],
-  "agents": ["SearchOptimizer", "QuerySuggester", "IndexManager"],
-  "commands": ["/search", "/search filter", "/search sort", "/index create", "/index update"],
-  "ui": ["browser", "list", "settings"],
-  "ml": ["search", "recommendation", "classification"]
-}

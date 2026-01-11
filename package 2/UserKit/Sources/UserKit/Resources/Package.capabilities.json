@@ -1,8 +1,0 @@
-{
-  "nodes": ["User", "Preference", "Session", "Profile", "Setting"],
-  "actions": ["user.create", "user.update", "user.delete", "preference.set", "preference.get", "session.start", "session.end", "profile.update"],
-  "agents": ["PreferenceSync", "SessionManager", "ProfileUpdater"],
-  "commands": ["/user profile", "/user preferences", "/user session", "/user settings"],
-  "ui": ["browser", "editor", "settings"],
-  "ml": ["recommendation", "prediction"]
-}

@@ -1,8 +1,0 @@
-{
-  "nodes": ["Knowledge", "Topic", "Reference", "Source", "Tag"],
-  "actions": ["knowledge.create", "knowledge.update", "knowledge.delete", "knowledge.search", "knowledge.link", "topic.create", "reference.add"],
-  "agents": ["KnowledgeIndexer", "TopicSuggester", "ReferenceValidator"],
-  "commands": ["/knowledge add", "/knowledge search", "/knowledge link", "/topics", "/references"],
-  "ui": ["browser", "list", "graph"],
-  "ml": ["embedding", "search", "classification", "recommendation"]
-}

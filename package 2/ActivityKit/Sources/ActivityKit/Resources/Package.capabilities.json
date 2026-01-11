@@ -1,8 +1,0 @@
-{
-  "nodes": ["Activity", "Event", "Timeline", "Feed", "Notification"],
-  "actions": ["activity.log", "activity.query", "event.create", "timeline.build", "feed.generate", "notification.send"],
-  "agents": ["ActivityTracker", "FeedGenerator", "TimelineBuilder"],
-  "commands": ["/activity log", "/activity query", "/timeline", "/feed"],
-  "ui": ["browser", "timeline", "list"],
-  "ml": ["prediction", "recommendation"]
-}

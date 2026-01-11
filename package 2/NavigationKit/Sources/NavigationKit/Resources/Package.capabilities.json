@@ -1,8 +1,0 @@
-{
-  "nodes": ["Route", "Screen", "Tab", "Modal", "Deeplink"],
-  "actions": ["route.navigate", "route.back", "route.replace", "tab.switch", "modal.present", "modal.dismiss", "deeplink.handle"],
-  "agents": ["NavigationTracker", "DeeplinkHandler"],
-  "commands": ["/nav go", "/nav back", "/nav tab", "/nav modal"],
-  "ui": ["browser", "settings"],
-  "ml": ["prediction"]
-}

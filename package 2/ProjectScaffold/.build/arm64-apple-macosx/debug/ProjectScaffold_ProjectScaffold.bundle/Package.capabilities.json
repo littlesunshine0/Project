@@ -1,8 +1,0 @@
-{
-  "nodes": ["Project", "Template", "Structure", "File", "Config"],
-  "actions": ["project.create", "project.scaffold", "template.apply", "structure.generate", "config.setup"],
-  "agents": ["ProjectGenerator", "TemplateManager", "ConfigSetup"],
-  "commands": ["/project create", "/project scaffold", "/template apply", "/templates"],
-  "ui": ["browser", "editor", "settings"],
-  "ml": ["recommendation"]
-}

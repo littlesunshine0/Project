@@ -1,8 +1,0 @@
-{
-  "nodes": ["Node", "Extension", "Graph", "Schema", "Query"],
-  "actions": ["node.create", "node.read", "node.update", "node.delete", "node.query", "extension.attach", "graph.traverse", "schema.validate"],
-  "agents": ["NodeManager", "GraphOptimizer", "SchemaValidator"],
-  "commands": ["/node create", "/node query", "/graph traverse", "/schema validate"],
-  "ui": ["browser", "graph", "editor"],
-  "ml": ["search", "classification"]
-}

@@ -1,8 +1,0 @@
-{
-  "nodes": ["Feedback", "Rating", "Survey", "Response", "Report"],
-  "actions": ["feedback.submit", "feedback.view", "rating.submit", "survey.create", "survey.respond", "report.generate"],
-  "agents": ["FeedbackAnalyzer", "SentimentDetector", "SurveyOptimizer"],
-  "commands": ["/feedback submit", "/feedback view", "/rating", "/survey create", "/survey respond"],
-  "ui": ["browser", "list", "editor"],
-  "ml": ["classification", "prediction"]
-}

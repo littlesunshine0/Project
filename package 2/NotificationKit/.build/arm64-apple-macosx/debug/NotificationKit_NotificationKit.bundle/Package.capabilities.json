@@ -1,8 +1,0 @@
-{
-  "nodes": ["Notification", "Alert", "Badge", "Channel", "Schedule"],
-  "actions": ["notification.send", "notification.schedule", "notification.cancel", "alert.show", "alert.dismiss", "badge.update", "channel.configure"],
-  "agents": ["NotificationScheduler", "PriorityManager", "DeliveryOptimizer"],
-  "commands": ["/notify", "/notify schedule", "/notify cancel", "/alert", "/badge"],
-  "ui": ["browser", "list", "settings"],
-  "ml": ["prediction"]
-}
